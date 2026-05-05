@@ -19,9 +19,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
 <meta name="theme-color" content="#00AED5">
 
-<title>VaultDrive — Biometric Encrypted SSD | Your Face is the Key | 1TB $299</title>
-<meta name="description" content="The only encrypted portable SSD that unlocks with your face. AES-256 hardware encryption, zero stored keys, 1TB storage, $299. Ships worldwide. By DSCC Facrypt.">
-<meta name="keywords" content="biometric encrypted hard drive, encrypted SSD no password, face unlock SSD, AES-256 portable drive, hardware encrypted drive, secure portable SSD, GDPR compliant drive">
+<title>VaultDrive — 2TB Portable SSD with NFC Unlock & AES-256 | $399</title>
+<meta name="description" content="Premium 2TB portable SSD with one-touch NFC unlock and AES-256 hardware encryption. 1050 MB/s. CNC aluminum. $399 — $70 less than Samsung T7. By DSCC Facrypt.">
+<meta name="keywords" content="2TB portable SSD, NFC encrypted SSD, AES-256 portable drive, premium portable SSD, USB 3.2 Gen 2 SSD, samsung t7 alternative, hardware encrypted ssd, 1050 mbps portable ssd">
 
 <!-- Canonical and language alternates -->
 <link rel="canonical" href="https://facrypt.com/vaultdrive/">
@@ -32,21 +32,21 @@
 
 <!-- Open Graph — social sharing -->
 <meta property="og:type" content="product">
-<meta property="og:title" content="VaultDrive — The Encrypted SSD That Only Opens for You">
-<meta property="og:description" content="Your face generates the key. Your face erases it. No password. No stored key. Nothing to steal.">
+<meta property="og:title" content="VaultDrive — 2TB Premium SSD with NFC Unlock & AES-256">
+<meta property="og:description" content="1050 MB/s. CNC aluminum. NFC unlock. AES-256 encryption. Less than Samsung T7. More than encrypted.">
 <meta property="og:image" content="https://facrypt.com/assets/vaultdrive-og.jpg">
 <meta property="og:url" content="https://facrypt.com/vaultdrive/">
 <meta property="og:site_name" content="Facrypt">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ja_JP">
 <meta property="og:locale:alternate" content="de_DE">
-<meta property="product:price:amount" content="299">
+<meta property="product:price:amount" content="399">
 <meta property="product:price:currency" content="USD">
 
 <!-- Twitter Card -->
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="VaultDrive — Biometric Encrypted SSD">
-<meta name="twitter:description" content="Your face generates the key. Your face erases it. $299. Ships worldwide.">
+<meta name="twitter:title" content="VaultDrive — 2TB Premium SSD with NFC + AES-256">
+<meta name="twitter:description" content="1050 MB/s. CNC aluminum. NFC unlock. $399 — $70 less than Samsung T7 2TB.">
 <meta name="twitter:image" content="https://facrypt.com/assets/vaultdrive-twitter.jpg">
 
 <!-- ═══════════════════════════════════════════════════
@@ -59,7 +59,7 @@
   "@type": "Product",
   "name": "VaultDrive",
   "alternateName": "Facrypt VaultDrive",
-  "description": "Biometric encrypted portable SSD with 1TB NVMe storage, AES-256 hardware encryption, and NFC face-unlock. Zero stored keys.",
+  "description": "Premium 2TB portable SSD with NFC unlock and AES-256 hardware encryption. 1050 MB/s read/write. CNC aluminum chassis. $70 less than Samsung T7 2TB.",
   "brand": {
     "@type": "Brand",
     "name": "Facrypt",
@@ -81,14 +81,14 @@
     "https://facrypt.com/assets/vaultdrive-side.jpg",
     "https://facrypt.com/assets/vaultdrive-chip.jpg"
   ],
-  "sku": "VD-1TB-001",
+  "sku": "VD-2TB-001",
   "gtin": "0000000000000",
   "offers": {
     "@type": "Offer",
     "url": "https://facrypt.com/vaultdrive/#order",
     "priceCurrency": "USD",
-    "price": "299.00",
-    "priceValidUntil": "2025-12-31",
+    "price": "399.00",
+    "priceValidUntil": "2026-12-31",
     "availability": "https://schema.org/PreOrder",
     "itemCondition": "https://schema.org/NewCondition",
     "shippingDetails": {
@@ -112,7 +112,7 @@
     "worstRating": "1"
   },
   "additionalProperty": [
-    {"@type": "PropertyValue", "name": "Storage Capacity", "value": "1 TB"},
+    {"@type": "PropertyValue", "name": "Storage Capacity", "value": "2 TB"},
     {"@type": "PropertyValue", "name": "Interface", "value": "USB-C 3.2 Gen 2"},
     {"@type": "PropertyValue", "name": "Encryption", "value": "AES-256 Hardware"},
     {"@type": "PropertyValue", "name": "Unlock Method", "value": "NFC Biometric Face Recognition"},
@@ -1106,6 +1106,338 @@ body.menu-open { overflow:hidden; }
   font-size:13px;
   line-height:1.65;
   color:var(--gray-2);
+}
+
+/* ═══════════════════════════════════════════════════
+   §5.5 NFC UNLOCK — One-touch unlock visual
+═══════════════════════════════════════════════════ */
+.nfc-unlock {
+  padding:120px 0;
+  background:linear-gradient(180deg, var(--white) 0%, #F4F7FA 100%);
+}
+.nfc-unlock-inner {
+  max-width:var(--max-w);
+  margin:0 auto;
+  padding:0 32px;
+}
+.nfc-unlock-header {
+  text-align:center;
+  margin-bottom:64px;
+}
+.nfc-stage {
+  display:grid;
+  grid-template-columns:1.4fr 1fr;
+  gap:48px;
+  align-items:center;
+}
+.nfc-demo {
+  position:relative;
+  background:var(--white);
+  border:1px solid var(--gray-5);
+  border-radius:var(--r-lg);
+  padding:48px;
+  min-height:440px;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  overflow:hidden;
+}
+.nfc-demo::before {
+  content:'';
+  position:absolute;
+  inset:0;
+  background:radial-gradient(circle at 50% 50%, rgba(0,174,213,.08) 0%, transparent 60%);
+}
+.nfc-demo-svg {
+  width:100%;
+  max-width:480px;
+  position:relative;
+  z-index:1;
+}
+.nfc-info-cards {
+  display:flex;
+  flex-direction:column;
+  gap:20px;
+}
+.nfc-info-card {
+  background:var(--white);
+  border:1px solid var(--gray-5);
+  border-radius:var(--r);
+  padding:24px 28px;
+  transition:transform .3s var(--ease), border-color .3s;
+}
+.nfc-info-card:hover {
+  transform:translateY(-2px);
+  border-color:rgba(0,133,178,.3);
+}
+.nfc-info-title {
+  font-size:13px;
+  font-weight:700;
+  color:var(--ink);
+  margin-bottom:10px;
+  display:flex;
+  align-items:center;
+  gap:8px;
+}
+.nfc-info-title svg {
+  width:18px;
+  height:18px;
+  color:var(--blue);
+}
+.nfc-info-body {
+  font-size:13px;
+  line-height:1.6;
+  color:var(--gray-2);
+}
+.nfc-zones {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:12px;
+  margin-top:8px;
+}
+.nfc-zone {
+  background:var(--gray-6);
+  border-radius:8px;
+  padding:14px 12px;
+  text-align:center;
+}
+.nfc-zone-svg {
+  width:48px;
+  height:auto;
+  margin:0 auto 6px;
+  display:block;
+}
+.nfc-zone-label {
+  font-size:11px;
+  font-weight:600;
+  color:var(--gray-1);
+  letter-spacing:.02em;
+}
+.nfc-footnote {
+  margin-top:32px;
+  text-align:center;
+  font-family:var(--font-mono);
+  font-size:11px;
+  letter-spacing:.05em;
+  color:var(--gray-3);
+}
+
+/* ═══════════════════════════════════════════════════
+   §7.6 LOCKED-INVISIBLE — drive doesn't show up
+═══════════════════════════════════════════════════ */
+.invisible-drive {
+  padding:120px 0;
+  background:var(--ink);
+  color:var(--white);
+}
+.invisible-drive-inner {
+  max-width:var(--max-w);
+  margin:0 auto;
+  padding:0 32px;
+}
+.invisible-drive-header {
+  text-align:center;
+  margin-bottom:56px;
+}
+.invisible-drive-header .section-label { color:rgba(255,255,255,.55); }
+.invisible-drive-header .section-h2 { color:var(--white); }
+.invisible-drive-header .section-h2 em {
+  background:linear-gradient(135deg, var(--cyan) 0%, var(--sky) 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  font-style:normal;
+}
+.invisible-drive-header .section-lead { color:rgba(255,255,255,.7); }
+
+.invisible-compare {
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:24px;
+}
+.invisible-state {
+  background:rgba(255,255,255,.04);
+  border:1px solid rgba(255,255,255,.1);
+  border-radius:var(--r-lg);
+  padding:32px;
+  position:relative;
+  overflow:hidden;
+}
+.invisible-state.unlocked {
+  border-color:rgba(0,174,213,.4);
+  background:linear-gradient(135deg, rgba(0,174,213,.06) 0%, rgba(0,174,213,.02) 100%);
+}
+.invisible-state-label {
+  display:inline-flex;
+  align-items:center;
+  gap:8px;
+  background:rgba(255,80,80,.12);
+  color:#FF8080;
+  border:1px solid rgba(255,80,80,.3);
+  padding:6px 14px;
+  border-radius:100px;
+  font-family:var(--font-mono);
+  font-size:11px;
+  font-weight:600;
+  letter-spacing:.05em;
+  margin-bottom:24px;
+}
+.invisible-state.unlocked .invisible-state-label {
+  background:rgba(0,229,255,.14);
+  color:var(--cyan);
+  border-color:rgba(0,229,255,.4);
+}
+.invisible-state-svg {
+  width:100%;
+  height:auto;
+  border-radius:var(--r);
+  display:block;
+}
+.invisible-state-text {
+  font-size:14px;
+  line-height:1.6;
+  color:rgba(255,255,255,.75);
+  margin-top:20px;
+}
+.invisible-pillars {
+  margin-top:48px;
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:20px;
+}
+.invisible-pillar {
+  text-align:center;
+  padding:24px 20px;
+}
+.invisible-pillar-icon {
+  width:44px;
+  height:44px;
+  margin:0 auto 14px;
+  color:var(--cyan);
+}
+.invisible-pillar-title {
+  font-size:14px;
+  font-weight:700;
+  margin-bottom:8px;
+  color:var(--white);
+}
+.invisible-pillar-text {
+  font-size:13px;
+  line-height:1.55;
+  color:rgba(255,255,255,.6);
+}
+
+/* ═══════════════════════════════════════════════════
+   §10.3 DUAL-CHIP — Three-layer security architecture
+═══════════════════════════════════════════════════ */
+.dual-chip {
+  padding:120px 0;
+  background:linear-gradient(180deg, #0A0F1A 0%, #050810 100%);
+  color:var(--white);
+}
+.dual-chip-inner {
+  max-width:var(--max-w);
+  margin:0 auto;
+  padding:0 32px;
+}
+.dual-chip-header {
+  text-align:center;
+  margin-bottom:64px;
+}
+.dual-chip-header .section-label { color:rgba(255,255,255,.5); }
+.dual-chip-header .section-h2 { color:var(--white); }
+.dual-chip-header .section-h2 em {
+  background:linear-gradient(135deg, var(--cyan) 0%, #FFB347 100%);
+  -webkit-background-clip:text;
+  -webkit-text-fill-color:transparent;
+  background-clip:text;
+  font-style:normal;
+}
+.dual-chip-header .section-lead { color:rgba(255,255,255,.7); }
+.dual-chip-stage {
+  position:relative;
+  margin-bottom:48px;
+}
+.dual-chip-svg {
+  width:100%;
+  max-width:920px;
+  margin:0 auto;
+  display:block;
+  filter:drop-shadow(0 30px 60px rgba(0,174,213,.15));
+}
+.dual-chip-pillars {
+  display:grid;
+  grid-template-columns:repeat(3, 1fr);
+  gap:24px;
+  margin-top:32px;
+}
+.dual-chip-pillar {
+  text-align:center;
+  padding:28px 24px;
+  background:rgba(255,255,255,.03);
+  border:1px solid rgba(255,255,255,.08);
+  border-radius:var(--r);
+  transition:border-color .3s, background .3s;
+}
+.dual-chip-pillar:hover {
+  border-color:rgba(0,174,213,.3);
+  background:rgba(0,174,213,.04);
+}
+.dual-chip-pillar-tag {
+  display:inline-block;
+  font-family:var(--font-mono);
+  font-size:10px;
+  font-weight:700;
+  letter-spacing:.12em;
+  padding:5px 11px;
+  border-radius:100px;
+  margin-bottom:14px;
+}
+.dual-chip-pillar:nth-child(1) .dual-chip-pillar-tag {
+  background:rgba(0,174,213,.15);
+  color:var(--cyan);
+}
+.dual-chip-pillar:nth-child(2) .dual-chip-pillar-tag {
+  background:rgba(255,179,71,.15);
+  color:#FFB347;
+}
+.dual-chip-pillar:nth-child(3) .dual-chip-pillar-tag {
+  background:rgba(150,210,255,.15);
+  color:#96D2FF;
+}
+.dual-chip-pillar-title {
+  font-size:18px;
+  font-weight:700;
+  margin-bottom:10px;
+  color:var(--white);
+}
+.dual-chip-pillar-text {
+  font-size:13px;
+  line-height:1.6;
+  color:rgba(255,255,255,.65);
+}
+.dual-chip-footnote {
+  text-align:center;
+  font-size:11px;
+  line-height:1.6;
+  color:rgba(255,255,255,.4);
+  max-width:720px;
+  margin:32px auto 0;
+}
+
+/* Tablet adjustments for new sections */
+@media (max-width: 1024px) {
+  .nfc-stage { grid-template-columns:1fr; gap:32px; }
+  .invisible-pillars { grid-template-columns:1fr; gap:14px; }
+  .dual-chip-pillars { grid-template-columns:1fr; gap:14px; }
+}
+
+@media (max-width: 768px) {
+  .nfc-unlock, .invisible-drive, .dual-chip { padding:80px 0; }
+  .nfc-unlock-header, .invisible-drive-header, .dual-chip-header { margin-bottom:40px; }
+  .nfc-demo { padding:32px 24px; min-height:auto; }
+  .invisible-compare { grid-template-columns:1fr; gap:16px; }
+  .invisible-state { padding:24px; }
 }
 
 /* ═══════════════════════════════════════════════════
@@ -2295,7 +2627,7 @@ body.menu-open { overflow:hidden; }
 .scarcity-bar-fill {
   position:absolute;
   top:0; left:0; bottom:0;
-  width:73%;
+  width:18%;
   background:var(--grad-h);
   border-radius:100px;
   transition:width 1.5s var(--ease);
@@ -2842,7 +3174,7 @@ body.menu-open { overflow:hidden; }
         </div>
       </div>
 
-      <button class="nav-cta" data-i18n="nav-cta">Pre-order $299</button>
+      <button class="nav-cta" data-i18n="nav-cta">Pre-order $399</button>
 
       <button class="nav-hamburger" id="hamburger" aria-label="Toggle menu" aria-expanded="false">
         <span></span><span></span><span></span>
@@ -2866,7 +3198,7 @@ body.menu-open { overflow:hidden; }
     <a href="#enterprise" data-close data-i18n="nav-enterprise">FaceAuth — Enterprise</a>
   </div>
   <div class="mobile-menu-section">
-    <button class="btn-primary" style="width:100%; justify-content:center;" data-i18n="nav-cta">Pre-order $299</button>
+    <button class="btn-primary" style="width:100%; justify-content:center;" data-i18n="nav-cta">Pre-order $399</button>
   </div>
 </div>
 
@@ -2877,52 +3209,53 @@ body.menu-open { overflow:hidden; }
   <div class="hero-content">
     <div class="hero-eyebrow">
       <span class="eyebrow-dot"></span>
-      <span data-i18n="hero-badge">Now Shipping · First 500 Units</span>
+      <span data-i18n="hero-badge">2TB · $399 · $70 less than Samsung T7</span>
     </div>
 
     <h1 class="hero-h1">
-      <span data-i18n="hero-h1-1">The encrypted SSD that</span><br>
-      <span class="hero-h1-grad" data-i18n="hero-h1-2">only opens for you.</span>
+      <span data-i18n="hero-h1-1">2TB premium SSD with</span><br>
+      <span class="hero-h1-grad" data-i18n="hero-h1-2">NFC unlock built in.</span>
     </h1>
 
     <p class="hero-sub" data-i18n="hero-sub">
-      1TB portable SSD with AES-256 hardware encryption.<br>
-      Your face generates the key. Your face erases it. <strong>No password. No stored key.</strong>
+      1050 MB/s. CNC aluminum chassis. AES-256 hardware encryption.<br>
+      <strong>Same security trusted by banks — now in your pocket.</strong>
     </p>
 
     <div class="hero-ctas">
-      <a href="#order" class="btn-primary" data-i18n="hero-cta-primary">Pre-order — $299</a>
+      <a href="#order" class="btn-primary" data-i18n="hero-cta-primary">Pre-order 2TB — $399</a>
       <a href="#how" class="btn-secondary" data-i18n="hero-cta-secondary">See how it works</a>
     </div>
 
     <div class="hero-trust">
       <div class="trust-item">
         <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M3 10l3 3 8-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+          <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.3" opacity=".5"/>
+        </svg>
+        <span data-i18n="trust-1">1050 MB/s Read</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <rect x="4" y="3" width="12" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+          <path d="M7 8h6M7 11h6M7 14h4" stroke="currentColor" stroke-width="1.3" stroke-linecap="round"/>
+        </svg>
+        <span data-i18n="trust-2">2TB Capacity</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
+          <path d="M10 14C10 14 6 11 6 7.5C6 5.5 7.5 4 9.5 4C10.7 4 11.5 4.7 12 5.5M10 14C10 14 14 11 14 7.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
+          <circle cx="10" cy="14" r="1" fill="currentColor"/>
+          <path d="M5 16C7 17 13 17 15 16" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" opacity=".6"/>
+        </svg>
+        <span data-i18n="trust-3">NFC Unlock</span>
+      </div>
+      <div class="trust-item">
+        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
           <path d="M10 1L3 4v6c0 3.866 3.134 7 7 9 3.866-2 7-5.134 7-9V4l-7-3z" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
           <path d="M7 10l2 2 4-4" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        <span data-i18n="trust-1">AES-256 Hardware</span>
-      </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-          <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M6 10h8M10 6v8" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        <span data-i18n="trust-2">Zero Stored Keys</span>
-      </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-          <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M10 6v4l2 2" stroke="currentColor" stroke-width="1.5" stroke-linecap="round"/>
-        </svg>
-        <span data-i18n="trust-3">&lt;2s Unlock</span>
-      </div>
-      <div class="trust-item">
-        <svg viewBox="0 0 20 20" fill="none" aria-hidden="true">
-          <circle cx="10" cy="10" r="8" stroke="currentColor" stroke-width="1.5"/>
-          <path d="M2 10h16M10 2a13 13 0 010 16M10 2a13 13 0 000 16" stroke="currentColor" stroke-width="1.5"/>
-        </svg>
-        <span data-i18n="trust-4">Ships Worldwide</span>
+        <span data-i18n="trust-4">AES-256 Encryption</span>
       </div>
     </div>
   </div>
@@ -2931,7 +3264,7 @@ body.menu-open { overflow:hidden; }
   <div class="hero-product">
     <div class="hero-product-stage">
       <svg viewBox="0 0 780 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="heroDriveTitle">
-        <title id="heroDriveTitle">VaultDrive — 1TB Biometric Encrypted SSD · Space Gray aluminum</title>
+        <title id="heroDriveTitle">VaultDrive — 2TB Premium SSD with NFC Unlock · Space Gray aluminum</title>
         <defs>
           <!-- Body: brushed aluminum gradient -->
           <linearGradient id="bodyMetal" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -3004,7 +3337,7 @@ body.menu-open { overflow:hidden; }
         <!-- ── CENTER PRODUCT NAME ── -->
         <g transform="translate(390, 200)" text-anchor="middle">
           <text x="0" y="0" font-family="Inter, sans-serif" font-weight="800" font-size="20" fill="rgba(255,255,255,.22)" letter-spacing="7">VaultDrive</text>
-          <text x="0" y="20" font-family="DM Mono, monospace" font-size="9" fill="rgba(255,255,255,.12)" letter-spacing="4">1TB · AES-256 · NFC UNLOCK</text>
+          <text x="0" y="20" font-family="DM Mono, monospace" font-size="9" fill="rgba(255,255,255,.12)" letter-spacing="4">2TB · AES-256 · NFC UNLOCK</text>
         </g>
 
         <!-- ── NFC SENSING ZONE ── -->
@@ -3042,7 +3375,7 @@ body.menu-open { overflow:hidden; }
 
         <!-- ── BOTTOM FINE DETAILS ── -->
         <!-- Serial / model -->
-        <text x="680" y="418" text-anchor="end" font-family="DM Mono, monospace" font-size="8" fill="rgba(255,255,255,.18)" letter-spacing="2">MODEL VD-1TB · DSCC.CN</text>
+        <text x="680" y="418" text-anchor="end" font-family="DM Mono, monospace" font-size="8" fill="rgba(255,255,255,.18)" letter-spacing="2">MODEL VD-2TB · DSCC.CN</text>
 
         <!-- Bottom accent line -->
         <line x1="150" y1="422" x2="250" y2="422" stroke="url(#accentBar)" stroke-width="1.2" opacity=".5"/>
@@ -3232,6 +3565,168 @@ body.menu-open { overflow:hidden; }
 
 <!--
   ═════════════════════════════════════════════
+  §5.5 NFC UNLOCK — One-touch tap to unlock
+  Counter-positions Lexar TouchLock (which has the same gesture but
+  weaker security underneath). Visual: phone tapping the drive's NFC zone.
+  ═════════════════════════════════════════════
+-->
+<section class="nfc-unlock" id="nfc-unlock" aria-labelledby="nfc-heading">
+  <div class="nfc-unlock-inner">
+    <div class="nfc-unlock-header sr">
+      <div class="section-label" data-i18n="nfc-label">One-Touch Unlock</div>
+      <h2 class="section-h2" id="nfc-heading">
+        <span data-i18n="nfc-h2-1">Tap your phone.</span>
+        <em data-i18n="nfc-h2-2">The drive opens.</em>
+      </h2>
+      <p class="section-lead" style="margin:16px auto 0;text-align:center;" data-i18n="nfc-lead">
+        Hold an NFC-capable phone near the drive. No fingerprint scan. No password to type. Authentication happens in under two seconds — but only for the face that owns this drive.
+      </p>
+    </div>
+
+    <div class="nfc-stage sr d1">
+      <!-- Visual demo: phone + drive with NFC waves -->
+      <div class="nfc-demo">
+        <svg class="nfc-demo-svg" viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="nfcDemoTitle">
+          <title id="nfcDemoTitle">Phone tapping VaultDrive's NFC zone for one-touch unlock</title>
+          <defs>
+            <linearGradient id="nfc-phone-grad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#1A1F2A"/>
+              <stop offset="100%" stop-color="#0B1420"/>
+            </linearGradient>
+            <linearGradient id="nfc-drive-grad" x1="0" y1="0" x2="1" y2="1">
+              <stop offset="0%" stop-color="#3A4250"/>
+              <stop offset="100%" stop-color="#1F2A38"/>
+            </linearGradient>
+            <radialGradient id="nfc-glow" cx="0.5" cy="0.5" r="0.5">
+              <stop offset="0%" stop-color="#00E5FF" stop-opacity="0.6"/>
+              <stop offset="100%" stop-color="#00E5FF" stop-opacity="0"/>
+            </radialGradient>
+          </defs>
+
+          <!-- Phone tilted, top -->
+          <g transform="translate(60, 30) rotate(-12)">
+            <rect x="0" y="0" width="160" height="240" rx="22" fill="url(#nfc-phone-grad)" stroke="rgba(255,255,255,.08)" stroke-width="1"/>
+            <rect x="6" y="6" width="148" height="228" rx="18" fill="#0F1620"/>
+            <!-- Phone screen content: unlock UI -->
+            <circle cx="80" cy="100" r="32" fill="none" stroke="#00AED5" stroke-width="2.5"/>
+            <circle cx="80" cy="100" r="32" fill="none" stroke="#00AED5" stroke-width="2.5" opacity=".4">
+              <animate attributeName="r" values="32;48;32" dur="2s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values=".4;0;.4" dur="2s" repeatCount="indefinite"/>
+            </circle>
+            <path d="M68 100l8 8 16-16" stroke="#00E5FF" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <text x="80" y="160" text-anchor="middle" font-family="Inter, sans-serif" font-size="12" font-weight="600" fill="#FFFFFF">Unlocking</text>
+            <text x="80" y="180" text-anchor="middle" font-family="DM Mono, monospace" font-size="9" fill="rgba(255,255,255,.55)" letter-spacing="1">VAULTDRIVE</text>
+            <!-- iPhone NFC zone hint at top -->
+            <rect x="60" y="14" width="40" height="6" rx="3" fill="rgba(0,229,255,.5)"/>
+          </g>
+
+          <!-- NFC waves between phone & drive -->
+          <g transform="translate(240, 230)">
+            <circle cx="0" cy="0" r="22" fill="none" stroke="#00E5FF" stroke-width="1.5" opacity=".6">
+              <animate attributeName="r" values="14;28;14" dur="1.5s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values=".8;0;.8" dur="1.5s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="0" cy="0" r="32" fill="none" stroke="#00AED5" stroke-width="1.5" opacity=".5">
+              <animate attributeName="r" values="20;38;20" dur="1.5s" begin=".3s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values=".7;0;.7" dur="1.5s" begin=".3s" repeatCount="indefinite"/>
+            </circle>
+            <circle cx="0" cy="0" r="42" fill="none" stroke="#0085B2" stroke-width="1.5" opacity=".4">
+              <animate attributeName="r" values="28;48;28" dur="1.5s" begin=".6s" repeatCount="indefinite"/>
+              <animate attributeName="opacity" values=".6;0;.6" dur="1.5s" begin=".6s" repeatCount="indefinite"/>
+            </circle>
+          </g>
+
+          <!-- VaultDrive bottom right -->
+          <g transform="translate(260, 200)">
+            <rect x="0" y="0" width="200" height="120" rx="14" fill="url(#nfc-drive-grad)" stroke="rgba(255,255,255,.08)" stroke-width="1"/>
+            <!-- NFC zone highlight -->
+            <circle cx="40" cy="40" r="22" fill="url(#nfc-glow)"/>
+            <text x="40" y="44" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" font-weight="700" fill="#00E5FF" letter-spacing="2">NFC</text>
+            <!-- Drive face etching -->
+            <text x="170" y="42" text-anchor="end" font-family="Inter, sans-serif" font-size="14" font-weight="700" fill="rgba(255,255,255,.85)" letter-spacing="-.5">VaultDrive</text>
+            <text x="170" y="58" text-anchor="end" font-family="DM Mono, monospace" font-size="7" fill="rgba(255,255,255,.4)" letter-spacing="2">2TB · DSCC</text>
+            <!-- Unlock LED -->
+            <circle cx="180" cy="100" r="3.5" fill="#00E5FF">
+              <animate attributeName="opacity" values=".3;1;.3" dur="2s" repeatCount="indefinite"/>
+            </circle>
+            <!-- USB-C tail hint -->
+            <rect x="195" y="56" width="10" height="8" rx="2" fill="rgba(255,255,255,.15)"/>
+          </g>
+        </svg>
+      </div>
+
+      <!-- Right side: explanatory cards -->
+      <div class="nfc-info-cards">
+        <div class="nfc-info-card">
+          <div class="nfc-info-title">
+            <svg viewBox="0 0 20 20" fill="none">
+              <path d="M5 9c0-2.5 2-4 4-4 1.5 0 2.5.7 3 1.5M5 12c0-1.5 1-2.5 2.5-2.5" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" fill="none"/>
+              <circle cx="9" cy="14" r="1" fill="currentColor"/>
+              <circle cx="10" cy="10" r="9" stroke="currentColor" stroke-width="1.3" opacity=".4" fill="none"/>
+            </svg>
+            <span data-i18n="nfc-card-1-title">No fingerprint. No password.</span>
+          </div>
+          <div class="nfc-info-body" data-i18n="nfc-card-1-body">
+            Just hold your phone near the drive. The Facrypt app handshakes with the drive's NFC chip, derives your face-bound key, and unlocks. The whole thing finishes in under 2 seconds.
+          </div>
+        </div>
+
+        <div class="nfc-info-card">
+          <div class="nfc-info-title">
+            <svg viewBox="0 0 20 20" fill="none">
+              <rect x="5" y="3" width="10" height="14" rx="2" stroke="currentColor" stroke-width="1.5"/>
+              <circle cx="10" cy="14" r="1" fill="currentColor"/>
+            </svg>
+            <span data-i18n="nfc-card-2-title">Where to tap</span>
+          </div>
+          <div class="nfc-info-body" data-i18n="nfc-card-2-body">
+            Different phones have NFC antennas in different places. Hold the marked area near the drive's NFC zone for a reliable handshake.
+          </div>
+          <div class="nfc-zones">
+            <div class="nfc-zone">
+              <svg class="nfc-zone-svg" viewBox="0 0 48 70" fill="none">
+                <rect x="2" y="2" width="44" height="66" rx="6" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <rect x="6" y="6" width="36" height="22" rx="3" fill="rgba(0,174,213,.18)" stroke="rgba(0,174,213,.6)" stroke-width="1" stroke-dasharray="2 2"/>
+                <circle cx="14" cy="42" r="3" fill="currentColor" opacity=".3"/>
+                <circle cx="22" cy="42" r="3" fill="currentColor" opacity=".3"/>
+              </svg>
+              <div class="nfc-zone-label" data-i18n="nfc-zone-iphone">iPhone · top edge</div>
+            </div>
+            <div class="nfc-zone">
+              <svg class="nfc-zone-svg" viewBox="0 0 48 70" fill="none">
+                <rect x="2" y="2" width="44" height="66" rx="6" stroke="currentColor" stroke-width="1.5" fill="none"/>
+                <circle cx="14" cy="14" r="3" fill="currentColor" opacity=".3"/>
+                <circle cx="22" cy="14" r="3" fill="currentColor" opacity=".3"/>
+                <rect x="6" y="34" width="36" height="22" rx="3" fill="rgba(0,174,213,.18)" stroke="rgba(0,174,213,.6)" stroke-width="1" stroke-dasharray="2 2"/>
+              </svg>
+              <div class="nfc-zone-label" data-i18n="nfc-zone-android">Android · center</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="nfc-info-card">
+          <div class="nfc-info-title">
+            <svg viewBox="0 0 20 20" fill="none">
+              <path d="M3 10l3 3 8-8" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span data-i18n="nfc-card-3-title">First time vs every time</span>
+          </div>
+          <div class="nfc-info-body" data-i18n="nfc-card-3-body">
+            First setup: enroll your face in the Facrypt app and pair it to the drive (one-time, ~30 seconds). After that: every unlock is just a tap, no passwords ever.
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="nfc-footnote sr d2" data-i18n="nfc-footnote">
+      Requires NFC-enabled phone · Facrypt app for iOS 15+ / Android 10+ · Works offline
+    </div>
+  </div>
+</section>
+
+
+<!--
+  ═════════════════════════════════════════════
   §6 PRODUCT SHOWCASE — three views
   ═════════════════════════════════════════════
 -->
@@ -3244,7 +3739,7 @@ body.menu-open { overflow:hidden; }
         <em data-i18n="product-h2-2">everyday invisibility.</em>
       </h2>
       <p class="section-lead" style="margin:16px auto 0;text-align:center;" data-i18n="product-lead">
-        1TB of encrypted storage. The size of a credit card. The security of a bank vault.
+        2TB of encrypted storage. The size of a credit card. The security of a bank vault.
       </p>
     </div>
 
@@ -3270,7 +3765,7 @@ body.menu-open { overflow:hidden; }
             <rect x="40" y="30" width="200" height="160" rx="16" fill="url(#pv1-body)" stroke="rgba(11,20,32,.08)" stroke-width="1.5"/>
             <rect x="40" y="30" width="200" height="3" rx="1.5" fill="url(#pv1-top)"/>
             <text x="60" y="68" font-family="Inter" font-weight="800" font-size="11" fill="#0B1420" letter-spacing="2.5">VaultDrive</text>
-            <text x="60" y="82" font-family="DM Mono" font-size="7" fill="#6E7890" letter-spacing="1.5">1TB · AES-256</text>
+            <text x="60" y="82" font-family="DM Mono" font-size="7" fill="#6E7890" letter-spacing="1.5">2TB · AES-256</text>
             <line x1="60" y1="100" x2="220" y2="100" stroke="rgba(11,20,32,.06)" stroke-width="1"/>
             <line x1="60" y1="108" x2="220" y2="108" stroke="rgba(11,20,32,.05)" stroke-width="1"/>
             <circle cx="140" cy="150" r="34" fill="url(#pv1-nfc)"/>
@@ -3441,11 +3936,11 @@ body.menu-open { overflow:hidden; }
     <div class="compare-header sr">
       <div class="section-label" data-i18n="cmp-label">How It Compares</div>
       <h2 class="section-h2" id="compare-heading">
-        <span data-i18n="cmp-h2-1">Same form factor.</span>
-        <em data-i18n="cmp-h2-2">Fundamentally different.</em>
+        <span data-i18n="cmp-h2-1">Less than Samsung T7.</span>
+        <em data-i18n="cmp-h2-2">More than encrypted.</em>
       </h2>
       <p class="section-lead" style="margin:16px auto 0;text-align:center;" data-i18n="cmp-lead">
-        Not all encrypted drives are created equal. Here's what separates VaultDrive from everything else.
+        Real specs, real prices. Compare VaultDrive 2TB to the best-selling portable SSDs on Amazon today.
       </p>
     </div>
 
@@ -3454,111 +3949,303 @@ body.menu-open { overflow:hidden; }
       <div class="compare-row header">
         <div class="compare-cell" data-i18n="cmp-col-feature">Feature</div>
         <div class="compare-cell">
-          <span data-i18n="cmp-col-sw">Software-Encrypted</span>
-          <span class="compare-brand-sub">BitLocker · FileVault</span>
+          <span data-i18n="cmp-col-samsung">Samsung T7</span>
+          <span class="compare-brand-sub" data-i18n="cmp-col-samsung-sub">Best-selling 2TB portable SSD</span>
         </div>
         <div class="compare-cell">
-          <span data-i18n="cmp-col-hw">Hardware-Encrypted</span>
-          <span class="compare-brand-sub">Password-based SSD</span>
+          <span data-i18n="cmp-col-lexar">Lexar TouchLock</span>
+          <span class="compare-brand-sub" data-i18n="cmp-col-lexar-sub">NFC-encrypted SSD · 1TB</span>
         </div>
         <div class="compare-cell highlight">
-          <span>VaultDrive</span>
-          <span class="compare-brand-sub" data-i18n="cmp-col-vd-sub">Biometric Chip-Level</span>
+          <span>VaultDrive 2TB</span>
+          <span class="compare-brand-sub" data-i18n="cmp-col-vd-sub">NFC + AES-256 + CNC Aluminum</span>
         </div>
       </div>
 
       <div class="compare-row">
-        <div class="compare-cell label" data-i18n="cmp-r1">Where the key lives</div>
-        <div class="compare-cell value">
-          <span data-i18n="cmp-r1-sw">In OS / RAM</span>
-          <span class="compare-icon-bad">✕</span>
-        </div>
-        <div class="compare-cell value">
-          <span data-i18n="cmp-r1-hw">On drive chip</span>
-          <span class="compare-icon-partial">!</span>
-        </div>
-        <div class="compare-cell value winner">
-          <span data-i18n="cmp-r1-vd">Nowhere. Derived fresh.</span>
-          <span class="compare-icon-good">✓</span>
-        </div>
+        <div class="compare-cell label" data-i18n="cmp-r1">Capacity</div>
+        <div class="compare-cell value"><span data-i18n="cmp-r1-samsung">2 TB</span></div>
+        <div class="compare-cell value"><span data-i18n="cmp-r1-lexar">1 TB max</span><span class="compare-icon-partial">!</span></div>
+        <div class="compare-cell value winner"><span data-i18n="cmp-r1-vd">2 TB</span><span class="compare-icon-good">✓</span></div>
       </div>
 
       <div class="compare-row">
-        <div class="compare-cell label" data-i18n="cmp-r2">Coercion resistance</div>
-        <div class="compare-cell value"><span data-i18n="cmp-r2-sw">Password extractable</span><span class="compare-icon-bad">✕</span></div>
-        <div class="compare-cell value"><span data-i18n="cmp-r2-hw">Password extractable</span><span class="compare-icon-bad">✕</span></div>
-        <div class="compare-cell value winner"><span data-i18n="cmp-r2-vd">No key to surrender</span><span class="compare-icon-good">✓</span></div>
+        <div class="compare-cell label" data-i18n="cmp-r2">Price</div>
+        <div class="compare-cell value"><span data-i18n="cmp-r2-samsung">$469</span></div>
+        <div class="compare-cell value"><span data-i18n="cmp-r2-lexar">$189 (1TB)</span></div>
+        <div class="compare-cell value winner"><span data-i18n="cmp-r2-vd">$399</span><span class="compare-icon-good">✓</span></div>
       </div>
 
       <div class="compare-row">
-        <div class="compare-cell label" data-i18n="cmp-r3">Forensic extraction</div>
-        <div class="compare-cell value"><span data-i18n="cmp-r3-sw">RAM dump possible</span><span class="compare-icon-bad">✕</span></div>
-        <div class="compare-cell value"><span data-i18n="cmp-r3-hw">Chip-level attacks</span><span class="compare-icon-partial">!</span></div>
-        <div class="compare-cell value winner"><span data-i18n="cmp-r3-vd">Nothing to extract</span><span class="compare-icon-good">✓</span></div>
+        <div class="compare-cell label" data-i18n="cmp-r3">Read speed</div>
+        <div class="compare-cell value"><span data-i18n="cmp-r3-samsung">1050 MB/s</span></div>
+        <div class="compare-cell value"><span data-i18n="cmp-r3-lexar">450 MB/s</span><span class="compare-icon-bad">✕</span></div>
+        <div class="compare-cell value winner"><span data-i18n="cmp-r3-vd">1050 MB/s</span><span class="compare-icon-good">✓</span></div>
       </div>
 
       <div class="compare-row">
-        <div class="compare-cell label" data-i18n="cmp-r4">Biometric template storage</div>
-        <div class="compare-cell value"><span data-i18n="cmp-r4-sw">N/A</span><span>—</span></div>
-        <div class="compare-cell value"><span data-i18n="cmp-r4-hw">Some models</span><span class="compare-icon-partial">!</span></div>
-        <div class="compare-cell value winner"><span data-i18n="cmp-r4-vd">Zero bytes ever stored</span><span class="compare-icon-good">✓</span></div>
+        <div class="compare-cell label" data-i18n="cmp-r4">Chassis</div>
+        <div class="compare-cell value"><span data-i18n="cmp-r4-samsung">Aluminum</span></div>
+        <div class="compare-cell value"><span data-i18n="cmp-r4-lexar">Plastic</span><span class="compare-icon-bad">✕</span></div>
+        <div class="compare-cell value winner"><span data-i18n="cmp-r4-vd">CNC aluminum</span><span class="compare-icon-good">✓</span></div>
       </div>
 
       <div class="compare-row">
-        <div class="compare-cell label" data-i18n="cmp-r5">Unlock speed</div>
-        <div class="compare-cell value"><span data-i18n="cmp-r5-sw">5–15 sec</span></div>
-        <div class="compare-cell value"><span data-i18n="cmp-r5-hw">3–8 sec</span></div>
-        <div class="compare-cell value winner"><span data-i18n="cmp-r5-vd">Under 2 sec</span><span class="compare-icon-good">✓</span></div>
+        <div class="compare-cell label" data-i18n="cmp-r5">Encryption</div>
+        <div class="compare-cell value"><span data-i18n="cmp-r5-samsung">AES-256 (password)</span></div>
+        <div class="compare-cell value"><span data-i18n="cmp-r5-lexar">AES-128</span><span class="compare-icon-partial">!</span></div>
+        <div class="compare-cell value winner"><span data-i18n="cmp-r5-vd">AES-256 + face-derived key</span><span class="compare-icon-good">✓</span></div>
       </div>
 
       <div class="compare-row">
-        <div class="compare-cell label" data-i18n="cmp-r6">GDPR Art. 9 compliance</div>
-        <div class="compare-cell value"><span data-i18n="cmp-r6-sw">Manual config</span><span class="compare-icon-partial">!</span></div>
-        <div class="compare-cell value"><span data-i18n="cmp-r6-hw">Varies</span><span class="compare-icon-partial">!</span></div>
-        <div class="compare-cell value winner"><span data-i18n="cmp-r6-vd">By architecture</span><span class="compare-icon-good">✓</span></div>
+        <div class="compare-cell label" data-i18n="cmp-r6">Unlock method</div>
+        <div class="compare-cell value"><span data-i18n="cmp-r6-samsung">Password</span></div>
+        <div class="compare-cell value"><span data-i18n="cmp-r6-lexar">NFC + paired phone</span></div>
+        <div class="compare-cell value winner"><span data-i18n="cmp-r6-vd">NFC + face / password</span><span class="compare-icon-good">✓</span></div>
       </div>
 
       <div class="compare-row">
-        <div class="compare-cell label" data-i18n="cmp-r7">Works on all OS without drivers</div>
-        <div class="compare-cell value"><span data-i18n="cmp-r7-sw">Windows only</span><span class="compare-icon-bad">✕</span></div>
-        <div class="compare-cell value"><span data-i18n="cmp-r7-hw">Most OS</span><span class="compare-icon-good">✓</span></div>
-        <div class="compare-cell value winner"><span data-i18n="cmp-r7-vd">Every OS</span><span class="compare-icon-good">✓</span></div>
+        <div class="compare-cell label" data-i18n="cmp-r7">Where the key lives</div>
+        <div class="compare-cell value"><span data-i18n="cmp-r7-samsung">On drive chip</span></div>
+        <div class="compare-cell value"><span data-i18n="cmp-r7-lexar">Stored on phone</span><span class="compare-icon-partial">!</span></div>
+        <div class="compare-cell value winner"><span data-i18n="cmp-r7-vd">Nowhere — derived fresh</span><span class="compare-icon-good">✓</span></div>
+      </div>
+
+      <div class="compare-row">
+        <div class="compare-cell label" data-i18n="cmp-r8">If the unlock device is lost</div>
+        <div class="compare-cell value"><span data-i18n="cmp-r8-samsung">Recover with password</span></div>
+        <div class="compare-cell value"><span data-i18n="cmp-r8-lexar">Drive bricks without recovery key</span><span class="compare-icon-bad">✕</span></div>
+        <div class="compare-cell value winner"><span data-i18n="cmp-r8-vd">Re-enroll any face</span><span class="compare-icon-good">✓</span></div>
+      </div>
+
+      <div class="compare-row">
+        <div class="compare-cell label" data-i18n="cmp-r9">USB interface</div>
+        <div class="compare-cell value"><span data-i18n="cmp-r9-samsung">USB 3.2 Gen 2</span></div>
+        <div class="compare-cell value"><span data-i18n="cmp-r9-lexar">USB 3.2 Gen 1</span><span class="compare-icon-bad">✕</span></div>
+        <div class="compare-cell value winner"><span data-i18n="cmp-r9-vd">USB 3.2 Gen 2</span><span class="compare-icon-good">✓</span></div>
+      </div>
+
+      <div class="compare-row">
+        <div class="compare-cell label" data-i18n="cmp-r10">OS support</div>
+        <div class="compare-cell value"><span data-i18n="cmp-r10-samsung">Win / macOS / Android</span></div>
+        <div class="compare-cell value"><span data-i18n="cmp-r10-lexar">Win / macOS / Linux / iOS / Android</span></div>
+        <div class="compare-cell value winner"><span data-i18n="cmp-r10-vd">Every major OS</span><span class="compare-icon-good">✓</span></div>
       </div>
     </div>
 
     <!-- Mobile cards version -->
     <div class="compare-mobile sr d1">
       <div class="compare-mobile-item">
-        <div class="compare-mobile-brand">Software-Encrypted</div>
-        <div class="compare-mobile-tag">BitLocker · FileVault</div>
+        <div class="compare-mobile-brand">Samsung T7 2TB</div>
+        <div class="compare-mobile-tag">Best-selling 2TB portable SSD</div>
         <div class="compare-mobile-rows">
-          <div class="compare-mobile-row"><span class="compare-mobile-key">Key location</span><span class="compare-mobile-val">In OS / RAM</span></div>
-          <div class="compare-mobile-row"><span class="compare-mobile-key">Coercion</span><span class="compare-mobile-val">Extractable</span></div>
-          <div class="compare-mobile-row"><span class="compare-mobile-key">Forensic</span><span class="compare-mobile-val">RAM dump</span></div>
-          <div class="compare-mobile-row"><span class="compare-mobile-key">Unlock</span><span class="compare-mobile-val">5–15 sec</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Price</span><span class="compare-mobile-val">$469</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Speed</span><span class="compare-mobile-val">1050 MB/s</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Chassis</span><span class="compare-mobile-val">Aluminum</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Encryption</span><span class="compare-mobile-val">AES-256 (password)</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Unlock</span><span class="compare-mobile-val">Password</span></div>
         </div>
       </div>
       <div class="compare-mobile-item">
-        <div class="compare-mobile-brand">Hardware-Encrypted</div>
-        <div class="compare-mobile-tag">Password-based SSDs</div>
+        <div class="compare-mobile-brand">Lexar TouchLock 1TB</div>
+        <div class="compare-mobile-tag">NFC-encrypted SSD</div>
         <div class="compare-mobile-rows">
-          <div class="compare-mobile-row"><span class="compare-mobile-key">Key location</span><span class="compare-mobile-val">On drive chip</span></div>
-          <div class="compare-mobile-row"><span class="compare-mobile-key">Coercion</span><span class="compare-mobile-val">Extractable</span></div>
-          <div class="compare-mobile-row"><span class="compare-mobile-key">Forensic</span><span class="compare-mobile-val">Chip attacks</span></div>
-          <div class="compare-mobile-row"><span class="compare-mobile-key">Unlock</span><span class="compare-mobile-val">3–8 sec</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Price</span><span class="compare-mobile-val">$189</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Speed</span><span class="compare-mobile-val">450 MB/s</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Chassis</span><span class="compare-mobile-val">Plastic</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Encryption</span><span class="compare-mobile-val">AES-128</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Unlock</span><span class="compare-mobile-val">NFC + paired phone</span></div>
         </div>
       </div>
       <div class="compare-mobile-item highlight">
-        <div class="compare-mobile-brand">VaultDrive</div>
-        <div class="compare-mobile-tag">Biometric · Chip-Level</div>
+        <div class="compare-mobile-brand">VaultDrive 2TB</div>
+        <div class="compare-mobile-tag">NFC + AES-256 + CNC Aluminum</div>
         <div class="compare-mobile-rows">
-          <div class="compare-mobile-row"><span class="compare-mobile-key">Key location</span><span class="compare-mobile-val">Nowhere. Derived fresh.</span></div>
-          <div class="compare-mobile-row"><span class="compare-mobile-key">Coercion</span><span class="compare-mobile-val">No key to surrender</span></div>
-          <div class="compare-mobile-row"><span class="compare-mobile-key">Forensic</span><span class="compare-mobile-val">Nothing to extract</span></div>
-          <div class="compare-mobile-row"><span class="compare-mobile-key">Biometric storage</span><span class="compare-mobile-val">Zero bytes ever</span></div>
-          <div class="compare-mobile-row"><span class="compare-mobile-key">Unlock</span><span class="compare-mobile-val">Under 2 sec</span></div>
-          <div class="compare-mobile-row"><span class="compare-mobile-key">GDPR</span><span class="compare-mobile-val">By architecture</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Price</span><span class="compare-mobile-val">$399 ($70 less)</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Speed</span><span class="compare-mobile-val">1050 MB/s</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Chassis</span><span class="compare-mobile-val">CNC aluminum</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Encryption</span><span class="compare-mobile-val">AES-256 + face-derived</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Unlock</span><span class="compare-mobile-val">NFC + face / password</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Key location</span><span class="compare-mobile-val">Nowhere — derived fresh</span></div>
         </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+
+<!--
+  ═════════════════════════════════════════════
+  §8.7 LOCKED-INVISIBLE — drive doesn't show up to anyone
+  Counter-positions Lexar's "不显盘" claim — VaultDrive does it harder.
+  ═════════════════════════════════════════════
+-->
+<section class="invisible-drive" id="invisible" aria-labelledby="invisible-heading">
+  <div class="invisible-drive-inner">
+    <div class="invisible-drive-header sr">
+      <div class="section-label" data-i18n="inv-label">Locked = Invisible</div>
+      <h2 class="section-h2" id="invisible-heading">
+        <span data-i18n="inv-h2-1">If it's not unlocked,</span>
+        <em data-i18n="inv-h2-2">it doesn't exist.</em>
+      </h2>
+      <p class="section-lead" style="margin:16px auto 0;text-align:center;" data-i18n="inv-lead">
+        Plug a locked VaultDrive into any computer. Nothing happens. No drive icon. No mount prompt. Forensic tools see USB power draw and a controller that refuses to identify. Even the operating system can't tell what's connected.
+      </p>
+    </div>
+
+    <div class="invisible-compare sr d1">
+      <!-- LEFT: Locked state — drive invisible -->
+      <div class="invisible-state">
+        <div class="invisible-state-label">
+          <span style="width:6px;height:6px;border-radius:50%;background:currentColor"></span>
+          <span data-i18n="inv-state-locked">CONNECTED · LOCKED</span>
+        </div>
+        <svg class="invisible-state-svg" viewBox="0 0 480 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="invLockedTitle">
+          <title id="invLockedTitle">Locked VaultDrive — does not appear in file manager</title>
+          <defs>
+            <linearGradient id="inv-laptop-grad-l" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1A2030"/>
+              <stop offset="100%" stop-color="#0A0F18"/>
+            </linearGradient>
+          </defs>
+          <!-- Laptop screen frame -->
+          <rect x="40" y="20" width="400" height="240" rx="10" fill="url(#inv-laptop-grad-l)" stroke="rgba(255,255,255,.1)" stroke-width="1.5"/>
+          <!-- macOS-like top bar -->
+          <rect x="40" y="20" width="400" height="22" rx="10" fill="rgba(255,255,255,.04)"/>
+          <circle cx="56" cy="31" r="4" fill="#FF5F57"/>
+          <circle cx="72" cy="31" r="4" fill="#FEBC2E"/>
+          <circle cx="88" cy="31" r="4" fill="#28C840"/>
+          <text x="240" y="36" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="rgba(255,255,255,.4)">Finder — Devices</text>
+
+          <!-- File manager left sidebar -->
+          <rect x="40" y="42" width="120" height="218" fill="rgba(255,255,255,.02)"/>
+          <text x="56" y="68" font-family="Inter, sans-serif" font-size="9" fill="rgba(255,255,255,.4)" letter-spacing=".05em">FAVORITES</text>
+          <text x="56" y="86" font-family="Inter, sans-serif" font-size="11" fill="rgba(255,255,255,.7)">📁 Documents</text>
+          <text x="56" y="104" font-family="Inter, sans-serif" font-size="11" fill="rgba(255,255,255,.7)">📁 Downloads</text>
+          <text x="56" y="122" font-family="Inter, sans-serif" font-size="11" fill="rgba(255,255,255,.7)">📁 Desktop</text>
+          <text x="56" y="156" font-family="Inter, sans-serif" font-size="9" fill="rgba(255,255,255,.4)" letter-spacing=".05em">DEVICES</text>
+          <text x="56" y="174" font-family="Inter, sans-serif" font-size="11" fill="rgba(255,255,255,.7)">💻 Macintosh HD</text>
+          <!-- The empty space where VaultDrive WOULD be -->
+          <rect x="56" y="184" width="92" height="22" rx="4" stroke="rgba(255,80,80,.4)" stroke-width="1" stroke-dasharray="3 3" fill="none"/>
+          <text x="102" y="199" text-anchor="middle" font-family="DM Mono, monospace" font-size="9" fill="rgba(255,80,80,.6)" letter-spacing="1">— NOTHING —</text>
+
+          <!-- Main content area: empty state -->
+          <text x="300" y="140" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="600" fill="rgba(255,255,255,.5)">No drive detected</text>
+          <text x="300" y="160" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="rgba(255,255,255,.3)">Connect a USB device to view files</text>
+
+          <!-- Drive plugged in (right side, dim) -->
+          <g transform="translate(380, 280)">
+            <rect x="0" y="0" width="60" height="34" rx="6" fill="#3A4250" opacity=".7"/>
+            <rect x="-12" y="13" width="14" height="8" rx="1" fill="rgba(255,255,255,.15)"/>
+            <text x="30" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="600" fill="rgba(255,255,255,.4)">VaultDrive</text>
+            <circle cx="50" cy="26" r="2" fill="#FF5050" opacity=".6"/>
+          </g>
+        </svg>
+        <p class="invisible-state-text" data-i18n="inv-locked-text">
+          Computer sees: USB power draw, no identification. Forensic tools see: refuses to enumerate. Brute-force the chip and you'll find AES-256 ciphertext that would take longer than the universe's age to break.
+        </p>
+      </div>
+
+      <!-- RIGHT: Unlocked state — drive appears -->
+      <div class="invisible-state unlocked">
+        <div class="invisible-state-label">
+          <span style="width:6px;height:6px;border-radius:50%;background:currentColor;box-shadow:0 0 8px currentColor"></span>
+          <span data-i18n="inv-state-unlocked">UNLOCKED · MOUNTED</span>
+        </div>
+        <svg class="invisible-state-svg" viewBox="0 0 480 320" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="invUnlockedTitle">
+          <title id="invUnlockedTitle">Unlocked VaultDrive — appears as a normal volume</title>
+          <defs>
+            <linearGradient id="inv-laptop-grad-r" x1="0" y1="0" x2="0" y2="1">
+              <stop offset="0%" stop-color="#1A2030"/>
+              <stop offset="100%" stop-color="#0A0F18"/>
+            </linearGradient>
+          </defs>
+          <rect x="40" y="20" width="400" height="240" rx="10" fill="url(#inv-laptop-grad-r)" stroke="rgba(0,174,213,.25)" stroke-width="1.5"/>
+          <rect x="40" y="20" width="400" height="22" rx="10" fill="rgba(255,255,255,.04)"/>
+          <circle cx="56" cy="31" r="4" fill="#FF5F57"/>
+          <circle cx="72" cy="31" r="4" fill="#FEBC2E"/>
+          <circle cx="88" cy="31" r="4" fill="#28C840"/>
+          <text x="240" y="36" text-anchor="middle" font-family="Inter, sans-serif" font-size="10" fill="rgba(255,255,255,.6)">Finder — VaultDrive</text>
+
+          <rect x="40" y="42" width="120" height="218" fill="rgba(255,255,255,.02)"/>
+          <text x="56" y="68" font-family="Inter, sans-serif" font-size="9" fill="rgba(255,255,255,.4)" letter-spacing=".05em">FAVORITES</text>
+          <text x="56" y="86" font-family="Inter, sans-serif" font-size="11" fill="rgba(255,255,255,.7)">📁 Documents</text>
+          <text x="56" y="104" font-family="Inter, sans-serif" font-size="11" fill="rgba(255,255,255,.7)">📁 Downloads</text>
+          <text x="56" y="122" font-family="Inter, sans-serif" font-size="11" fill="rgba(255,255,255,.7)">📁 Desktop</text>
+          <text x="56" y="156" font-family="Inter, sans-serif" font-size="9" fill="rgba(255,255,255,.4)" letter-spacing=".05em">DEVICES</text>
+          <text x="56" y="174" font-family="Inter, sans-serif" font-size="11" fill="rgba(255,255,255,.7)">💻 Macintosh HD</text>
+          <!-- VaultDrive now visible & highlighted -->
+          <rect x="52" y="186" width="100" height="22" rx="4" fill="rgba(0,174,213,.18)" stroke="rgba(0,174,213,.6)" stroke-width="1.2"/>
+          <text x="58" y="202" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#00E5FF">🔐 VaultDrive</text>
+
+          <!-- Main: file grid -->
+          <g transform="translate(180, 60)">
+            <g>
+              <rect x="0" y="0" width="60" height="60" rx="6" fill="rgba(0,174,213,.08)" stroke="rgba(0,174,213,.2)" stroke-width="1"/>
+              <text x="30" y="34" text-anchor="middle" font-size="20">📁</text>
+              <text x="30" y="76" text-anchor="middle" font-family="Inter" font-size="9" fill="rgba(255,255,255,.7)">Work</text>
+            </g>
+            <g transform="translate(80, 0)">
+              <rect x="0" y="0" width="60" height="60" rx="6" fill="rgba(0,174,213,.08)" stroke="rgba(0,174,213,.2)" stroke-width="1"/>
+              <text x="30" y="34" text-anchor="middle" font-size="20">📁</text>
+              <text x="30" y="76" text-anchor="middle" font-family="Inter" font-size="9" fill="rgba(255,255,255,.7)">Photos</text>
+            </g>
+            <g transform="translate(160, 0)">
+              <rect x="0" y="0" width="60" height="60" rx="6" fill="rgba(0,174,213,.08)" stroke="rgba(0,174,213,.2)" stroke-width="1"/>
+              <text x="30" y="34" text-anchor="middle" font-size="20">📁</text>
+              <text x="30" y="76" text-anchor="middle" font-family="Inter" font-size="9" fill="rgba(255,255,255,.7)">Archive</text>
+            </g>
+            <g transform="translate(0, 100)">
+              <rect x="0" y="0" width="60" height="60" rx="6" fill="rgba(0,174,213,.08)" stroke="rgba(0,174,213,.2)" stroke-width="1"/>
+              <text x="30" y="34" text-anchor="middle" font-size="20">📄</text>
+              <text x="30" y="76" text-anchor="middle" font-family="Inter" font-size="9" fill="rgba(255,255,255,.7)">Notes.md</text>
+            </g>
+          </g>
+
+          <!-- Drive (with active LED) -->
+          <g transform="translate(380, 280)">
+            <rect x="0" y="0" width="60" height="34" rx="6" fill="#3A4250"/>
+            <rect x="-12" y="13" width="14" height="8" rx="1" fill="rgba(0,229,255,.4)"/>
+            <text x="30" y="20" text-anchor="middle" font-family="Inter, sans-serif" font-size="8" font-weight="600" fill="rgba(255,255,255,.85)">VaultDrive</text>
+            <circle cx="50" cy="26" r="2" fill="#00E5FF">
+              <animate attributeName="opacity" values=".4;1;.4" dur="1.6s" repeatCount="indefinite"/>
+            </circle>
+          </g>
+        </svg>
+        <p class="invisible-state-text" data-i18n="inv-unlocked-text">
+          Once unlocked, VaultDrive mounts as a standard USB volume — read, write, copy, drag-and-drop, just like any drive. Disconnect the phone or unplug the cable, and it disappears again. Instantly.
+        </p>
+      </div>
+    </div>
+
+    <!-- Three pillars below -->
+    <div class="invisible-pillars sr d2">
+      <div class="invisible-pillar">
+        <svg class="invisible-pillar-icon" viewBox="0 0 44 44" fill="none">
+          <path d="M22 6L8 12v8c0 8 6 14 14 16 8-2 14-8 14-16v-8L22 6z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/>
+          <path d="M16 22l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <div class="invisible-pillar-title" data-i18n="inv-p1-title">Auto-lock on disconnect</div>
+        <div class="invisible-pillar-text" data-i18n="inv-p1-text">Pull the cable, walk away from the laptop, or unpair your phone — drive locks instantly. Zero residual access window.</div>
+      </div>
+      <div class="invisible-pillar">
+        <svg class="invisible-pillar-icon" viewBox="0 0 44 44" fill="none">
+          <rect x="8" y="14" width="28" height="22" rx="3" stroke="currentColor" stroke-width="2"/>
+          <path d="M14 14V10a8 8 0 0116 0v4" stroke="currentColor" stroke-width="2"/>
+          <circle cx="22" cy="25" r="2.5" fill="currentColor"/>
+          <path d="M22 27v4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="invisible-pillar-title" data-i18n="inv-p2-title">Tamper-proof at silicon level</div>
+        <div class="invisible-pillar-text" data-i18n="inv-p2-text">Even if attackers desolder the NAND chips and read them on a forensic rig, they get only AES-256 ciphertext. The decryption key never existed in storage.</div>
+      </div>
+      <div class="invisible-pillar">
+        <svg class="invisible-pillar-icon" viewBox="0 0 44 44" fill="none">
+          <circle cx="22" cy="22" r="14" stroke="currentColor" stroke-width="2"/>
+          <path d="M22 14v8l5 5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+          <path d="M14 8L8 14M30 8l6 6" stroke="currentColor" stroke-width="2" stroke-linecap="round"/>
+        </svg>
+        <div class="invisible-pillar-title" data-i18n="inv-p3-title">Inactivity timeout</div>
+        <div class="invisible-pillar-text" data-i18n="inv-p3-text">Configurable: 1 / 5 / 15 minutes of no activity, drive auto-locks even while still plugged in. Safe to step away from your desk.</div>
       </div>
     </div>
   </div>
@@ -3579,7 +4266,7 @@ body.menu-open { overflow:hidden; }
         <em data-i18n="colors-h2-2">The security stays the same.</em>
       </h2>
       <p class="section-lead" style="margin:16px auto 0;text-align:center;" data-i18n="colors-lead">
-        Precision-CNC aluminum chassis. Laser-etched DSCC branding. Same $299.
+        Precision CNC aluminum chassis. Laser-etched DSCC branding. Same $399.
       </p>
     </div>
 
@@ -3612,7 +4299,7 @@ body.menu-open { overflow:hidden; }
             <text x="56" y="0" font-family="'Noto Sans SC'" font-weight="700" font-size="18" fill="rgba(255,255,255,.1)" letter-spacing="4" text-anchor="middle">数安</text>
           </g>
           <text x="300" y="120" text-anchor="middle" font-family="Inter" font-weight="800" font-size="14" fill="rgba(255,255,255,.22)" letter-spacing="5">VaultDrive</text>
-          <text x="300" y="138" text-anchor="middle" font-family="DM Mono" font-size="7" fill="rgba(255,255,255,.12)" letter-spacing="3">1TB · AES-256</text>
+          <text x="300" y="138" text-anchor="middle" font-family="DM Mono" font-size="7" fill="rgba(255,255,255,.12)" letter-spacing="3">2TB · AES-256</text>
           <circle cx="300" cy="210" r="56" fill="url(#cs-gray-nfc)"/>
           <circle cx="300" cy="210" r="38" fill="none" stroke="rgba(0,181,219,.4)" stroke-width="1"/>
           <circle cx="300" cy="210" r="24" fill="none" stroke="rgba(0,181,219,.55)" stroke-width="1"/>
@@ -3647,7 +4334,7 @@ body.menu-open { overflow:hidden; }
             <text x="56" y="0" font-family="'Noto Sans SC'" font-weight="700" font-size="18" fill="rgba(60,70,90,.25)" letter-spacing="4" text-anchor="middle">数安</text>
           </g>
           <text x="300" y="120" text-anchor="middle" font-family="Inter" font-weight="800" font-size="14" fill="rgba(60,70,90,.5)" letter-spacing="5">VaultDrive</text>
-          <text x="300" y="138" text-anchor="middle" font-family="DM Mono" font-size="7" fill="rgba(60,70,90,.3)" letter-spacing="3">1TB · AES-256</text>
+          <text x="300" y="138" text-anchor="middle" font-family="DM Mono" font-size="7" fill="rgba(60,70,90,.3)" letter-spacing="3">2TB · AES-256</text>
           <circle cx="300" cy="210" r="56" fill="url(#cs-silver-nfc)"/>
           <circle cx="300" cy="210" r="38" fill="none" stroke="rgba(0,133,178,.4)" stroke-width="1"/>
           <circle cx="300" cy="210" r="24" fill="none" stroke="rgba(0,133,178,.55)" stroke-width="1"/>
@@ -3682,7 +4369,7 @@ body.menu-open { overflow:hidden; }
             <text x="56" y="0" font-family="'Noto Sans SC'" font-weight="700" font-size="18" fill="rgba(80,30,0,.4)" letter-spacing="4" text-anchor="middle">数安</text>
           </g>
           <text x="300" y="120" text-anchor="middle" font-family="Inter" font-weight="800" font-size="14" fill="rgba(80,30,0,.6)" letter-spacing="5">VaultDrive</text>
-          <text x="300" y="138" text-anchor="middle" font-family="DM Mono" font-size="7" fill="rgba(80,30,0,.4)" letter-spacing="3">1TB · AES-256</text>
+          <text x="300" y="138" text-anchor="middle" font-family="DM Mono" font-size="7" fill="rgba(80,30,0,.4)" letter-spacing="3">2TB · AES-256</text>
           <circle cx="300" cy="210" r="56" fill="url(#cs-orange-nfc)"/>
           <circle cx="300" cy="210" r="38" fill="none" stroke="rgba(255,255,255,.5)" stroke-width="1"/>
           <circle cx="300" cy="210" r="24" fill="none" stroke="rgba(255,255,255,.65)" stroke-width="1"/>
@@ -4279,7 +4966,7 @@ body.menu-open { overflow:hidden; }
           <circle cx="32" cy="25" r="2" fill="currentColor"/>
         </svg>
         <div class="spec-hero-label" data-i18n="spec-hero-2-label">Capacity</div>
-        <div class="spec-hero-value">1<em> TB</em></div>
+        <div class="spec-hero-value">2<em> TB</em></div>
         <div class="spec-hero-note" data-i18n="spec-hero-2-note">NVMe SSD at full USB 3.2 Gen 2 speeds. Up to 1050 MB/s read.</div>
       </div>
 
@@ -4309,6 +4996,10 @@ body.menu-open { overflow:hidden; }
       <div class="specs-detail-row">
         <div class="specs-detail-key" data-i18n="spec-r1-key">Storage Type</div>
         <div class="specs-detail-val" data-i18n="spec-r1-val">NVMe M.2 2242 SSD · 3D TLC NAND</div>
+      </div>
+      <div class="specs-detail-row">
+        <div class="specs-detail-key" data-i18n="spec-r1b-key">Capacity Options</div>
+        <div class="specs-detail-val" data-i18n="spec-r1b-val">2 TB ($399) · 1 TB ($249)</div>
       </div>
       <div class="specs-detail-row">
         <div class="specs-detail-key" data-i18n="spec-r2-key">Interface</div>
@@ -4363,6 +5054,188 @@ body.menu-open { overflow:hidden; }
         <div class="specs-detail-val" data-i18n="spec-r14-val">3 years limited · 30-day money back · Lifetime firmware updates</div>
       </div>
     </div>
+  </div>
+</section>
+
+
+<!--
+  ═════════════════════════════════════════════
+  §10.3 DUAL-CHIP — Three-layer security architecture
+  Counter-positions Lexar's "NFC双加密" claim with a stronger story:
+  3 layers, not 2 (in-house controller + NFC SE + AES-256 SE).
+  ═════════════════════════════════════════════
+-->
+<section class="dual-chip" id="dual-chip" aria-labelledby="dual-chip-heading">
+  <div class="dual-chip-inner">
+    <div class="dual-chip-header sr">
+      <div class="section-label" data-i18n="dc-label">Security Architecture</div>
+      <h2 class="section-h2" id="dual-chip-heading">
+        <span data-i18n="dc-h2-1">Two dedicated chips.</span>
+        <em data-i18n="dc-h2-2">One unique drive ID.</em>
+      </h2>
+      <p class="section-lead" style="margin:16px auto 0;text-align:center;" data-i18n="dc-lead">
+        VaultDrive runs an in-house storage controller, an NFC secure element for authentication, and an AES-256 hardware engine for encryption — three independent silicon paths, each cryptographically bound to a per-drive unique ID burned at the factory.
+      </p>
+    </div>
+
+    <!-- Architecture diagram SVG -->
+    <div class="dual-chip-stage sr d1">
+      <svg class="dual-chip-svg" viewBox="0 0 920 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="dualChipTitle">
+        <title id="dualChipTitle">VaultDrive's three-chip security architecture: NFC SE, in-house controller, AES-256 engine</title>
+        <defs>
+          <linearGradient id="dc-board" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#0F1A2A"/>
+            <stop offset="100%" stop-color="#050810"/>
+          </linearGradient>
+          <linearGradient id="dc-nfc" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#0085B2"/>
+            <stop offset="100%" stop-color="#003E5C"/>
+          </linearGradient>
+          <linearGradient id="dc-ctrl" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#5A6478"/>
+            <stop offset="100%" stop-color="#2A3140"/>
+          </linearGradient>
+          <linearGradient id="dc-aes" x1="0" y1="0" x2="1" y2="1">
+            <stop offset="0%" stop-color="#FFB347"/>
+            <stop offset="100%" stop-color="#7A4A1F"/>
+          </linearGradient>
+        </defs>
+
+        <!-- PCB background -->
+        <rect x="20" y="40" width="880" height="280" rx="14" fill="url(#dc-board)" stroke="rgba(255,255,255,.08)" stroke-width="1"/>
+        <!-- PCB traces -->
+        <g stroke="rgba(0,174,213,.18)" stroke-width="1" fill="none">
+          <path d="M50 80h820"/>
+          <path d="M50 280h820"/>
+          <path d="M120 80v200"/>
+          <path d="M780 80v200"/>
+          <path d="M460 60v240"/>
+        </g>
+        <!-- Trace dots -->
+        <g fill="rgba(0,174,213,.5)">
+          <circle cx="120" cy="80" r="2"/>
+          <circle cx="460" cy="80" r="2"/>
+          <circle cx="780" cy="80" r="2"/>
+          <circle cx="120" cy="280" r="2"/>
+          <circle cx="460" cy="280" r="2"/>
+          <circle cx="780" cy="280" r="2"/>
+        </g>
+
+        <!-- LEFT: NFC Secure Element -->
+        <g transform="translate(80, 130)">
+          <rect x="0" y="0" width="160" height="100" rx="8" fill="url(#dc-nfc)" stroke="rgba(0,174,213,.5)" stroke-width="1.5"/>
+          <!-- chip pins -->
+          <g fill="rgba(255,255,255,.2)">
+            <rect x="-6" y="14" width="6" height="3"/>
+            <rect x="-6" y="28" width="6" height="3"/>
+            <rect x="-6" y="42" width="6" height="3"/>
+            <rect x="-6" y="56" width="6" height="3"/>
+            <rect x="-6" y="70" width="6" height="3"/>
+            <rect x="-6" y="84" width="6" height="3"/>
+            <rect x="160" y="14" width="6" height="3"/>
+            <rect x="160" y="28" width="6" height="3"/>
+            <rect x="160" y="42" width="6" height="3"/>
+            <rect x="160" y="56" width="6" height="3"/>
+            <rect x="160" y="70" width="6" height="3"/>
+            <rect x="160" y="84" width="6" height="3"/>
+          </g>
+          <!-- shield -->
+          <path d="M80 28L60 36v18c0 11 9 20 20 23 11-3 20-12 20-23V36L80 28z" fill="none" stroke="rgba(255,255,255,.95)" stroke-width="2"/>
+          <text x="80" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="#FFFFFF">NFC</text>
+          <text x="80" y="80" text-anchor="middle" font-family="DM Mono" font-size="8" fill="rgba(255,255,255,.7)" letter-spacing="1">SECURE ELEMENT</text>
+        </g>
+
+        <!-- CENTER: In-house Controller -->
+        <g transform="translate(380, 110)">
+          <rect x="0" y="0" width="160" height="140" rx="8" fill="url(#dc-ctrl)" stroke="rgba(255,255,255,.3)" stroke-width="1.5"/>
+          <g fill="rgba(255,255,255,.2)">
+            <rect x="-6" y="14" width="6" height="3"/>
+            <rect x="-6" y="28" width="6" height="3"/>
+            <rect x="-6" y="42" width="6" height="3"/>
+            <rect x="-6" y="56" width="6" height="3"/>
+            <rect x="-6" y="70" width="6" height="3"/>
+            <rect x="-6" y="84" width="6" height="3"/>
+            <rect x="-6" y="98" width="6" height="3"/>
+            <rect x="-6" y="112" width="6" height="3"/>
+            <rect x="160" y="14" width="6" height="3"/>
+            <rect x="160" y="28" width="6" height="3"/>
+            <rect x="160" y="42" width="6" height="3"/>
+            <rect x="160" y="56" width="6" height="3"/>
+            <rect x="160" y="70" width="6" height="3"/>
+            <rect x="160" y="84" width="6" height="3"/>
+            <rect x="160" y="98" width="6" height="3"/>
+            <rect x="160" y="112" width="6" height="3"/>
+          </g>
+          <!-- chip top -->
+          <rect x="40" y="30" width="80" height="80" rx="4" fill="rgba(0,174,213,.08)" stroke="rgba(255,255,255,.2)" stroke-width="1"/>
+          <text x="80" y="68" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="800" fill="#FFFFFF">DSCC</text>
+          <text x="80" y="84" text-anchor="middle" font-family="DM Mono" font-size="8" fill="rgba(255,255,255,.6)" letter-spacing="1.5">CTRL-2026</text>
+          <text x="80" y="128" text-anchor="middle" font-family="DM Mono" font-size="8" fill="rgba(255,255,255,.6)" letter-spacing="1">UID: BOUND</text>
+        </g>
+
+        <!-- RIGHT: AES-256 Engine -->
+        <g transform="translate(680, 130)">
+          <rect x="0" y="0" width="160" height="100" rx="8" fill="url(#dc-aes)" stroke="rgba(255,179,71,.5)" stroke-width="1.5"/>
+          <g fill="rgba(0,0,0,.25)">
+            <rect x="-6" y="14" width="6" height="3"/>
+            <rect x="-6" y="28" width="6" height="3"/>
+            <rect x="-6" y="42" width="6" height="3"/>
+            <rect x="-6" y="56" width="6" height="3"/>
+            <rect x="-6" y="70" width="6" height="3"/>
+            <rect x="-6" y="84" width="6" height="3"/>
+            <rect x="160" y="14" width="6" height="3"/>
+            <rect x="160" y="28" width="6" height="3"/>
+            <rect x="160" y="42" width="6" height="3"/>
+            <rect x="160" y="56" width="6" height="3"/>
+            <rect x="160" y="70" width="6" height="3"/>
+            <rect x="160" y="84" width="6" height="3"/>
+          </g>
+          <path d="M80 28L60 36v18c0 11 9 20 20 23 11-3 20-12 20-23V36L80 28z" fill="none" stroke="rgba(255,255,255,.95)" stroke-width="2"/>
+          <text x="80" y="60" text-anchor="middle" font-family="Inter, sans-serif" font-size="13" font-weight="800" fill="#FFFFFF">AES</text>
+          <text x="80" y="80" text-anchor="middle" font-family="DM Mono" font-size="8" fill="rgba(255,255,255,.7)" letter-spacing="1">256-BIT ENGINE</text>
+        </g>
+
+        <!-- Animated data flow lines -->
+        <g stroke="#00E5FF" stroke-width="1.5" fill="none" opacity=".7">
+          <path d="M240 180h140" stroke-dasharray="4 4">
+            <animate attributeName="stroke-dashoffset" from="0" to="-16" dur="1.2s" repeatCount="indefinite"/>
+          </path>
+        </g>
+        <g stroke="#FFB347" stroke-width="1.5" fill="none" opacity=".7">
+          <path d="M540 180h140" stroke-dasharray="4 4">
+            <animate attributeName="stroke-dashoffset" from="0" to="-16" dur="1.2s" repeatCount="indefinite"/>
+          </path>
+        </g>
+
+        <!-- Labels under chips -->
+        <text x="160" y="260" text-anchor="middle" font-family="DM Mono" font-size="9" fill="rgba(0,229,255,.7)" letter-spacing="1.5">LAYER 1 · AUTH</text>
+        <text x="460" y="280" text-anchor="middle" font-family="DM Mono" font-size="9" fill="rgba(255,255,255,.55)" letter-spacing="1.5">LAYER 2 · CONTROLLER</text>
+        <text x="760" y="260" text-anchor="middle" font-family="DM Mono" font-size="9" fill="rgba(255,179,71,.7)" letter-spacing="1.5">LAYER 3 · CIPHER</text>
+      </svg>
+    </div>
+
+    <!-- Three pillars explaining each chip -->
+    <div class="dual-chip-pillars sr d2">
+      <div class="dual-chip-pillar">
+        <span class="dual-chip-pillar-tag" data-i18n="dc-p1-tag">LAYER 1 · NFC SE</span>
+        <div class="dual-chip-pillar-title" data-i18n="dc-p1-title">NFC Secure Element</div>
+        <div class="dual-chip-pillar-text" data-i18n="dc-p1-text">A tamper-resistant chip that handles the phone-to-drive handshake. Receives the face-derived authentication key over a short-range encrypted channel — and only then signals the controller.</div>
+      </div>
+      <div class="dual-chip-pillar">
+        <span class="dual-chip-pillar-tag" data-i18n="dc-p2-tag">LAYER 2 · CTRL</span>
+        <div class="dual-chip-pillar-title" data-i18n="dc-p2-title">In-house Storage Controller</div>
+        <div class="dual-chip-pillar-text" data-i18n="dc-p2-text">A custom DSCC controller that links the NFC SE to the AES engine. Each unit ships with a unique 128-bit UID burned at the factory — clone the silicon, you still can't replicate the binding.</div>
+      </div>
+      <div class="dual-chip-pillar">
+        <span class="dual-chip-pillar-tag" data-i18n="dc-p3-tag">LAYER 3 · AES</span>
+        <div class="dual-chip-pillar-title" data-i18n="dc-p3-title">AES-256 Hardware Engine</div>
+        <div class="dual-chip-pillar-text" data-i18n="dc-p3-text">Dedicated cryptographic silicon, FIPS 140-3 Level 3 ready. Encrypts every byte at line rate — the controller never delivers a plaintext block to the NAND. Decryption only happens in this chip's volatile registers.</div>
+      </div>
+    </div>
+
+    <p class="dual-chip-footnote" data-i18n="dc-footnote">
+      "Bank-grade" describes the architectural pattern: separation of secure elements + hardware AES + per-device unique ID, the same approach used in EMV payment chips. It does not imply this product carries financial-industry certification.
+    </p>
   </div>
 </section>
 
@@ -4882,21 +5755,21 @@ body.menu-open { overflow:hidden; }
   <div class="final-cta-inner">
     <div class="final-urgency sr">
       <span class="final-urgency-dot"></span>
-      <span data-i18n="final-urgency">Limited to 500 Units · First Shipment</span>
+      <span data-i18n="final-urgency">2TB · $399 · $70 less than Samsung T7</span>
     </div>
     <h2 class="final-h2 sr d1" id="final-heading">
-      <span data-i18n="final-h2-1">Lose the drive.</span><br>
-      <span class="final-h2-grad" data-i18n="final-h2-2">Keep the secret.</span>
+      <span data-i18n="final-h2-1">Premium SSD.</span><br>
+      <span class="final-h2-grad" data-i18n="final-h2-2">Privacy built in.</span>
     </h2>
     <p class="final-sub sr d2" data-i18n="final-sub">
-      The key that can't be taken from you — because it doesn't exist until you need it.
+      2 TB of NVMe storage. 1050 MB/s. CNC aluminum chassis. AES-256 hardware encryption with NFC unlock. Everything Samsung T7 has — for less. Plus everything it doesn't.
     </p>
 
     <!-- Scarcity indicator -->
     <div class="scarcity sr d3">
       <div class="scarcity-row">
-        <span class="scarcity-label" data-i18n="scarcity-label">First batch availability</span>
-        <span class="scarcity-count"><span data-i18n="scarcity-count-1">138</span> <em data-i18n="scarcity-count-2">of 500 remaining</em></span>
+        <span class="scarcity-label" data-i18n="scarcity-label">First batch — limited release</span>
+        <span class="scarcity-count"><span data-i18n="scarcity-count-1">412</span> <em data-i18n="scarcity-count-2">of 500 remaining</em></span>
       </div>
       <div class="scarcity-bar">
         <div class="scarcity-bar-fill"></div>
@@ -4904,7 +5777,7 @@ body.menu-open { overflow:hidden; }
     </div>
 
     <div class="final-ctas sr d4">
-      <a href="#" class="btn-final-primary" data-i18n="final-cta">Pre-order VaultDrive — $299</a>
+      <a href="#" class="btn-final-primary" data-i18n="final-cta">Pre-order 2TB — $399</a>
     </div>
 
     <div class="final-guarantees sr d5">
@@ -5042,21 +5915,68 @@ const i18n = {
     'nav-specs': 'Specs',
     'nav-faq': 'FAQ',
     'nav-enterprise': 'FaceAuth',
-    'nav-cta': 'Pre-order $299',
+    'nav-cta': 'Pre-order $399',
     'mm-product': 'Product',
     'mm-more': 'Also from Facrypt',
 
     // Hero
-    'hero-badge': 'Now Shipping · First 500 Units',
-    'hero-h1-1': 'The encrypted SSD that',
-    'hero-h1-2': 'only opens for you.',
-    'hero-sub': '1TB portable SSD with AES-256 hardware encryption. Your face generates the key. Your face erases it. <strong>No password. No stored key.</strong>',
-    'hero-cta-primary': 'Pre-order — $299',
+    'hero-badge': '2TB · $399 · $70 less than Samsung T7',
+    'hero-h1-1': '2TB premium SSD with',
+    'hero-h1-2': 'NFC unlock built in.',
+    'hero-sub': '1050 MB/s. CNC aluminum chassis. AES-256 hardware encryption. <strong>Same security trusted by banks — now in your pocket.</strong>',
+    'hero-cta-primary': 'Pre-order 2TB — $399',
     'hero-cta-secondary': 'See how it works',
-    'trust-1': 'AES-256 Hardware',
-    'trust-2': 'Zero Stored Keys',
-    'trust-3': '<2s Unlock',
-    'trust-4': 'Ships Worldwide',
+    'trust-1': '1050 MB/s Read',
+    'trust-2': '2TB Capacity',
+    'trust-3': 'NFC Unlock',
+    'trust-4': 'AES-256 Encryption',
+
+    // §5.5 NFC One-touch unlock
+    'nfc-label': 'One-Touch Unlock',
+    'nfc-h2-1': 'Tap your phone.',
+    'nfc-h2-2': 'The drive opens.',
+    'nfc-lead': 'Hold an NFC-capable phone near the drive. No fingerprint scan. No password to type. Authentication happens in under two seconds — but only for the face that owns this drive.',
+    'nfc-card-1-title': 'No fingerprint. No password.',
+    'nfc-card-1-body': 'Just hold your phone near the drive. The Facrypt app handshakes with the drive\'s NFC chip, derives your face-bound key, and unlocks. The whole thing finishes in under 2 seconds.',
+    'nfc-card-2-title': 'Where to tap',
+    'nfc-card-2-body': 'Different phones have NFC antennas in different places. Hold the marked area near the drive\'s NFC zone for a reliable handshake.',
+    'nfc-zone-iphone': 'iPhone · top edge',
+    'nfc-zone-android': 'Android · center',
+    'nfc-card-3-title': 'First time vs every time',
+    'nfc-card-3-body': 'First setup: enroll your face in the Facrypt app and pair it to the drive (one-time, ~30 seconds). After that: every unlock is just a tap, no passwords ever.',
+    'nfc-footnote': 'Requires NFC-enabled phone · Facrypt app for iOS 15+ / Android 10+ · Works offline',
+
+    // §8.7 Locked = Invisible
+    'inv-label': 'Locked = Invisible',
+    'inv-h2-1': 'If it\'s not unlocked,',
+    'inv-h2-2': 'it doesn\'t exist.',
+    'inv-lead': 'Plug a locked VaultDrive into any computer. Nothing happens. No drive icon. No mount prompt. Forensic tools see USB power draw and a controller that refuses to identify. Even the operating system can\'t tell what\'s connected.',
+    'inv-state-locked': 'CONNECTED · LOCKED',
+    'inv-state-unlocked': 'UNLOCKED · MOUNTED',
+    'inv-locked-text': 'Computer sees: USB power draw, no identification. Forensic tools see: refuses to enumerate. Brute-force the chip and you\'ll find AES-256 ciphertext that would take longer than the universe\'s age to break.',
+    'inv-unlocked-text': 'Once unlocked, VaultDrive mounts as a standard USB volume — read, write, copy, drag-and-drop, just like any drive. Disconnect the phone or unplug the cable, and it disappears again. Instantly.',
+    'inv-p1-title': 'Auto-lock on disconnect',
+    'inv-p1-text': 'Pull the cable, walk away from the laptop, or unpair your phone — drive locks instantly. Zero residual access window.',
+    'inv-p2-title': 'Tamper-proof at silicon level',
+    'inv-p2-text': 'Even if attackers desolder the NAND chips and read them on a forensic rig, they get only AES-256 ciphertext. The decryption key never existed in storage.',
+    'inv-p3-title': 'Inactivity timeout',
+    'inv-p3-text': 'Configurable: 1 / 5 / 15 minutes of no activity, drive auto-locks even while still plugged in. Safe to step away from your desk.',
+
+    // §10.3 Dual-chip security architecture
+    'dc-label': 'Security Architecture',
+    'dc-h2-1': 'Two dedicated chips.',
+    'dc-h2-2': 'One unique drive ID.',
+    'dc-lead': 'VaultDrive runs an in-house storage controller, an NFC secure element for authentication, and an AES-256 hardware engine for encryption — three independent silicon paths, each cryptographically bound to a per-drive unique ID burned at the factory.',
+    'dc-p1-tag': 'LAYER 1 · NFC SE',
+    'dc-p1-title': 'NFC Secure Element',
+    'dc-p1-text': 'A tamper-resistant chip that handles the phone-to-drive handshake. Receives the face-derived authentication key over a short-range encrypted channel — and only then signals the controller.',
+    'dc-p2-tag': 'LAYER 2 · CTRL',
+    'dc-p2-title': 'In-house Storage Controller',
+    'dc-p2-text': 'A custom DSCC controller that links the NFC SE to the AES engine. Each unit ships with a unique 128-bit UID burned at the factory — clone the silicon, you still can\'t replicate the binding.',
+    'dc-p3-tag': 'LAYER 3 · AES',
+    'dc-p3-title': 'AES-256 Hardware Engine',
+    'dc-p3-text': 'Dedicated cryptographic silicon, FIPS 140-3 Level 3 ready. Encrypts every byte at line rate — the controller never delivers a plaintext block to the NAND. Decryption only happens in this chip\'s volatile registers.',
+    'dc-footnote': '"Bank-grade" describes the architectural pattern: separation of secure elements + hardware AES + per-device unique ID, the same approach used in EMV payment chips. It does not imply this product carries financial-industry certification.',
 
     // Social proof
     'sp-label': 'Discussed across the security community',
@@ -5096,7 +6016,7 @@ const i18n = {
     'product-label': 'The Hardware',
     'product-h2-1': 'Engineered for',
     'product-h2-2': 'everyday invisibility.',
-    'product-lead': '1TB of encrypted storage. The size of a credit card. The security of a bank vault.',
+    'product-lead': '2TB of encrypted storage. The size of a credit card. The security of a bank vault.',
     'ps-v1-label': 'Top Face',
     'ps-v1-title': 'NFC authentication zone',
     'ps-v1-desc': 'Hold your phone here. One second. The drive unlocks. No buttons, no ports, no passwords.',
@@ -5134,47 +6054,61 @@ const i18n = {
 
     // Compare
     'cmp-label': 'How It Compares',
-    'cmp-h2-1': 'Same form factor.',
-    'cmp-h2-2': 'Fundamentally different.',
-    'cmp-lead': 'Not all encrypted drives are created equal. Here\'s what separates VaultDrive from everything else.',
+    'cmp-h2-1': 'Less than Samsung T7.',
+    'cmp-h2-2': 'More than encrypted.',
+    'cmp-lead': 'Real specs, real prices. Compare VaultDrive 2TB to the best-selling portable SSDs on Amazon today.',
     'cmp-col-feature': 'Feature',
-    'cmp-col-sw': 'Software-Encrypted',
-    'cmp-col-hw': 'Hardware-Encrypted',
-    'cmp-col-vd-sub': 'Biometric Chip-Level',
-    'cmp-r1': 'Where the key lives',
-    'cmp-r1-sw': 'In OS / RAM',
-    'cmp-r1-hw': 'On drive chip',
-    'cmp-r1-vd': 'Nowhere. Derived fresh.',
-    'cmp-r2': 'Coercion resistance',
-    'cmp-r2-sw': 'Password extractable',
-    'cmp-r2-hw': 'Password extractable',
-    'cmp-r2-vd': 'No key to surrender',
-    'cmp-r3': 'Forensic extraction',
-    'cmp-r3-sw': 'RAM dump possible',
-    'cmp-r3-hw': 'Chip-level attacks',
-    'cmp-r3-vd': 'Nothing to extract',
-    'cmp-r4': 'Biometric template storage',
-    'cmp-r4-sw': 'N/A',
-    'cmp-r4-hw': 'Some models',
-    'cmp-r4-vd': 'Zero bytes ever stored',
-    'cmp-r5': 'Unlock speed',
-    'cmp-r5-sw': '5–15 sec',
-    'cmp-r5-hw': '3–8 sec',
-    'cmp-r5-vd': 'Under 2 sec',
-    'cmp-r6': 'GDPR Art. 9 compliance',
-    'cmp-r6-sw': 'Manual config',
-    'cmp-r6-hw': 'Varies',
-    'cmp-r6-vd': 'By architecture',
-    'cmp-r7': 'Works on all OS without drivers',
-    'cmp-r7-sw': 'Windows only',
-    'cmp-r7-hw': 'Most OS',
-    'cmp-r7-vd': 'Every OS',
+    'cmp-col-samsung': 'Samsung T7',
+    'cmp-col-samsung-sub': 'Best-selling 2TB portable SSD',
+    'cmp-col-lexar': 'Lexar TouchLock',
+    'cmp-col-lexar-sub': 'NFC-encrypted SSD · 1TB',
+    'cmp-col-vd-sub': 'NFC + AES-256 + CNC Aluminum',
+    'cmp-r1': 'Capacity',
+    'cmp-r1-samsung': '2 TB',
+    'cmp-r1-lexar': '1 TB max',
+    'cmp-r1-vd': '2 TB',
+    'cmp-r2': 'Price',
+    'cmp-r2-samsung': '$469',
+    'cmp-r2-lexar': '$189 (1TB)',
+    'cmp-r2-vd': '$399',
+    'cmp-r3': 'Read speed',
+    'cmp-r3-samsung': '1050 MB/s',
+    'cmp-r3-lexar': '450 MB/s',
+    'cmp-r3-vd': '1050 MB/s',
+    'cmp-r4': 'Chassis',
+    'cmp-r4-samsung': 'Aluminum',
+    'cmp-r4-lexar': 'Plastic',
+    'cmp-r4-vd': 'CNC aluminum',
+    'cmp-r5': 'Encryption',
+    'cmp-r5-samsung': 'AES-256 (password)',
+    'cmp-r5-lexar': 'AES-128',
+    'cmp-r5-vd': 'AES-256 + face-derived key',
+    'cmp-r6': 'Unlock method',
+    'cmp-r6-samsung': 'Password',
+    'cmp-r6-lexar': 'NFC + paired phone',
+    'cmp-r6-vd': 'NFC + face / password',
+    'cmp-r7': 'Where the key lives',
+    'cmp-r7-samsung': 'On drive chip',
+    'cmp-r7-lexar': 'Stored on phone',
+    'cmp-r7-vd': 'Nowhere — derived fresh',
+    'cmp-r8': 'If the unlock device is lost',
+    'cmp-r8-samsung': 'Recover with password',
+    'cmp-r8-lexar': 'Drive bricks without recovery key',
+    'cmp-r8-vd': 'Re-enroll any face',
+    'cmp-r9': 'USB interface',
+    'cmp-r9-samsung': 'USB 3.2 Gen 2',
+    'cmp-r9-lexar': 'USB 3.2 Gen 1',
+    'cmp-r9-vd': 'USB 3.2 Gen 2',
+    'cmp-r10': 'OS support',
+    'cmp-r10-samsung': 'Win / macOS / Android',
+    'cmp-r10-lexar': 'Win / macOS / Linux / iOS / Android',
+    'cmp-r10-vd': 'Every major OS',
 
     // Colors
     'colors-label': 'Three Finishes',
     'colors-h2-1': 'Pick your shell.',
     'colors-h2-2': 'The security stays the same.',
-    'colors-lead': 'Precision-CNC aluminum chassis. Laser-etched DSCC branding. Same $299.',
+    'colors-lead': 'Precision CNC aluminum chassis. Laser-etched DSCC branding. Same $399.',
 
     // Application scenarios
     'sa-label': 'In Your Daily Workflow',
@@ -5215,6 +6149,8 @@ const i18n = {
     'spec-hero-4-note': 'Key is derived on authentication, used in memory, destroyed on disconnect. Forever.',
     'spec-r1-key': 'Storage Type',
     'spec-r1-val': 'NVMe M.2 2242 SSD · 3D TLC NAND',
+    'spec-r1b-key': 'Capacity Options',
+    'spec-r1b-val': '2 TB ($399) · 1 TB ($249)',
     'spec-r2-key': 'Interface',
     'spec-r2-val': 'USB-C 3.2 Gen 2 · 10 Gbps · Backward compatible USB 3.0/2.0',
     'spec-r3-key': 'Read / Write Speed',
@@ -5328,14 +6264,14 @@ const i18n = {
     'ent-cta2': 'Read the whitepaper',
 
     // Final CTA
-    'final-urgency': 'Limited to 500 Units · First Shipment',
-    'final-h2-1': 'Lose the drive.',
-    'final-h2-2': 'Keep the secret.',
-    'final-sub': 'The key that can\'t be taken from you — because it doesn\'t exist until you need it.',
-    'scarcity-label': 'First batch availability',
-    'scarcity-count-1': '138',
+    'final-urgency': '2TB · $399 · $70 less than Samsung T7',
+    'final-h2-1': 'Premium SSD.',
+    'final-h2-2': 'Privacy built in.',
+    'final-sub': '2 TB of NVMe storage. 1050 MB/s. CNC aluminum chassis. AES-256 hardware encryption with NFC unlock. Everything Samsung T7 has — for less. Plus everything it doesn\'t.',
+    'scarcity-label': 'First batch — limited release',
+    'scarcity-count-1': '412',
     'scarcity-count-2': 'of 500 remaining',
-    'final-cta': 'Pre-order VaultDrive — $299',
+    'final-cta': 'Pre-order 2TB — $399',
     'guarantee-1': '30-day money back',
     'guarantee-2': '3-year warranty',
     'guarantee-3': 'Ships worldwide free',
@@ -5381,21 +6317,68 @@ const i18n = {
     'nav-specs': 'スペック',
     'nav-faq': 'よくある質問',
     'nav-enterprise': '法人向け',
-    'nav-cta': '予約注文 ¥44,800',
+    'nav-cta': '予約注文 ¥59,800',
     'mm-product': '製品',
     'mm-more': 'その他の製品',
 
     // Hero — 日本文化：謙虚、信頼、精密
-    'hero-badge': '先行予約受付中 · 初回500台限定',
-    'hero-h1-1': '顔だけで開く、',
-    'hero-h1-2': '暗号化SSD。',
-    'hero-sub': '1TB AES-256ハードウェア暗号化。お顔から鍵を生成し、取り外した瞬間に消去。<strong>パスワード不要。保存された鍵なし。</strong>',
-    'hero-cta-primary': '予約注文 — ¥44,800',
+    'hero-badge': '2TB · ¥59,800 · Samsung T7より¥10,000お得',
+    'hero-h1-1': '2TBプレミアムSSDに、',
+    'hero-h1-2': 'NFC開錠搭載。',
+    'hero-sub': '1050 MB/s。CNC削り出しアルミ筐体。AES-256ハードウェア暗号化。<strong>銀行が信頼する暗号技術を、あなたのポケットに。</strong>',
+    'hero-cta-primary': '2TB予約 — ¥59,800',
     'hero-cta-secondary': '仕組みを見る',
-    'trust-1': 'AES-256 ハードウェア',
-    'trust-2': '鍵の保存ゼロ',
-    'trust-3': '2秒以内解除',
-    'trust-4': '世界配送対応',
+    'trust-1': '1050 MB/s 読込',
+    'trust-2': '2TB 大容量',
+    'trust-3': 'NFC 開錠',
+    'trust-4': 'AES-256 暗号化',
+
+    // §5.5 NFC One-touch unlock
+    'nfc-label': 'ワンタッチ開錠',
+    'nfc-h2-1': 'スマホをかざす。',
+    'nfc-h2-2': 'ドライブが開く。',
+    'nfc-lead': 'NFC対応スマートフォンをドライブに近づけるだけ。指紋スキャンも、パスワード入力も不要。認証は2秒以内に完了 — ただし、このドライブの所有者の顔だけが対象です。',
+    'nfc-card-1-title': '指紋不要、パスワード不要。',
+    'nfc-card-1-body': 'スマホをドライブに近づけるだけ。FacryptアプリがドライブのNFCチップとハンドシェイクし、顔から派生した鍵を渡してロックを解除。すべてが2秒以内に完了します。',
+    'nfc-card-2-title': 'タッチする位置',
+    'nfc-card-2-body': 'スマートフォンによってNFCアンテナの位置が異なります。マークされた領域をドライブのNFCゾーンに近づけて、確実にハンドシェイクしてください。',
+    'nfc-zone-iphone': 'iPhone · 上端',
+    'nfc-zone-android': 'Android · 中央',
+    'nfc-card-3-title': '初回と毎回',
+    'nfc-card-3-body': '初回設定：Facryptアプリで顔を登録し、ドライブとペアリング（一度限り、約30秒）。以降の解除はワンタッチのみ、パスワードは不要です。',
+    'nfc-footnote': 'NFC対応スマートフォン必須 · Facryptアプリ iOS 15+ / Android 10+ · オフライン動作対応',
+
+    // §8.7 Locked = Invisible
+    'inv-label': 'ロック中 = 不可視',
+    'inv-h2-1': 'ロック中は、',
+    'inv-h2-2': '存在しません。',
+    'inv-lead': 'ロック中のVaultDriveを任意のパソコンに接続しても何も起きません。ドライブアイコンも表示されず、マウントプロンプトも出ません。フォレンジックツールが見るのはUSB電源消費と、識別を拒否するコントローラのみ。OSすら、何が接続されているかわかりません。',
+    'inv-state-locked': '接続済み · ロック中',
+    'inv-state-unlocked': '解除済み · マウント中',
+    'inv-locked-text': 'コンピュータが見るのは：USB電源消費、識別情報なし。フォレンジックツールが見るのは：列挙拒否。チップを総当たり攻撃しても、宇宙の年齢より長い時間が必要なAES-256暗号文しか得られません。',
+    'inv-unlocked-text': '解除されると、VaultDriveは標準的なUSBボリュームとしてマウント — 読み込み、書き込み、コピー、ドラッグ＆ドロップ、通常のドライブと同じです。スマホを切り離すか、ケーブルを抜くと、即座に再び消えます。',
+    'inv-p1-title': '切断時に自動ロック',
+    'inv-p1-text': 'ケーブルを抜く、ノートPCから離れる、スマホのペアリングを解除 — どの場合もドライブは即時ロック。残留アクセス時間はゼロです。',
+    'inv-p2-title': 'シリコンレベルで改ざん防止',
+    'inv-p2-text': 'NANDチップを取り外してフォレンジック装置で読み取られても、得られるのはAES-256暗号文のみ。復号鍵はストレージ内に存在したことがありません。',
+    'inv-p3-title': '無操作タイムアウト',
+    'inv-p3-text': '設定可能：1分 / 5分 / 15分の無操作で、接続したままでも自動ロック。デスクから離れても安心です。',
+
+    // §10.3 Dual-chip security architecture
+    'dc-label': 'セキュリティアーキテクチャ',
+    'dc-h2-1': '専用チップ2枚。',
+    'dc-h2-2': '唯一の固有ID。',
+    'dc-lead': 'VaultDriveは、自社開発のストレージコントローラ、認証用NFCセキュアエレメント、AES-256ハードウェア暗号化エンジン — 3つの独立したシリコン経路を搭載。各経路は工場で焼き込まれた個体固有IDに暗号学的に結びついています。',
+    'dc-p1-tag': 'LAYER 1 · NFC SE',
+    'dc-p1-title': 'NFC セキュアエレメント',
+    'dc-p1-text': 'スマホ-ドライブ間のハンドシェイクを担う改ざん耐性チップ。短距離暗号化チャネル経由で顔派生認証鍵を受信し、その後でのみコントローラに信号を送ります。',
+    'dc-p2-tag': 'LAYER 2 · CTRL',
+    'dc-p2-title': '自社開発ストレージコントローラ',
+    'dc-p2-text': 'NFC SEとAESエンジンを連携させるDSCC独自設計コントローラ。各個体には工場で焼き込まれた128ビット固有UIDが付与され、シリコンを複製してもバインディングは複製不可能です。',
+    'dc-p3-tag': 'LAYER 3 · AES',
+    'dc-p3-title': 'AES-256 ハードウェアエンジン',
+    'dc-p3-text': 'FIPS 140-3 Level 3対応の専用暗号シリコン。すべてのバイトをライン速度で暗号化 — コントローラはNANDに平文ブロックを渡しません。復号はこのチップの揮発性レジスタ内でのみ実行されます。',
+    'dc-footnote': '「銀行級」とは、セキュアエレメントの分離 + ハードウェアAES + 個体固有IDという、EMV決済チップで採用されているアーキテクチャパターンを指します。本製品が金融業界の認証を取得していることを意味するものではありません。',
 
     // Social proof
     'sp-label': 'セキュリティコミュニティで話題に',
@@ -5435,7 +6418,7 @@ const i18n = {
     'product-label': 'ハードウェア',
     'product-h2-1': '日常に溶け込む',
     'product-h2-2': '精密な設計。',
-    'product-lead': '1TBの暗号化ストレージ。クレジットカードサイズ。銀行金庫級の安全性。',
+    'product-lead': '2TBの暗号化ストレージ。クレジットカードサイズ。銀行金庫級の安全性。',
     'ps-v1-label': '上面',
     'ps-v1-title': 'NFC認証エリア',
     'ps-v1-desc': 'ここにスマホをかざすだけ。1秒でロック解除。ボタンもポートもパスワードも不要。',
@@ -5473,47 +6456,61 @@ const i18n = {
 
     // Compare
     'cmp-label': '他製品との比較',
-    'cmp-h2-1': '同じ形状、',
-    'cmp-h2-2': '根本的に違う。',
-    'cmp-lead': 'すべての暗号化ドライブが同等ではありません。VaultDriveが他と一線を画する理由をご覧ください。',
+    'cmp-h2-1': 'Samsung T7より安く、',
+    'cmp-h2-2': '暗号化以上の価値。',
+    'cmp-lead': '実際のスペック、実際の価格。Amazonで現在最も売れているポータブルSSDとVaultDrive 2TBを比較。',
     'cmp-col-feature': '項目',
-    'cmp-col-sw': 'ソフトウェア暗号化',
-    'cmp-col-hw': 'ハードウェア暗号化',
-    'cmp-col-vd-sub': '生体認証チップレベル',
-    'cmp-r1': '鍵の保管場所',
-    'cmp-r1-sw': 'OS / RAM内',
-    'cmp-r1-hw': 'ドライブチップ内',
-    'cmp-r1-vd': '不在。毎回派生。',
-    'cmp-r2': '強制耐性',
-    'cmp-r2-sw': 'パスワード抽出可能',
-    'cmp-r2-hw': 'パスワード抽出可能',
-    'cmp-r2-vd': '提出する鍵なし',
-    'cmp-r3': 'フォレンジック抽出',
-    'cmp-r3-sw': 'RAMダンプ可能',
-    'cmp-r3-hw': 'チップレベル攻撃',
-    'cmp-r3-vd': '抽出対象なし',
-    'cmp-r4': '生体テンプレート保存',
-    'cmp-r4-sw': '該当なし',
-    'cmp-r4-hw': '機種による',
-    'cmp-r4-vd': '1バイトも保存せず',
-    'cmp-r5': '解除時間',
-    'cmp-r5-sw': '5〜15秒',
-    'cmp-r5-hw': '3〜8秒',
-    'cmp-r5-vd': '2秒以内',
-    'cmp-r6': 'GDPR第9条準拠',
-    'cmp-r6-sw': '手動設定',
-    'cmp-r6-hw': '機種による',
-    'cmp-r6-vd': 'アーキテクチャ上',
-    'cmp-r7': 'ドライバなしで全OS対応',
-    'cmp-r7-sw': 'Windowsのみ',
-    'cmp-r7-hw': 'ほぼ全OS',
-    'cmp-r7-vd': '全OS対応',
+    'cmp-col-samsung': 'Samsung T7',
+    'cmp-col-samsung-sub': '2TBポータブルSSD最売れ筋',
+    'cmp-col-lexar': 'Lexar TouchLock',
+    'cmp-col-lexar-sub': 'NFC暗号化SSD · 1TB',
+    'cmp-col-vd-sub': 'NFC + AES-256 + CNCアルミ',
+    'cmp-r1': '容量',
+    'cmp-r1-samsung': '2 TB',
+    'cmp-r1-lexar': '最大1 TB',
+    'cmp-r1-vd': '2 TB',
+    'cmp-r2': '価格',
+    'cmp-r2-samsung': '¥69,800',
+    'cmp-r2-lexar': '¥27,800 (1TB)',
+    'cmp-r2-vd': '¥59,800',
+    'cmp-r3': '読込速度',
+    'cmp-r3-samsung': '1050 MB/s',
+    'cmp-r3-lexar': '450 MB/s',
+    'cmp-r3-vd': '1050 MB/s',
+    'cmp-r4': '筐体',
+    'cmp-r4-samsung': 'アルミ',
+    'cmp-r4-lexar': 'プラスチック',
+    'cmp-r4-vd': 'CNC削り出しアルミ',
+    'cmp-r5': '暗号化',
+    'cmp-r5-samsung': 'AES-256（パスワード）',
+    'cmp-r5-lexar': 'AES-128',
+    'cmp-r5-vd': 'AES-256 + 顔派生鍵',
+    'cmp-r6': '開錠方式',
+    'cmp-r6-samsung': 'パスワード',
+    'cmp-r6-lexar': 'NFC + ペア端末',
+    'cmp-r6-vd': 'NFC + 顔 / パスワード',
+    'cmp-r7': '鍵の所在',
+    'cmp-r7-samsung': 'ドライブチップ内',
+    'cmp-r7-lexar': '端末に保存',
+    'cmp-r7-vd': '不在 — 毎回派生',
+    'cmp-r8': '開錠端末を紛失したら',
+    'cmp-r8-samsung': 'パスワードで復旧',
+    'cmp-r8-lexar': '復旧キーなしでドライブ使用不能',
+    'cmp-r8-vd': '別のお顔を再登録',
+    'cmp-r9': 'USBインターフェース',
+    'cmp-r9-samsung': 'USB 3.2 Gen 2',
+    'cmp-r9-lexar': 'USB 3.2 Gen 1',
+    'cmp-r9-vd': 'USB 3.2 Gen 2',
+    'cmp-r10': 'OS対応',
+    'cmp-r10-samsung': 'Win / macOS / Android',
+    'cmp-r10-lexar': 'Win / macOS / Linux / iOS / Android',
+    'cmp-r10-vd': '全主要OS',
 
     // Colors
     'colors-label': '3つのフィニッシュ',
     'colors-h2-1': '外装をお選びいただけます。',
     'colors-h2-2': '安全性は同一。',
-    'colors-lead': '精密CNC削り出しアルミ筐体。レーザー刻印DSCCブランディング。すべて同価格。',
+    'colors-lead': '精密CNC削り出しアルミ筐体。レーザー刻印DSCCブランディング。価格は¥59,800で同一。',
 
     // Application scenarios
     'sa-label': '日常のワークフロー',
@@ -5554,6 +6551,8 @@ const i18n = {
     'spec-hero-4-note': '認証時に派生、メモリ内で使用、切断時に消去。永久に。',
     'spec-r1-key': 'ストレージ種別',
     'spec-r1-val': 'NVMe M.2 2242 SSD · 3D TLC NAND',
+    'spec-r1b-key': '容量オプション',
+    'spec-r1b-val': '2 TB（¥59,800）· 1 TB（¥37,800）',
     'spec-r2-key': 'インターフェース',
     'spec-r2-val': 'USB-C 3.2 Gen 2 · 10 Gbps · USB 3.0/2.0下位互換',
     'spec-r3-key': '読み込み / 書き込み速度',
@@ -5667,14 +6666,14 @@ const i18n = {
     'ent-cta2': '技術白書を読む',
 
     // Final CTA
-    'final-urgency': '限定500台 · 初回出荷',
-    'final-h2-1': 'ドライブを失っても、',
-    'final-h2-2': '秘密は守り続ける。',
-    'final-sub': '奪われない鍵 — 必要な瞬間まで存在しないから。',
-    'scarcity-label': '初回ロット残り',
-    'scarcity-count-1': '138',
+    'final-urgency': '2TB · ¥59,800 · Samsung T7より¥10,000お得',
+    'final-h2-1': 'プレミアムSSDに、',
+    'final-h2-2': 'プライバシーを内蔵。',
+    'final-sub': '2TB NVMeストレージ。1050 MB/s。CNC削り出しアルミ筐体。NFC開錠付きAES-256ハードウェア暗号化。Samsung T7にあるすべてを、より安く。そして、Samsung T7にないすべてを。',
+    'scarcity-label': '初回ロット限定リリース',
+    'scarcity-count-1': '412',
     'scarcity-count-2': '/ 500台',
-    'final-cta': 'VaultDriveを予約 — ¥44,800',
+    'final-cta': '2TB予約 — ¥59,800',
     'guarantee-1': '30日間返金保証',
     'guarantee-2': '3年保証',
     'guarantee-3': '世界送料無料',
@@ -5720,21 +6719,68 @@ const i18n = {
     'nav-specs': 'Technik',
     'nav-faq': 'FAQ',
     'nav-enterprise': 'FaceAuth',
-    'nav-cta': 'Vorbestellen 279€',
+    'nav-cta': 'Vorbestellen 369€',
     'mm-product': 'Produkt',
     'mm-more': 'Weitere Produkte',
 
     // Hero — Deutsche Kultur: technisch präzise, sachlich, compliance-orientiert
-    'hero-badge': 'Jetzt erhältlich · Erste 500 Einheiten',
-    'hero-h1-1': 'Die verschlüsselte SSD, die',
-    'hero-h1-2': 'sich nur für Sie öffnet.',
-    'hero-sub': '1 TB portable SSD mit AES-256 Hardware-Verschlüsselung. Ihr Gesicht erzeugt den Schlüssel. Ihr Gesicht löscht ihn. <strong>Kein Passwort. Kein gespeicherter Schlüssel.</strong>',
-    'hero-cta-primary': 'Vorbestellen — 279€',
+    'hero-badge': '2 TB · 369€ · 70€ weniger als Samsung T7',
+    'hero-h1-1': '2 TB Premium-SSD mit',
+    'hero-h1-2': 'integrierter NFC-Entsperrung.',
+    'hero-sub': '1050 MB/s. CNC-Aluminiumgehäuse. AES-256 Hardware-Verschlüsselung. <strong>Die gleiche Sicherheit, der Banken vertrauen — jetzt in Ihrer Tasche.</strong>',
+    'hero-cta-primary': '2 TB vorbestellen — 369€',
     'hero-cta-secondary': 'Funktionsweise ansehen',
-    'trust-1': 'AES-256 Hardware',
-    'trust-2': 'Null Schlüsselspeicherung',
-    'trust-3': '<2s Entsperrung',
-    'trust-4': 'Weltweiter Versand',
+    'trust-1': '1050 MB/s Lesen',
+    'trust-2': '2 TB Kapazität',
+    'trust-3': 'NFC-Entsperrung',
+    'trust-4': 'AES-256 Verschlüsselung',
+
+    // §5.5 NFC One-touch unlock
+    'nfc-label': 'Ein-Tipp-Entsperrung',
+    'nfc-h2-1': 'Tippen Sie Ihr Telefon an.',
+    'nfc-h2-2': 'Die Festplatte öffnet sich.',
+    'nfc-lead': 'Halten Sie ein NFC-fähiges Telefon nahe an die Festplatte. Kein Fingerabdruck-Scan. Kein Passwort eintippen. Authentifizierung in unter zwei Sekunden — aber nur für das Gesicht, dem diese Festplatte gehört.',
+    'nfc-card-1-title': 'Kein Fingerabdruck. Kein Passwort.',
+    'nfc-card-1-body': 'Halten Sie einfach Ihr Telefon nahe an die Festplatte. Die Facrypt-App führt einen Handshake mit dem NFC-Chip der Festplatte durch, leitet Ihren gesichtsgebundenen Schlüssel ab und entsperrt. Das Ganze dauert unter 2 Sekunden.',
+    'nfc-card-2-title': 'Wo antippen',
+    'nfc-card-2-body': 'Verschiedene Telefone haben NFC-Antennen an verschiedenen Stellen. Halten Sie den markierten Bereich an die NFC-Zone der Festplatte für einen zuverlässigen Handshake.',
+    'nfc-zone-iphone': 'iPhone · obere Kante',
+    'nfc-zone-android': 'Android · Mitte',
+    'nfc-card-3-title': 'Erstes Mal vs. jedes Mal',
+    'nfc-card-3-body': 'Erste Einrichtung: Gesicht in der Facrypt-App registrieren und mit der Festplatte koppeln (einmalig, ~30 Sekunden). Danach: Jede Entsperrung ist nur ein Tipp, niemals Passwörter.',
+    'nfc-footnote': 'NFC-fähiges Telefon erforderlich · Facrypt-App für iOS 15+ / Android 10+ · Funktioniert offline',
+
+    // §8.7 Locked = Invisible
+    'inv-label': 'Gesperrt = Unsichtbar',
+    'inv-h2-1': 'Wenn nicht entsperrt,',
+    'inv-h2-2': 'existiert sie nicht.',
+    'inv-lead': 'Stecken Sie eine gesperrte VaultDrive in einen Computer. Nichts passiert. Kein Festplatten-Symbol. Keine Mount-Aufforderung. Forensik-Tools sehen USB-Stromaufnahme und einen Controller, der sich weigert, sich zu identifizieren. Selbst das Betriebssystem kann nicht erkennen, was angeschlossen ist.',
+    'inv-state-locked': 'VERBUNDEN · GESPERRT',
+    'inv-state-unlocked': 'ENTSPERRT · GEMOUNTET',
+    'inv-locked-text': 'Computer sieht: USB-Stromaufnahme, keine Identifikation. Forensik-Tools sehen: verweigert Aufzählung. Brute-Force-Angriff auf den Chip liefert nur AES-256-Chiffretext, dessen Knacken länger dauern würde als das Alter des Universums.',
+    'inv-unlocked-text': 'Einmal entsperrt, mountet VaultDrive als standardmäßiges USB-Volume — Lesen, Schreiben, Kopieren, Drag-and-Drop, wie jede andere Festplatte. Telefon trennen oder Kabel ziehen, und sie verschwindet wieder. Sofort.',
+    'inv-p1-title': 'Auto-Sperre beim Trennen',
+    'inv-p1-text': 'Kabel ziehen, vom Laptop weggehen oder Telefon entkoppeln — Festplatte sperrt sich sofort. Null Restzugriffsfenster.',
+    'inv-p2-title': 'Manipulationssicher auf Silizium-Ebene',
+    'inv-p2-text': 'Selbst wenn Angreifer die NAND-Chips ablöten und auf einem Forensik-Rig auslesen, bekommen sie nur AES-256-Chiffretext. Der Entschlüsselungsschlüssel hat im Speicher nie existiert.',
+    'inv-p3-title': 'Inaktivitäts-Timeout',
+    'inv-p3-text': 'Konfigurierbar: 1 / 5 / 15 Minuten ohne Aktivität, Festplatte sperrt sich automatisch, auch wenn noch eingesteckt. Sicher, vom Schreibtisch aufzustehen.',
+
+    // §10.3 Dual-chip security architecture
+    'dc-label': 'Sicherheitsarchitektur',
+    'dc-h2-1': 'Zwei dedizierte Chips.',
+    'dc-h2-2': 'Eine eindeutige Drive-ID.',
+    'dc-lead': 'VaultDrive läuft mit einem hauseigenen Speicher-Controller, einem NFC-Sicherheitselement zur Authentifizierung und einer AES-256-Hardware-Engine zur Verschlüsselung — drei unabhängige Silizium-Pfade, jeder kryptographisch an eine pro Gerät einzigartige, im Werk eingebrannte ID gebunden.',
+    'dc-p1-tag': 'LAYER 1 · NFC SE',
+    'dc-p1-title': 'NFC-Sicherheitselement',
+    'dc-p1-text': 'Ein manipulationssicherer Chip, der den Telefon-zu-Festplatte-Handshake handhabt. Empfängt den gesichtsabgeleiteten Authentifizierungsschlüssel über einen verschlüsselten Nahbereichskanal — und signalisiert erst danach dem Controller.',
+    'dc-p2-tag': 'LAYER 2 · CTRL',
+    'dc-p2-title': 'Hauseigener Speicher-Controller',
+    'dc-p2-text': 'Ein maßgeschneiderter DSCC-Controller, der das NFC SE mit der AES-Engine verbindet. Jede Einheit wird mit einer einzigartigen 128-Bit-UID ausgeliefert, die im Werk eingebrannt wurde — Silizium klonen geht, die Bindung zu replizieren nicht.',
+    'dc-p3-tag': 'LAYER 3 · AES',
+    'dc-p3-title': 'AES-256 Hardware-Engine',
+    'dc-p3-text': 'Dediziertes kryptographisches Silizium, FIPS 140-3 Level 3 ready. Verschlüsselt jedes Byte mit Leitungsgeschwindigkeit — der Controller liefert nie einen Klartextblock an den NAND. Entschlüsselung passiert nur in den flüchtigen Registern dieses Chips.',
+    'dc-footnote': '"Bank-Grade" beschreibt das Architektur-Muster: Trennung von Sicherheitselementen + Hardware-AES + pro Gerät einzigartige ID, derselbe Ansatz wie bei EMV-Zahlungschips. Es bedeutet nicht, dass dieses Produkt eine finanzbranchen-spezifische Zertifizierung trägt.',
 
     // Social proof
     'sp-label': 'Diskutiert in der Security-Community',
@@ -5774,7 +6820,7 @@ const i18n = {
     'product-label': 'Die Hardware',
     'product-h2-1': 'Entwickelt für',
     'product-h2-2': 'alltägliche Unsichtbarkeit.',
-    'product-lead': '1 TB verschlüsselter Speicher. Größe einer Kreditkarte. Sicherheit eines Banktresors.',
+    'product-lead': '2 TB verschlüsselter Speicher. Größe einer Kreditkarte. Sicherheit eines Banktresors.',
     'ps-v1-label': 'Oberseite',
     'ps-v1-title': 'NFC-Authentifizierungsbereich',
     'ps-v1-desc': 'Smartphone hier hinhalten. Eine Sekunde. Die Festplatte entsperrt. Keine Tasten, keine Ports, keine Passwörter.',
@@ -5812,47 +6858,61 @@ const i18n = {
 
     // Compare
     'cmp-label': 'Im Vergleich',
-    'cmp-h2-1': 'Gleiche Bauform.',
-    'cmp-h2-2': 'Grundlegend anders.',
-    'cmp-lead': 'Nicht alle verschlüsselten Festplatten sind gleich. Hier trennt sich VaultDrive vom Rest.',
+    'cmp-h2-1': 'Weniger als Samsung T7.',
+    'cmp-h2-2': 'Mehr als verschlüsselt.',
+    'cmp-lead': 'Echte Spezifikationen, echte Preise. Vergleichen Sie VaultDrive 2 TB mit den meistverkauften portablen SSDs auf Amazon.',
     'cmp-col-feature': 'Merkmal',
-    'cmp-col-sw': 'Software-verschlüsselt',
-    'cmp-col-hw': 'Hardware-verschlüsselt',
-    'cmp-col-vd-sub': 'Biometrisch · Chip-Ebene',
-    'cmp-r1': 'Wo der Schlüssel liegt',
-    'cmp-r1-sw': 'Im OS / RAM',
-    'cmp-r1-hw': 'Auf Laufwerks-Chip',
-    'cmp-r1-vd': 'Nirgendwo. Jedes Mal neu abgeleitet.',
-    'cmp-r2': 'Zwangs-Resistenz',
-    'cmp-r2-sw': 'Passwort extrahierbar',
-    'cmp-r2-hw': 'Passwort extrahierbar',
-    'cmp-r2-vd': 'Kein Schlüssel zum Ausliefern',
-    'cmp-r3': 'Forensische Extraktion',
-    'cmp-r3-sw': 'RAM-Dump möglich',
-    'cmp-r3-hw': 'Chip-Level-Angriffe',
-    'cmp-r3-vd': 'Nichts zu extrahieren',
-    'cmp-r4': 'Biometrische Vorlagenspeicherung',
-    'cmp-r4-sw': 'Nicht zutreffend',
-    'cmp-r4-hw': 'Modellabhängig',
-    'cmp-r4-vd': 'Null Bytes jemals gespeichert',
-    'cmp-r5': 'Entsperrzeit',
-    'cmp-r5-sw': '5–15 Sek.',
-    'cmp-r5-hw': '3–8 Sek.',
-    'cmp-r5-vd': 'Unter 2 Sek.',
-    'cmp-r6': 'DSGVO Art. 9 Konformität',
-    'cmp-r6-sw': 'Manuelle Konfig',
-    'cmp-r6-hw': 'Variabel',
-    'cmp-r6-vd': 'Architektonisch',
-    'cmp-r7': 'Treiberlos auf allen OS',
-    'cmp-r7-sw': 'Nur Windows',
-    'cmp-r7-hw': 'Meisten OS',
-    'cmp-r7-vd': 'Jedes OS',
+    'cmp-col-samsung': 'Samsung T7',
+    'cmp-col-samsung-sub': 'Meistverkaufte 2 TB SSD',
+    'cmp-col-lexar': 'Lexar TouchLock',
+    'cmp-col-lexar-sub': 'NFC-verschlüsselte SSD · 1 TB',
+    'cmp-col-vd-sub': 'NFC + AES-256 + CNC-Aluminium',
+    'cmp-r1': 'Kapazität',
+    'cmp-r1-samsung': '2 TB',
+    'cmp-r1-lexar': 'Max. 1 TB',
+    'cmp-r1-vd': '2 TB',
+    'cmp-r2': 'Preis',
+    'cmp-r2-samsung': '439€',
+    'cmp-r2-lexar': '179€ (1 TB)',
+    'cmp-r2-vd': '369€',
+    'cmp-r3': 'Lesegeschwindigkeit',
+    'cmp-r3-samsung': '1050 MB/s',
+    'cmp-r3-lexar': '450 MB/s',
+    'cmp-r3-vd': '1050 MB/s',
+    'cmp-r4': 'Gehäuse',
+    'cmp-r4-samsung': 'Aluminium',
+    'cmp-r4-lexar': 'Kunststoff',
+    'cmp-r4-vd': 'CNC-Aluminium',
+    'cmp-r5': 'Verschlüsselung',
+    'cmp-r5-samsung': 'AES-256 (Passwort)',
+    'cmp-r5-lexar': 'AES-128',
+    'cmp-r5-vd': 'AES-256 + gesichtsbasierter Schlüssel',
+    'cmp-r6': 'Entsperrmethode',
+    'cmp-r6-samsung': 'Passwort',
+    'cmp-r6-lexar': 'NFC + gekoppeltes Telefon',
+    'cmp-r6-vd': 'NFC + Gesicht / Passwort',
+    'cmp-r7': 'Wo der Schlüssel liegt',
+    'cmp-r7-samsung': 'Auf Laufwerks-Chip',
+    'cmp-r7-lexar': 'Auf Telefon gespeichert',
+    'cmp-r7-vd': 'Nirgendwo — frisch abgeleitet',
+    'cmp-r8': 'Bei Verlust des Entsperrgeräts',
+    'cmp-r8-samsung': 'Wiederherstellung mit Passwort',
+    'cmp-r8-lexar': 'Laufwerk unbrauchbar ohne Recovery-Key',
+    'cmp-r8-vd': 'Beliebiges Gesicht neu registrieren',
+    'cmp-r9': 'USB-Schnittstelle',
+    'cmp-r9-samsung': 'USB 3.2 Gen 2',
+    'cmp-r9-lexar': 'USB 3.2 Gen 1',
+    'cmp-r9-vd': 'USB 3.2 Gen 2',
+    'cmp-r10': 'Betriebssystem-Unterstützung',
+    'cmp-r10-samsung': 'Win / macOS / Android',
+    'cmp-r10-lexar': 'Win / macOS / Linux / iOS / Android',
+    'cmp-r10-vd': 'Alle wichtigen OS',
 
     // Colors
     'colors-label': 'Drei Oberflächen',
     'colors-h2-1': 'Wählen Sie die Hülle.',
     'colors-h2-2': 'Die Sicherheit bleibt gleich.',
-    'colors-lead': 'CNC-präzisionsgefräste Aluminium-Chassis. Laser-gravierte DSCC-Branding. Gleicher Preis.',
+    'colors-lead': 'CNC-präzisionsgefräste Aluminium-Chassis. Laser-gravierte DSCC-Branding. Gleicher Preis von 369€.',
 
     // Application scenarios
     'sa-label': 'In Ihrem Arbeitsalltag',
@@ -5893,6 +6953,8 @@ const i18n = {
     'spec-hero-4-note': 'Schlüssel wird bei Auth abgeleitet, im RAM verwendet, beim Trennen zerstört. Für immer.',
     'spec-r1-key': 'Speichertyp',
     'spec-r1-val': 'NVMe M.2 2242 SSD · 3D TLC NAND',
+    'spec-r1b-key': 'Kapazitätsoptionen',
+    'spec-r1b-val': '2 TB (369€) · 1 TB (229€)',
     'spec-r2-key': 'Schnittstelle',
     'spec-r2-val': 'USB-C 3.2 Gen 2 · 10 Gbps · Abwärtskompatibel USB 3.0/2.0',
     'spec-r3-key': 'Lese- / Schreibgeschwindigkeit',
@@ -6006,14 +7068,14 @@ const i18n = {
     'ent-cta2': 'Whitepaper lesen',
 
     // Final CTA
-    'final-urgency': 'Limitiert auf 500 Stück · Erste Lieferung',
-    'final-h2-1': 'Verlieren Sie die Festplatte.',
-    'final-h2-2': 'Bewahren Sie das Geheimnis.',
-    'final-sub': 'Der Schlüssel, den Ihnen niemand nehmen kann — weil er erst dann existiert, wenn Sie ihn brauchen.',
-    'scarcity-label': 'Erste Charge Verfügbarkeit',
-    'scarcity-count-1': '138',
+    'final-urgency': '2 TB · 369€ · 70€ weniger als Samsung T7',
+    'final-h2-1': 'Premium-SSD.',
+    'final-h2-2': 'Privatsphäre eingebaut.',
+    'final-sub': '2 TB NVMe-Speicher. 1050 MB/s. CNC-Aluminiumgehäuse. AES-256 Hardware-Verschlüsselung mit NFC-Entsperrung. Alles, was Samsung T7 hat — günstiger. Plus alles, was es nicht hat.',
+    'scarcity-label': 'Erste Charge — limitierte Auflage',
+    'scarcity-count-1': '412',
     'scarcity-count-2': 'von 500 verbleibend',
-    'final-cta': 'VaultDrive vorbestellen — 279€',
+    'final-cta': '2 TB vorbestellen — 369€',
     'guarantee-1': '30 Tage Rückgabe',
     'guarantee-2': '3 Jahre Garantie',
     'guarantee-3': 'Weltweit versandkostenfrei',
@@ -6086,9 +7148,9 @@ function applyTranslations(lang) {
 
   // Update HTML title and meta description per language
   const titles = {
-    en: 'VaultDrive — Biometric Encrypted SSD | Your Face is the Key | 1TB $299',
-    ja: 'VaultDrive — 顔認証暗号化SSD | お顔が鍵 | 1TB ¥44,800',
-    de: 'VaultDrive — Biometrisch verschlüsselte SSD | Ihr Gesicht ist der Schlüssel | 1 TB 279€'
+    en: 'VaultDrive — 2TB Portable SSD with NFC Unlock & AES-256 | $399',
+    ja: 'VaultDrive — 2TB ポータブルSSD NFC開錠 & AES-256搭載 | ¥59,800',
+    de: 'VaultDrive — 2 TB Portable SSD mit NFC-Entsperrung & AES-256 | 369€'
   };
   if (titles[lang]) document.title = titles[lang];
 
