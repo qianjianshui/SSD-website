@@ -24,18 +24,16 @@
 <meta name="keywords" content="2TB portable SSD, NFC encrypted SSD, AES-256 portable drive, premium portable SSD, USB 3.2 Gen 2 SSD, samsung t7 alternative, hardware encrypted ssd, 1050 mbps portable ssd">
 
 <!-- Canonical and language alternates -->
-<link rel="canonical" href="https://facrypt.com/vaultdrive/">
-<link rel="alternate" hreflang="en" href="https://facrypt.com/vaultdrive/">
-<link rel="alternate" hreflang="ja" href="https://facrypt.com/ja/vaultdrive/">
-<link rel="alternate" hreflang="de" href="https://facrypt.com/de/vaultdrive/">
-<link rel="alternate" hreflang="x-default" href="https://facrypt.com/vaultdrive/">
+<link rel="canonical" href="https://facrypt.com/">
+<link rel="alternate" hreflang="en" href="https://facrypt.com/">
+<link rel="alternate" hreflang="x-default" href="https://facrypt.com/">
 
 <!-- Open Graph — social sharing -->
 <meta property="og:type" content="product">
 <meta property="og:title" content="VaultDrive — 2TB Premium SSD with NFC Unlock & AES-256">
 <meta property="og:description" content="1050 MB/s. CNC aluminum. NFC unlock. AES-256 encryption. Less than Samsung T7. More than encrypted.">
-<meta property="og:image" content="https://facrypt.com/assets/vaultdrive-og.jpg">
-<meta property="og:url" content="https://facrypt.com/vaultdrive/">
+<meta property="og:image" content="https://facrypt.com/outputs/generated_images/IMG-24_social_og_banner.png">
+<meta property="og:url" content="https://facrypt.com/">
 <meta property="og:site_name" content="Facrypt">
 <meta property="og:locale" content="en_US">
 <meta property="og:locale:alternate" content="ja_JP">
@@ -47,7 +45,7 @@
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:title" content="VaultDrive — 2TB Premium SSD with NFC + AES-256">
 <meta name="twitter:description" content="1050 MB/s. CNC aluminum. NFC unlock. $399 — $70 less than Samsung T7 2TB.">
-<meta name="twitter:image" content="https://facrypt.com/assets/vaultdrive-twitter.jpg">
+<meta name="twitter:image" content="https://facrypt.com/outputs/generated_images/IMG-24_social_og_banner.png">
 
 <!-- ═══════════════════════════════════════════════════
      JSON-LD STRUCTURED DATA — Product + FAQ + Org
@@ -85,7 +83,7 @@
   "gtin": "0000000000000",
   "offers": {
     "@type": "Offer",
-    "url": "https://facrypt.com/vaultdrive/#order",
+    "url": "https://facrypt.com/#order",
     "priceCurrency": "USD",
     "price": "399.00",
     "priceValidUntil": "2026-12-31",
@@ -103,13 +101,6 @@
         "name": "Worldwide"
       }
     }
-  },
-  "aggregateRating": {
-    "@type": "AggregateRating",
-    "ratingValue": "4.9",
-    "reviewCount": "247",
-    "bestRating": "5",
-    "worstRating": "1"
   },
   "additionalProperty": [
     {"@type": "PropertyValue", "name": "Storage Capacity", "value": "2 TB"},
@@ -163,7 +154,7 @@
       "name": "How does VaultDrive work without storing my biometric data?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Your phone camera captures 128 facial geometry points and runs them through a deterministic key derivation algorithm. The same face always produces the same AES-256 key, but the key only exists in memory for the moment of authentication. No facial image, template, or biometric data is ever stored — on your phone, on our servers, or on the drive."
+        "text": "Authentication runs entirely on your phone, on-device and offline. The unlock credential is bound to you personally (person-bound) and exists only in memory for the moment of authentication. No facial image, template, or biometric data is ever stored — on your phone, on our servers, or on the drive."
       }
     },
     {
@@ -195,7 +186,7 @@
       "name": "How is VaultDrive different from software-encrypted drives like BitLocker?",
       "acceptedAnswer": {
         "@type": "Answer",
-        "text": "Software encryption stores the key somewhere — in the OS, on a chip, or derived from a password that can be guessed or coerced. VaultDrive's key is derived fresh each time from your face and destroyed on disconnect. There is nothing stored to extract, nothing to crack, and nothing to coerce out of you."
+        "text": "Software encryption stores the key somewhere — in the OS, on a chip, or derived from a password that can be guessed or coerced. VaultDrive's unlock credential requires your live, in-person authentication and is destroyed on disconnect. There is nothing stored to extract, nothing to crack, and nothing to coerce out of you."
       }
     },
     {
@@ -680,6 +671,163 @@ body.menu-open { overflow:hidden; }
   position:relative;
   filter:drop-shadow(0 40px 80px rgba(0,101,153,.15))
          drop-shadow(0 10px 24px rgba(11,20,32,.08));
+}
+.hero-product-stage > svg { display:none; }
+
+/* Generated imagery mapped to the product story */
+.generated-img {
+  display:block;
+  width:100%;
+  height:auto;
+  object-fit:cover;
+}
+.generated-img.contain { object-fit:contain; }
+.generated-frame {
+  position:relative;
+  overflow:hidden;
+  border:1px solid var(--gray-5);
+  border-radius:var(--r);
+  background:var(--white);
+  box-shadow:0 18px 50px rgba(11,20,32,.08);
+}
+.generated-frame::after {
+  content:'';
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  box-shadow:inset 0 1px 0 rgba(255,255,255,.75);
+}
+.hero-generated-img {
+  border-radius:26px;
+  background:transparent;
+}
+.trust-visual {
+  max-width:820px;
+  margin:32px auto 0;
+  border-radius:22px;
+}
+.trust-visual .generated-img {
+  aspect-ratio:16/7;
+  object-fit:cover;
+  object-position:center;
+}
+.problem-visual {
+  grid-column:1 / -1;
+  border-radius:24px;
+  margin-top:8px;
+}
+.problem-visual .generated-img,
+.solution-visual .generated-img,
+.nfc-demo .generated-img,
+.product-hero-visual .generated-img,
+.scenario-card .generated-img,
+.invisible-visual .generated-img,
+.color-generated .generated-img,
+.specs-visual .generated-img,
+.audience-visual .generated-img,
+.enterprise-visual .generated-img,
+.final-product-visual .generated-img {
+  aspect-ratio:16/9;
+}
+.solution-visual {
+  max-width:920px;
+  margin:48px auto 0;
+  border-radius:26px;
+}
+.how-step-visual {
+  width:100%;
+  max-width:290px;
+  margin:0 auto 22px;
+  border-radius:18px;
+  overflow:hidden;
+  border:1px solid var(--gray-5);
+  background:var(--white);
+  box-shadow:0 12px 32px rgba(11,20,32,.08);
+}
+.how-step-visual .generated-img {
+  aspect-ratio:4/3;
+}
+.nfc-demo .generated-img {
+  position:relative;
+  z-index:1;
+  border-radius:22px;
+  box-shadow:0 20px 60px rgba(0,85,142,.12);
+}
+.nfc-demo .generated-img + svg { display:none; }
+.nfc-position-visual {
+  margin-top:14px;
+  border-radius:12px;
+  overflow:hidden;
+  border:1px solid var(--gray-5);
+}
+.nfc-position-visual .generated-img { aspect-ratio:16/9; }
+.product-hero-visual {
+  margin:0 auto 28px;
+  border-radius:26px;
+}
+.ps-view-visual .generated-img,
+.sa-card-visual .generated-img {
+  position:relative;
+  z-index:1;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  border-radius:12px;
+}
+.ps-view-visual .generated-img + svg,
+.sa-card-visual .generated-img + svg { display:none; }
+.scenario-card .scenario-icon-wrap {
+  padding:0;
+  height:150px;
+}
+.scenario-card .generated-img {
+  height:100%;
+  border-radius:0;
+}
+.invisible-visual {
+  margin-bottom:28px;
+  border-radius:26px;
+}
+.invisible-compare.generated-first { margin-top:28px; }
+.color-generated {
+  position:absolute;
+  inset:0;
+  z-index:2;
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  padding:24px;
+  pointer-events:none;
+}
+.color-generated .generated-img {
+  max-width:860px;
+  border-radius:22px;
+  box-shadow:0 28px 70px rgba(0,85,142,.12);
+}
+.colors-showcase .color-stage { opacity:0; }
+.specs-visual,
+.audience-visual {
+  margin:0 auto 42px;
+  border-radius:26px;
+}
+.usecase-card.has-photo {
+  padding-top:0;
+  overflow:hidden;
+}
+.usecase-photo {
+  margin:0 -30px 24px;
+  border-bottom:1px solid var(--gray-5);
+}
+.usecase-photo .generated-img { aspect-ratio:4/3; }
+.enterprise-visual .generated-img {
+  border-radius:22px;
+  box-shadow:0 22px 70px rgba(0,0,0,.24);
+}
+.enterprise-visual .generated-img + svg { display:none; }
+.final-product-visual {
+  max-width:760px;
+  margin:0 auto 42px;
+  border-radius:26px;
 }
 
 /* ═══════════════════════════════════════════════════
@@ -2811,6 +2959,7 @@ body.menu-open { overflow:hidden; }
   /* Social proof */
   .social-proof-logos { gap:32px; }
   .sp-logo { font-size:14px; }
+  .trust-visual { margin-left:24px; margin-right:24px; }
 
   /* Part 2 sections */
   .problem, .solution, .how, .product-showcase, .scenarios, .compare {
@@ -2838,6 +2987,7 @@ body.menu-open { overflow:hidden; }
 
   /* How steps: keep 3 cols on tablet but tighter */
   .how-steps { gap:20px; }
+  .how-step-visual { max-width:240px; }
   .how-step-number { width:96px; height:96px; }
   .how-step-number-inner { width:76px; height:76px; }
   .how-step-icon { width:34px; height:34px; }
@@ -2853,6 +3003,7 @@ body.menu-open { overflow:hidden; }
   .colors-inner, .scenarios-app-inner { padding:0 24px; }
   .colors-showcase { min-height:320px; }
   .color-stage svg { max-width:400px; }
+  .color-generated { padding:20px; }
 
   /* Bento grid: simplify for tablet (4 cols) */
   .scenarios-app-grid {
@@ -2864,6 +3015,7 @@ body.menu-open { overflow:hidden; }
   .sa-square { grid-column:span 2; grid-row:span 1; }
   .sa-tall { grid-column:span 4; grid-row:span 1; }
   .sa-large .sa-card-visual { min-height:280px; }
+  .sa-card-visual .generated-img { min-height:220px; }
 
   /* Part 3 tablet */
   .specs, .audience, .faq, .enterprise, .final-cta { padding:96px 0; }
@@ -2879,10 +3031,13 @@ body.menu-open { overflow:hidden; }
   .usecase-inner { padding:0 24px; }
   .usecase-grid { grid-template-columns:1fr 1fr; gap:18px; }
   .usecase-card { min-height:auto; padding:28px 26px 24px; }
+  .usecase-card.has-photo { padding-top:0; }
+  .usecase-photo { margin:0 -26px 22px; }
 
   .enterprise-card { grid-template-columns:1fr; min-height:auto; }
   .enterprise-left { padding:48px 40px; }
   .enterprise-right { min-height:240px; padding:32px; border-top:1px solid rgba(0,181,219,.1); }
+  .final-product-visual { max-width:680px; }
 
   .footer-grid { grid-template-columns:1.2fr 1fr 1fr 1fr; gap:32px; }
   .footer-brand { grid-column:span 1; }
@@ -2901,8 +3056,22 @@ body.menu-open { overflow:hidden; }
   .hero { padding:calc(var(--nav-h) + 28px) 0 48px; }
   .hero-content { padding:0 20px; }
   .hero-h1 {
-    font-size:clamp(32px, 9vw, 48px);
+    font-size:clamp(30px, 8vw, 40px);
+    line-height:1.08;
+    letter-spacing:-.035em;
+    max-width:340px;
+    margin-left:auto;
+    margin-right:auto;
     margin-bottom:14px;
+    overflow-wrap:anywhere;
+  }
+  .hero-eyebrow {
+    max-width:calc(100vw - 40px);
+    white-space:normal;
+    justify-content:center;
+    line-height:1.45;
+    font-size:10px;
+    letter-spacing:.12em;
   }
   .hero-sub {
     font-size:16px;
@@ -2914,10 +3083,14 @@ body.menu-open { overflow:hidden; }
     gap:10px;
     align-items:stretch;
     padding:0 8px;
+    max-width:340px;
+    margin-left:auto;
+    margin-right:auto;
   }
   .btn-primary, .btn-secondary {
     justify-content:center;
     padding:14px 24px;
+    max-width:100%;
   }
   .hero-trust {
     margin-top:32px;
@@ -2928,6 +3101,7 @@ body.menu-open { overflow:hidden; }
     margin-top:40px;
     padding:0 12px;
   }
+  .hero-generated-img { border-radius:18px; }
 
   /* Social proof */
   .social-proof { padding:32px 0; }
@@ -2935,6 +3109,14 @@ body.menu-open { overflow:hidden; }
   .social-proof-logos { gap:20px 28px; padding:0 20px; }
   .sp-logo { font-size:13px; }
   .sp-logo-subtext { display:none; }
+  .trust-visual {
+    margin:24px 20px 0;
+    border-radius:16px;
+  }
+  .trust-visual .generated-img {
+    aspect-ratio:4/3;
+    object-position:center top;
+  }
 
   /* Part 2 mobile */
   .problem, .solution, .how, .product-showcase, .scenarios, .compare {
@@ -2955,6 +3137,24 @@ body.menu-open { overflow:hidden; }
     margin-top:44px;
   }
   .problem-quote { padding:28px; }
+  .problem-visual,
+  .solution-visual,
+  .product-hero-visual,
+  .invisible-visual,
+  .specs-visual,
+  .audience-visual,
+  .final-product-visual {
+    border-radius:18px;
+  }
+  .problem-visual .generated-img,
+  .solution-visual .generated-img,
+  .product-hero-visual .generated-img,
+  .invisible-visual .generated-img,
+  .specs-visual .generated-img,
+  .audience-visual .generated-img,
+  .final-product-visual .generated-img {
+    aspect-ratio:4/3;
+  }
 
   /* Solution */
   .solution-body { font-size:16px; }
@@ -2975,6 +3175,14 @@ body.menu-open { overflow:hidden; }
   .how-step-number-inner { width:68px; height:68px; }
   .how-step-icon { width:30px; height:30px; }
   .how-step-body { font-size:14px; }
+  .how-step-visual {
+    max-width:320px;
+    border-radius:16px;
+  }
+
+  .nfc-demo { padding:18px; }
+  .nfc-demo .generated-img { border-radius:16px; }
+  .nfc-position-visual .generated-img { aspect-ratio:4/3; }
 
   /* Product showcase: 1 col */
   .ps-views {
@@ -3007,6 +3215,8 @@ body.menu-open { overflow:hidden; }
   .colors-showcase { min-height:260px; border-radius:var(--r); }
   .color-stage { padding:24px; }
   .color-stage svg { max-width:280px; }
+  .color-generated { padding:14px; }
+  .color-generated .generated-img { border-radius:16px; }
   .color-swatch { width:36px; height:36px; }
   .color-swatch-inner { width:26px; height:26px; }
   .color-name-label { font-size:18px; }
@@ -3023,6 +3233,10 @@ body.menu-open { overflow:hidden; }
   }
   .sa-card-visual { min-height:180px; padding:24px; }
   .sa-large .sa-card-visual { min-height:220px; padding:28px; }
+  .sa-card-visual .generated-img {
+    min-height:0;
+    aspect-ratio:4/3;
+  }
   .sa-card-body { padding:18px 22px 22px; }
   .sa-card-title, .sa-large .sa-card-title { font-size:16px; }
   .sa-card-desc { font-size:12px; }
@@ -3052,6 +3266,8 @@ body.menu-open { overflow:hidden; }
   .usecase-header { margin-bottom:48px; }
   .usecase-grid { grid-template-columns:1fr; gap:14px; }
   .usecase-card { padding:26px 24px 22px; min-height:auto; }
+  .usecase-card.has-photo { padding-top:0; }
+  .usecase-photo { margin:0 -24px 20px; }
   .usecase-quote { font-size:17px; }
   .usecase-illustration { width:52px; height:52px; margin-bottom:18px; }
 
@@ -3062,12 +3278,14 @@ body.menu-open { overflow:hidden; }
   .enterprise-card { border-radius:var(--r); }
   .enterprise-left { padding:40px 28px; }
   .enterprise-right { min-height:180px; padding:24px; }
+  .enterprise-visual .generated-img { border-radius:16px; }
   .enterprise-h3 { font-size:24px; }
   .enterprise-body { font-size:14px; }
   .enterprise-ctas { flex-direction:column; align-items:stretch; gap:10px; }
   .btn-enterprise-primary, .btn-enterprise-ghost { justify-content:center; }
 
   .scarcity { max-width:100%; padding:14px 16px; }
+  .final-product-visual { margin-bottom:30px; }
   .final-h2 { font-size:clamp(36px, 10vw, 56px); }
   .final-sub { font-size:16px; margin-bottom:32px; }
   .final-ctas { padding:0 16px; }
@@ -3147,7 +3365,7 @@ body.menu-open { overflow:hidden; }
       <a class="nav-link" href="#compare" data-i18n="nav-compare">Compare</a>
       <a class="nav-link" href="#specs" data-i18n="nav-specs">Specs</a>
       <a class="nav-link" href="#faq" data-i18n="nav-faq">FAQ</a>
-      <a class="nav-link" href="#enterprise" data-i18n="nav-enterprise">FaceAuth</a>
+      <a class="nav-link" href="#enterprise" data-i18n="nav-enterprise">FacePass</a>
     </div>
 
     <div class="nav-r">
@@ -3195,7 +3413,7 @@ body.menu-open { overflow:hidden; }
   </div>
   <div class="mobile-menu-section">
     <div class="mobile-menu-title" data-i18n="mm-more">Also from Facrypt</div>
-    <a href="#enterprise" data-close data-i18n="nav-enterprise">FaceAuth — Enterprise</a>
+    <a href="#enterprise" data-close data-i18n="nav-enterprise">FacePass — Enterprise</a>
   </div>
   <div class="mobile-menu-section">
     <button class="btn-primary" style="width:100%; justify-content:center;" data-i18n="nav-cta">Pre-order $399</button>
@@ -3263,6 +3481,11 @@ body.menu-open { overflow:hidden; }
   <!-- Hero Product Image (VaultDrive — Production Render) -->
   <div class="hero-product">
     <div class="hero-product-stage">
+      <img class="generated-img hero-generated-img contain"
+           src="outputs/generated_images/IMG-01_hero_product.png"
+           alt="VaultDrive space gray portable SSD with NFC unlock zone and USB-C port"
+           loading="eager"
+           fetchpriority="high">
       <svg viewBox="0 0 780 520" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="heroDriveTitle">
         <title id="heroDriveTitle">VaultDrive — 2TB Premium SSD with NFC Unlock · Space Gray aluminum</title>
         <defs>
@@ -3387,39 +3610,21 @@ body.menu-open { overflow:hidden; }
 <!-- ═════════════════════════════════════════════
      §2 SOCIAL PROOF — tech community credibility
 ═════════════════════════════════════════════ -->
-<section class="social-proof" aria-label="Featured in">
-  <div class="social-proof-label" data-i18n="sp-label">Discussed across the security community</div>
+<section class="social-proof" aria-label="Product guarantees">
+  <div class="social-proof-label" data-i18n="sp-label">Engineered and guaranteed</div>
   <div class="social-proof-logos">
-    <div class="sp-logo">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 0C5.4 0 0 5.4 0 12s5.4 12 12 12 12-5.4 12-12S18.6 0 12 0zm5.4 17.4h-2.2V9.6h2.2v7.8zm-1.1-8.9c-.7 0-1.3-.6-1.3-1.3s.6-1.3 1.3-1.3 1.3.6 1.3 1.3-.6 1.3-1.3 1.3z"/></svg>
-      <span>Hacker News</span>
-      <span class="sp-logo-subtext">Top 5 post</span>
-    </div>
-    <div class="sp-logo">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-.5 15.5H8v-8h3.5v8zm-1.75-9.1c-1.05 0-1.9-.85-1.9-1.9s.85-1.9 1.9-1.9 1.9.85 1.9 1.9-.85 1.9-1.9 1.9zM17.5 17.5h-3.5v-4c0-1-.4-1.8-1.3-1.8s-1.3.8-1.3 1.8v4h-3.5v-8h3.5v1c.5-.7 1.3-1.2 2.3-1.2 2 0 3.8 1.3 3.8 4v4.2z"/></svg>
-      <span>Product Hunt</span>
-      <span class="sp-logo-subtext">Launching Soon</span>
-    </div>
-    <div class="sp-logo">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-2 14.5l-4-4 1.4-1.4L10 13.7l6.6-6.6L18 8.5l-8 8z"/></svg>
-      <span>GitHub</span>
-      <span class="sp-logo-subtext">2.1k stars</span>
-    </div>
-    <div class="sp-logo">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M20 4H4c-1.1 0-1.99.9-1.99 2L2 18c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 14H4V8l8 5 8-5v10zm-8-7L4 6h16l-8 5z"/></svg>
-      <span>r/privacy</span>
-      <span class="sp-logo-subtext">4.2k upvotes</span>
-    </div>
-    <div class="sp-logo">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
-      <span>EFF</span>
-      <span class="sp-logo-subtext">Privacy-first</span>
-    </div>
-    <div class="sp-logo">
-      <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm1 17h-2v-6h2v6zm0-8h-2V7h2v4z"/></svg>
-      <span>Schneier on Security</span>
-      <span class="sp-logo-subtext">Commentary</span>
-    </div>
+    <div class="sp-logo"><span>AES-256</span><span class="sp-logo-subtext">Hardware encryption</span></div>
+    <div class="sp-logo"><span>FIPS 140-3</span><span class="sp-logo-subtext">SE, designed to Level 3</span></div>
+    <div class="sp-logo"><span>GDPR · CCPA</span><span class="sp-logo-subtext">Zero biometric storage</span></div>
+    <div class="sp-logo"><span>3-Year Warranty</span><span class="sp-logo-subtext">Lifetime firmware updates</span></div>
+    <div class="sp-logo"><span>30-Day Returns</span><span class="sp-logo-subtext">Money-back guarantee</span></div>
+    <div class="sp-logo"><span>Product Hunt</span><span class="sp-logo-subtext">Launching soon</span></div>
+  </div>
+  <div class="generated-frame trust-visual sr d1">
+    <img class="generated-img"
+         src="outputs/generated_images/IMG-02_trust_micro_scenes.png"
+         alt="VaultDrive key benefits: speed, storage, NFC unlock, and AES-256 security"
+         loading="lazy">
   </div>
 </section>
 
@@ -3457,6 +3662,13 @@ body.menu-open { overflow:hidden; }
         <p><strong>Biometric systems store templates.</strong> When Capital One, LastPass, or 23andMe suffered breaches, the stolen data remained useful to attackers forever. Your fingerprint is not a secret. Your face, once digitized and stored, is no different.</p>
         <p>Every other secure drive on the market asks the same question: <em>"Where should we put the key?"</em> VaultDrive asks: <strong>"What if the key doesn't have to exist?"</strong></p>
       </div>
+
+      <div class="generated-frame problem-visual sr d3">
+        <img class="generated-img"
+             src="outputs/generated_images/IMG-03_problem_stolen_drive.png"
+             alt="A misplaced encrypted portable SSD near a laptop and work bag in a cafe"
+             loading="lazy">
+      </div>
     </div>
   </div>
 </section>
@@ -3476,8 +3688,14 @@ body.menu-open { overflow:hidden; }
       <span data-i18n="solution-h2-3">Your data.</span>
     </h2>
     <p class="solution-body" data-i18n="solution-body">
-      VaultDrive derives its AES-256 encryption key from your face in real time, using your phone's camera. The key exists for the moment of authentication, then ceases to exist. <strong style="color:var(--ink)">Nothing is stored. Nothing can be stolen.</strong>
+      VaultDrive's AES-256 unlock credential is bound to you — verified in real time on your phone, never written to storage. It exists for the moment of authentication, then ceases to exist. <strong style="color:var(--ink)">Nothing is stored. Nothing can be stolen.</strong>
     </p>
+    <div class="generated-frame solution-visual">
+      <img class="generated-img"
+           src="outputs/generated_images/IMG-04_solution_face_key_data.png"
+           alt="Phone-based face authentication sends a temporary encrypted credential to VaultDrive"
+           loading="lazy">
+    </div>
   </div>
 </section>
 
@@ -3493,7 +3711,7 @@ body.menu-open { overflow:hidden; }
       <div class="how-label" data-i18n="how-label">How It Works</div>
       <h2 class="how-h2" id="how-heading" data-i18n="how-h2">Three steps. Zero stored keys.</h2>
       <p class="how-sub" data-i18n="how-sub">
-        Face-to-unlock is not facial recognition. It's cryptographic derivation. Here's the difference.
+        Face-to-unlock is not facial recognition. It's cryptographic authentication with zero stored secrets. Here's the difference.
       </p>
     </div>
 
@@ -3514,9 +3732,15 @@ body.menu-open { overflow:hidden; }
           </div>
           <div class="how-step-label">STEP 01</div>
         </div>
+        <div class="how-step-visual">
+          <img class="generated-img"
+               src="outputs/generated_images/IMG-05_step1_phone_auth.png"
+               alt="A phone verifies the user locally before unlocking VaultDrive"
+               loading="lazy">
+        </div>
         <h3 class="how-step-title" data-i18n="step-1-title">Look at your phone.</h3>
         <p class="how-step-body" data-i18n="step-1-body">
-          Open the Facrypt app. In under one second, your camera reads 128 facial geometry points and derives a unique AES-256 key. The raw image is discarded immediately.
+          Open the Facrypt app. In under one second, your phone verifies it's really you — entirely on-device. The raw image is discarded immediately; nothing is stored.
         </p>
         <span class="how-step-chip" data-i18n="step-1-chip">On-device · Offline</span>
       </div>
@@ -3534,9 +3758,15 @@ body.menu-open { overflow:hidden; }
           </div>
           <div class="how-step-label">STEP 02</div>
         </div>
+        <div class="how-step-visual">
+          <img class="generated-img"
+               src="outputs/generated_images/IMG-06_nfc_tap_unlock.png"
+               alt="A phone taps the VaultDrive NFC zone to unlock the SSD"
+               loading="lazy">
+        </div>
         <h3 class="how-step-title" data-i18n="step-2-title">Tap to unlock.</h3>
         <p class="how-step-body" data-i18n="step-2-body">
-          Hold your phone near VaultDrive. The derived key transfers via NFC into the drive's hardware security chip — air-gapped, encrypted, in under 100ms.
+          Hold your phone near VaultDrive. Your one-time unlock credential transfers via NFC into the drive's hardware security chip — air-gapped, encrypted, in under 100ms.
         </p>
         <span class="how-step-chip" data-i18n="step-2-chip">NFC · 100ms</span>
       </div>
@@ -3551,6 +3781,12 @@ body.menu-open { overflow:hidden; }
             </svg>
           </div>
           <div class="how-step-label">STEP 03</div>
+        </div>
+        <div class="how-step-visual">
+          <img class="generated-img"
+               src="outputs/generated_images/IMG-07_step3_disconnect_lock.png"
+               alt="VaultDrive locks again when disconnected from a laptop"
+               loading="lazy">
         </div>
         <h3 class="how-step-title" data-i18n="step-3-title">Use it. Then it's gone.</h3>
         <p class="how-step-body" data-i18n="step-3-body">
@@ -3586,6 +3822,10 @@ body.menu-open { overflow:hidden; }
     <div class="nfc-stage sr d1">
       <!-- Visual demo: phone + drive with NFC waves -->
       <div class="nfc-demo">
+        <img class="generated-img"
+             src="outputs/generated_images/IMG-06_nfc_tap_unlock.png"
+             alt="Phone hovering above VaultDrive while NFC waves unlock the drive"
+             loading="lazy">
         <svg class="nfc-demo-svg" viewBox="0 0 480 360" fill="none" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="nfcDemoTitle">
           <title id="nfcDemoTitle">Phone tapping VaultDrive's NFC zone for one-touch unlock</title>
           <defs>
@@ -3667,7 +3907,7 @@ body.menu-open { overflow:hidden; }
             <span data-i18n="nfc-card-1-title">No fingerprint. No password.</span>
           </div>
           <div class="nfc-info-body" data-i18n="nfc-card-1-body">
-            Just hold your phone near the drive. The Facrypt app handshakes with the drive's NFC chip, derives your face-bound key, and unlocks. The whole thing finishes in under 2 seconds.
+            Just hold your phone near the drive. The Facrypt app handshakes with the drive's NFC chip, verifies it's really you, and unlocks. The whole thing finishes in under 2 seconds.
           </div>
         </div>
 
@@ -3701,6 +3941,12 @@ body.menu-open { overflow:hidden; }
               </svg>
               <div class="nfc-zone-label" data-i18n="nfc-zone-android">Android · center</div>
             </div>
+          </div>
+          <div class="nfc-position-visual">
+            <img class="generated-img"
+                 src="outputs/generated_images/IMG-08_nfc_tap_positions.png"
+                 alt="NFC tap position guide for phones and VaultDrive"
+                 loading="lazy">
           </div>
         </div>
 
@@ -3743,10 +3989,21 @@ body.menu-open { overflow:hidden; }
       </p>
     </div>
 
+    <div class="generated-frame product-hero-visual sr d1">
+      <img class="generated-img"
+           src="outputs/generated_images/IMG-09_hardware_three_views.png"
+           alt="VaultDrive top face, side profile, and exploded internal hardware view"
+           loading="lazy">
+    </div>
+
     <div class="ps-views">
       <!-- View 1: Top / NFC zone -->
       <div class="ps-view sr d1">
         <div class="ps-view-visual">
+          <img class="generated-img"
+               src="outputs/generated_images/IMG-01_hero_product.png"
+               alt="VaultDrive top face with NFC authentication zone"
+               loading="lazy">
           <svg viewBox="0 0 280 220" fill="none" style="width:100%;max-width:240px" aria-hidden="true">
             <defs>
               <linearGradient id="pv1-body" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -3786,6 +4043,10 @@ body.menu-open { overflow:hidden; }
       <!-- View 2: Side / USB-C -->
       <div class="ps-view sr d2">
         <div class="ps-view-visual">
+          <img class="generated-img"
+               src="outputs/generated_images/IMG-17_credit_card_size_compare.png"
+               alt="VaultDrive shown next to a card and passport sleeve for size comparison"
+               loading="lazy">
           <svg viewBox="0 0 280 220" fill="none" style="width:100%;max-width:240px" aria-hidden="true">
             <defs>
               <linearGradient id="pv2-body" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -3813,6 +4074,10 @@ body.menu-open { overflow:hidden; }
       <!-- View 3: Inside / Security chip -->
       <div class="ps-view sr d3">
         <div class="ps-view-visual">
+          <img class="generated-img"
+               src="outputs/generated_images/IMG-10_secure_element_closeup.png"
+               alt="VaultDrive secure element chip inside the encrypted SSD"
+               loading="lazy">
           <svg viewBox="0 0 280 220" fill="none" style="width:100%;max-width:240px" aria-hidden="true">
             <defs>
               <linearGradient id="pv3-chip" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -3875,7 +4140,9 @@ body.menu-open { overflow:hidden; }
 
   <div class="scenarios-rail" id="scenarios-rail">
     <article class="scenario-card">
-      <div class="scenario-icon-wrap"><span class="scenario-emoji">🚕</span></div>
+      <div class="scenario-icon-wrap">
+        <img class="generated-img" src="outputs/generated_images/IMG-11_taxi_loss_scenario.png" alt="VaultDrive left on a taxi seat" loading="lazy">
+      </div>
       <div class="scenario-body">
         <div class="scenario-situation" data-i18n="sc-1-situation">Left in a taxi</div>
         <h3 class="scenario-result" data-i18n="sc-1-result">The computer doesn't recognize it.</h3>
@@ -3883,7 +4150,9 @@ body.menu-open { overflow:hidden; }
       </div>
     </article>
     <article class="scenario-card">
-      <div class="scenario-icon-wrap"><span class="scenario-emoji">🔧</span></div>
+      <div class="scenario-icon-wrap">
+        <img class="generated-img" src="outputs/generated_images/IMG-12_repair_shop_scenario.png" alt="VaultDrive connected at a laptop repair desk" loading="lazy">
+      </div>
       <div class="scenario-body">
         <div class="scenario-situation" data-i18n="sc-2-situation">Sent in for laptop repair</div>
         <h3 class="scenario-result" data-i18n="sc-2-result">Technicians see an encrypted box.</h3>
@@ -3891,7 +4160,9 @@ body.menu-open { overflow:hidden; }
       </div>
     </article>
     <article class="scenario-card">
-      <div class="scenario-icon-wrap"><span class="scenario-emoji">🛂</span></div>
+      <div class="scenario-icon-wrap">
+        <img class="generated-img" src="outputs/generated_images/IMG-13_border_inspection_scenario.png" alt="VaultDrive in an airport security tray" loading="lazy">
+      </div>
       <div class="scenario-body">
         <div class="scenario-situation" data-i18n="sc-3-situation">Border inspection</div>
         <h3 class="scenario-result" data-i18n="sc-3-result">There is no key to hand over.</h3>
@@ -3994,7 +4265,7 @@ body.menu-open { overflow:hidden; }
         <div class="compare-cell label" data-i18n="cmp-r5">Encryption</div>
         <div class="compare-cell value"><span data-i18n="cmp-r5-samsung">AES-256 (password)</span></div>
         <div class="compare-cell value"><span data-i18n="cmp-r5-lexar">AES-128</span><span class="compare-icon-partial">!</span></div>
-        <div class="compare-cell value winner"><span data-i18n="cmp-r5-vd">AES-256 + face-derived key</span><span class="compare-icon-good">✓</span></div>
+        <div class="compare-cell value winner"><span data-i18n="cmp-r5-vd">AES-256 + person-bound key</span><span class="compare-icon-good">✓</span></div>
       </div>
 
       <div class="compare-row">
@@ -4008,7 +4279,7 @@ body.menu-open { overflow:hidden; }
         <div class="compare-cell label" data-i18n="cmp-r7">Where the key lives</div>
         <div class="compare-cell value"><span data-i18n="cmp-r7-samsung">On drive chip</span></div>
         <div class="compare-cell value"><span data-i18n="cmp-r7-lexar">Stored on phone</span><span class="compare-icon-partial">!</span></div>
-        <div class="compare-cell value winner"><span data-i18n="cmp-r7-vd">Nowhere — derived fresh</span><span class="compare-icon-good">✓</span></div>
+        <div class="compare-cell value winner"><span data-i18n="cmp-r7-vd">Nowhere — nothing stored</span><span class="compare-icon-good">✓</span></div>
       </div>
 
       <div class="compare-row">
@@ -4064,9 +4335,9 @@ body.menu-open { overflow:hidden; }
           <div class="compare-mobile-row"><span class="compare-mobile-key">Price</span><span class="compare-mobile-val">$399 ($70 less)</span></div>
           <div class="compare-mobile-row"><span class="compare-mobile-key">Speed</span><span class="compare-mobile-val">1050 MB/s</span></div>
           <div class="compare-mobile-row"><span class="compare-mobile-key">Chassis</span><span class="compare-mobile-val">CNC aluminum</span></div>
-          <div class="compare-mobile-row"><span class="compare-mobile-key">Encryption</span><span class="compare-mobile-val">AES-256 + face-derived</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Encryption</span><span class="compare-mobile-val">AES-256 + person-bound</span></div>
           <div class="compare-mobile-row"><span class="compare-mobile-key">Unlock</span><span class="compare-mobile-val">NFC + face / password</span></div>
-          <div class="compare-mobile-row"><span class="compare-mobile-key">Key location</span><span class="compare-mobile-val">Nowhere — derived fresh</span></div>
+          <div class="compare-mobile-row"><span class="compare-mobile-key">Key location</span><span class="compare-mobile-val">Nowhere — nothing stored</span></div>
         </div>
       </div>
     </div>
@@ -4091,6 +4362,13 @@ body.menu-open { overflow:hidden; }
       <p class="section-lead" style="margin:16px auto 0;text-align:center;" data-i18n="inv-lead">
         Plug a locked VaultDrive into any computer. Nothing happens. No drive icon. No mount prompt. Forensic tools see USB power draw and a controller that refuses to identify. Even the operating system can't tell what's connected.
       </p>
+    </div>
+
+    <div class="generated-frame invisible-visual sr d1">
+      <img class="generated-img"
+           src="outputs/generated_images/IMG-14_locked_unlocked_compare.png"
+           alt="Locked VaultDrive does not mount, unlocked VaultDrive appears as a normal external volume"
+           loading="lazy">
     </div>
 
     <div class="invisible-compare sr d1">
@@ -4272,6 +4550,12 @@ body.menu-open { overflow:hidden; }
 
     <!-- Showcase area with morphing drive renders -->
     <div class="colors-showcase sr d1">
+      <div class="color-generated">
+        <img class="generated-img"
+             src="outputs/generated_images/IMG-15_color_variants.png"
+             alt="VaultDrive in space gray, titanium silver, and Facrypt orange"
+             loading="lazy">
+      </div>
       <!-- Space Gray (default) -->
       <div class="color-stage active" data-color="gray">
         <svg viewBox="0 0 600 320" fill="none">
@@ -4426,6 +4710,10 @@ body.menu-open { overflow:hidden; }
       <!-- LARGE: MacBook + VaultDrive scene -->
       <article class="sa-card sa-large sr">
         <div class="sa-card-visual">
+          <img class="generated-img"
+               src="outputs/generated_images/IMG-16_cross_platform_workflow.png"
+               alt="VaultDrive connected in a cross-platform workstation"
+               loading="lazy">
           <svg viewBox="0 0 560 320" fill="none" style="max-width:100%;max-height:100%;">
             <defs>
               <linearGradient id="mac-top" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -4544,6 +4832,10 @@ body.menu-open { overflow:hidden; }
       <!-- WIDE: Size comparison with credit card + hand -->
       <article class="sa-card sa-wide sr d1">
         <div class="sa-card-visual">
+          <img class="generated-img"
+               src="outputs/generated_images/IMG-17_credit_card_size_compare.png"
+               alt="VaultDrive size compared with a card and passport sleeve"
+               loading="lazy">
           <svg viewBox="0 0 400 160" fill="none">
             <defs>
               <linearGradient id="card-grad" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -4617,6 +4909,10 @@ body.menu-open { overflow:hidden; }
       <!-- SQUARE: Phone NFC tap -->
       <article class="sa-card sa-square sr d2">
         <div class="sa-card-visual">
+          <img class="generated-img"
+               src="outputs/generated_images/IMG-06_nfc_tap_unlock.png"
+               alt="Phone tapping VaultDrive for NFC unlock"
+               loading="lazy">
           <svg viewBox="0 0 280 200" fill="none">
             <defs>
               <linearGradient id="phone-body" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -4677,6 +4973,10 @@ body.menu-open { overflow:hidden; }
       <!-- SQUARE: Travel / passport scenario -->
       <article class="sa-card sa-square sr d3">
         <div class="sa-card-visual">
+          <img class="generated-img"
+               src="outputs/generated_images/IMG-13_border_inspection_scenario.png"
+               alt="VaultDrive in an airport security tray with travel essentials"
+               loading="lazy">
           <svg viewBox="0 0 280 200" fill="none">
             <defs>
               <linearGradient id="passport-grad" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -4722,6 +5022,10 @@ body.menu-open { overflow:hidden; }
       <!-- WIDE: Office desk / productivity scene -->
       <article class="sa-card sa-wide sr d4">
         <div class="sa-card-visual">
+          <img class="generated-img"
+               src="outputs/generated_images/IMG-20_freelancer_cafe_privacy.png"
+               alt="VaultDrive on a cafe desk for everyday secure work"
+               loading="lazy">
           <svg viewBox="0 0 400 160" fill="none">
             <defs>
               <linearGradient id="desk-bg" x1="0%" y1="0%" x2="0%" y2="100%">
@@ -4805,6 +5109,10 @@ body.menu-open { overflow:hidden; }
       <!-- TALL: Internal architecture -->
       <article class="sa-card sa-tall sr d5">
         <div class="sa-card-visual">
+          <img class="generated-img"
+               src="outputs/generated_images/IMG-10_secure_element_closeup.png"
+               alt="VaultDrive secure element and internal electronics"
+               loading="lazy">
           <svg viewBox="0 0 560 320" fill="none">
             <defs>
               <linearGradient id="pcb" x1="0%" y1="0%" x2="100%" y2="100%">
@@ -4947,6 +5255,13 @@ body.menu-open { overflow:hidden; }
       </p>
     </div>
 
+    <div class="generated-frame specs-visual sr d1">
+      <img class="generated-img"
+           src="outputs/generated_images/IMG-18_specs_hero_visual.png"
+           alt="VaultDrive technical hero visual for speed, capacity, unlock time, and zero stored keys"
+           loading="lazy">
+    </div>
+
     <!-- Hero stats (4 boxes) -->
     <div class="specs-hero-grid">
       <div class="spec-hero-card highlight sr">
@@ -4977,7 +5292,7 @@ body.menu-open { overflow:hidden; }
         </svg>
         <div class="spec-hero-label" data-i18n="spec-hero-3-label">Unlock Time</div>
         <div class="spec-hero-value">&lt;2<em>s</em></div>
-        <div class="spec-hero-note" data-i18n="spec-hero-3-note">From face scan to mounted volume. Biometric derivation + NFC transfer + AES init.</div>
+        <div class="spec-hero-note" data-i18n="spec-hero-3-note">From face scan to mounted volume. On-device authentication + NFC transfer + AES init.</div>
       </div>
 
       <div class="spec-hero-card highlight sr d3">
@@ -4987,7 +5302,7 @@ body.menu-open { overflow:hidden; }
         </svg>
         <div class="spec-hero-label" data-i18n="spec-hero-4-label">Stored Keys</div>
         <div class="spec-hero-value">0<em> bytes</em></div>
-        <div class="spec-hero-note" data-i18n="spec-hero-4-note">Key is derived on authentication, used in memory, destroyed on disconnect. Forever.</div>
+        <div class="spec-hero-note" data-i18n="spec-hero-4-note">The credential exists only during authentication, used in memory, destroyed on disconnect. Forever.</div>
       </div>
     </div>
 
@@ -5011,11 +5326,11 @@ body.menu-open { overflow:hidden; }
       </div>
       <div class="specs-detail-row">
         <div class="specs-detail-key" data-i18n="spec-r4-key">Security Element</div>
-        <div class="specs-detail-val" data-i18n="spec-r4-val">Dedicated hardware SE · FIPS 140-3 Level 3 certified</div>
+        <div class="specs-detail-val" data-i18n="spec-r4-val">Dedicated hardware SE · FIPS 140-3 Level 3 ready</div>
       </div>
       <div class="specs-detail-row">
         <div class="specs-detail-key" data-i18n="spec-r5-key">Authentication</div>
-        <div class="specs-detail-val" data-i18n="spec-r5-val">NFC · Face-derived AES-256 key (on-device, offline)</div>
+        <div class="specs-detail-val" data-i18n="spec-r5-val">NFC · Person-bound AES-256 credential (on-device, offline)</div>
       </div>
       <div class="specs-detail-row">
         <div class="specs-detail-key" data-i18n="spec-r6-key">Liveness Detection</div>
@@ -5219,7 +5534,7 @@ body.menu-open { overflow:hidden; }
       <div class="dual-chip-pillar">
         <span class="dual-chip-pillar-tag" data-i18n="dc-p1-tag">LAYER 1 · NFC SE</span>
         <div class="dual-chip-pillar-title" data-i18n="dc-p1-title">NFC Secure Element</div>
-        <div class="dual-chip-pillar-text" data-i18n="dc-p1-text">A tamper-resistant chip that handles the phone-to-drive handshake. Receives the face-derived authentication key over a short-range encrypted channel — and only then signals the controller.</div>
+        <div class="dual-chip-pillar-text" data-i18n="dc-p1-text">A tamper-resistant chip that handles the phone-to-drive handshake. Receives the person-bound authentication credential over a short-range encrypted channel — and only then signals the controller.</div>
       </div>
       <div class="dual-chip-pillar">
         <span class="dual-chip-pillar-tag" data-i18n="dc-p2-tag">LAYER 2 · CTRL</span>
@@ -5257,6 +5572,13 @@ body.menu-open { overflow:hidden; }
       <p class="section-lead" style="margin:16px auto 0;text-align:center;" data-i18n="aud-lead">
         Not paranoia. Professionalism. When your clients, sources, or data subjects trust you, you need tools that earn that trust.
       </p>
+    </div>
+
+    <div class="generated-frame audience-visual sr d1">
+      <img class="generated-img"
+           src="outputs/generated_images/IMG-19_audience_professional_collage.png"
+           alt="Professional use cases for VaultDrive across legal, journalism, travel, and healthcare contexts"
+           loading="lazy">
     </div>
 
     <div class="audience-grid">
@@ -5385,7 +5707,13 @@ body.menu-open { overflow:hidden; }
     <div class="usecase-grid">
 
       <!-- Freelancer / designer / consultant -->
-      <article class="usecase-card sr">
+      <article class="usecase-card has-photo sr">
+        <div class="usecase-photo">
+          <img class="generated-img"
+               src="outputs/generated_images/IMG-20_freelancer_cafe_privacy.png"
+               alt="Freelancer cafe desk with VaultDrive beside a laptop bag"
+               loading="lazy">
+        </div>
         <div class="usecase-illustration">
           <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
             <rect x="10" y="18" width="44" height="30" rx="3" stroke="currentColor" stroke-width="2" fill="none"/>
@@ -5403,7 +5731,13 @@ body.menu-open { overflow:hidden; }
       </article>
 
       <!-- Family traveler -->
-      <article class="usecase-card sr d1">
+      <article class="usecase-card has-photo sr d1">
+        <div class="usecase-photo">
+          <img class="generated-img"
+               src="outputs/generated_images/IMG-21_family_travel_backup.png"
+               alt="Travel desk with VaultDrive, camera, passport sleeve, and photo backups"
+               loading="lazy">
+        </div>
         <div class="usecase-illustration">
           <svg viewBox="0 0 64 64" fill="none" aria-hidden="true">
             <rect x="14" y="22" width="36" height="30" rx="3" stroke="currentColor" stroke-width="2" fill="none"/>
@@ -5535,7 +5869,7 @@ body.menu-open { overflow:hidden; }
         </button>
         <div class="faq-answer">
           <div class="faq-answer-inner" data-i18n="faq-2-a">
-            Your phone camera captures 128 facial geometry points and runs them through a deterministic key derivation algorithm. <strong>The same face always produces the same AES-256 key</strong>, but the key only exists in RAM for the moment of authentication. No facial image, template, or biometric data is ever stored — on your phone, on our servers, or on the drive.
+            Authentication runs entirely on your phone, on-device and offline. <strong>The unlock credential is bound to you personally (person-bound)</strong> and exists only in RAM for the moment of authentication. No facial image, template, or biometric data is ever stored — on your phone, on our servers, or on the drive.
           </div>
         </div>
       </div>
@@ -5591,7 +5925,7 @@ body.menu-open { overflow:hidden; }
         </button>
         <div class="faq-answer">
           <div class="faq-answer-inner" data-i18n="faq-6-a">
-            Software encryption stores the key somewhere — in the OS, on a chip, or derived from a password that can be guessed or coerced. <strong>VaultDrive's key is derived fresh each time from your face and destroyed on disconnect</strong>. There is nothing stored to extract, nothing to crack, and nothing to coerce out of you.
+            Software encryption stores the key somewhere — in the OS, on a chip, or derived from a password that can be guessed or coerced. <strong>VaultDrive's unlock credential requires your live, in-person authentication and is destroyed on disconnect</strong>. There is nothing stored to extract, nothing to crack, and nothing to coerce out of you.
           </div>
         </div>
       </div>
@@ -5650,7 +5984,7 @@ body.menu-open { overflow:hidden; }
           <em data-i18n="ent-h3-2">in your enterprise.</em>
         </h3>
         <p class="enterprise-body" data-i18n="ent-body">
-          <strong>FaceAuth</strong> is the enterprise counterpart to VaultDrive — the same zero-storage biometric architecture, scaled to replace passwords, tokens, and OTPs across your organization.
+          <strong>FacePass</strong> is the enterprise counterpart to VaultDrive — the same zero-storage biometric architecture, scaled to replace passwords, tokens, and OTPs across your organization.
         </p>
         <div class="enterprise-features">
           <div class="enterprise-feature">
@@ -5677,6 +6011,10 @@ body.menu-open { overflow:hidden; }
       </div>
       <div class="enterprise-right">
         <div class="enterprise-visual">
+          <img class="generated-img"
+               src="outputs/generated_images/IMG-22_enterprise_teaser_facepass.png"
+               alt="VaultDrive and FacePass connected through a secure enterprise identity workflow"
+               loading="lazy">
           <svg viewBox="0 0 340 280" fill="none" aria-hidden="true">
             <defs>
               <linearGradient id="ent-glow" cx="50%" cy="50%" r="50%" gradientUnits="objectBoundingBox">
@@ -5765,6 +6103,13 @@ body.menu-open { overflow:hidden; }
       2 TB of NVMe storage. 1050 MB/s. CNC aluminum chassis. AES-256 hardware encryption with NFC unlock. Everything Samsung T7 has — for less. Plus everything it doesn't.
     </p>
 
+    <div class="generated-frame final-product-visual sr d3">
+      <img class="generated-img"
+           src="outputs/generated_images/IMG-23_preorder_packshot.png"
+           alt="VaultDrive preorder kit with SSD, USB-C cable, adapter, quick start guide, and recovery phrase card"
+           loading="lazy">
+    </div>
+
     <!-- Scarcity indicator -->
     <div class="scarcity sr d3">
       <div class="scarcity-row">
@@ -5850,7 +6195,7 @@ body.menu-open { overflow:hidden; }
       <div>
         <div class="footer-col-title" data-i18n="footer-col-2">Enterprise</div>
         <ul class="footer-links">
-          <li><a href="#enterprise" data-i18n="footer-ent-1">FaceAuth Platform</a></li>
+          <li><a href="#enterprise" data-i18n="footer-ent-1">FacePass Platform</a></li>
           <li><a href="#" data-i18n="footer-ent-2">Book a Demo</a></li>
           <li><a href="#" data-i18n="footer-ent-3">Whitepapers</a></li>
           <li><a href="#" data-i18n="footer-ent-4">Security Audit</a></li>
@@ -5914,7 +6259,7 @@ const i18n = {
     'nav-compare': 'Compare',
     'nav-specs': 'Specs',
     'nav-faq': 'FAQ',
-    'nav-enterprise': 'FaceAuth',
+    'nav-enterprise': 'FacePass',
     'nav-cta': 'Pre-order $399',
     'mm-product': 'Product',
     'mm-more': 'Also from Facrypt',
@@ -5937,7 +6282,7 @@ const i18n = {
     'nfc-h2-2': 'The drive opens.',
     'nfc-lead': 'Hold an NFC-capable phone near the drive. No fingerprint scan. No password to type. Authentication happens in under two seconds — but only for the face that owns this drive.',
     'nfc-card-1-title': 'No fingerprint. No password.',
-    'nfc-card-1-body': 'Just hold your phone near the drive. The Facrypt app handshakes with the drive\'s NFC chip, derives your face-bound key, and unlocks. The whole thing finishes in under 2 seconds.',
+    'nfc-card-1-body': 'Just hold your phone near the drive. The Facrypt app handshakes with the drive\'s NFC chip, verifies it\'s really you, and unlocks. The whole thing finishes in under 2 seconds.',
     'nfc-card-2-title': 'Where to tap',
     'nfc-card-2-body': 'Different phones have NFC antennas in different places. Hold the marked area near the drive\'s NFC zone for a reliable handshake.',
     'nfc-zone-iphone': 'iPhone · top edge',
@@ -5969,7 +6314,7 @@ const i18n = {
     'dc-lead': 'VaultDrive runs an in-house storage controller, an NFC secure element for authentication, and an AES-256 hardware engine for encryption — three independent silicon paths, each cryptographically bound to a per-drive unique ID burned at the factory.',
     'dc-p1-tag': 'LAYER 1 · NFC SE',
     'dc-p1-title': 'NFC Secure Element',
-    'dc-p1-text': 'A tamper-resistant chip that handles the phone-to-drive handshake. Receives the face-derived authentication key over a short-range encrypted channel — and only then signals the controller.',
+    'dc-p1-text': 'A tamper-resistant chip that handles the phone-to-drive handshake. Receives the person-bound authentication credential over a short-range encrypted channel — and only then signals the controller.',
     'dc-p2-tag': 'LAYER 2 · CTRL',
     'dc-p2-title': 'In-house Storage Controller',
     'dc-p2-text': 'A custom DSCC controller that links the NFC SE to the AES engine. Each unit ships with a unique 128-bit UID burned at the factory — clone the silicon, you still can\'t replicate the binding.',
@@ -5979,7 +6324,7 @@ const i18n = {
     'dc-footnote': '"Bank-grade" describes the architectural pattern: separation of secure elements + hardware AES + per-device unique ID, the same approach used in EMV payment chips. It does not imply this product carries financial-industry certification.',
 
     // Social proof
-    'sp-label': 'Discussed across the security community',
+    'sp-label': 'Engineered and guaranteed',
 
     // Problem
     'problem-label': 'The Problem',
@@ -5996,17 +6341,17 @@ const i18n = {
     'solution-h2-1': 'Your face.',
     'solution-h2-2': 'Your key.',
     'solution-h2-3': 'Your data.',
-    'solution-body': 'VaultDrive derives its AES-256 encryption key from your face in real time, using your phone\'s camera. The key exists for the moment of authentication, then ceases to exist. <strong style="color:var(--ink)">Nothing is stored. Nothing can be stolen.</strong>',
+    'solution-body': 'VaultDrive\'s AES-256 unlock credential is bound to you — verified in real time on your phone, never written to storage. It exists for the moment of authentication, then ceases to exist. <strong style="color:var(--ink)">Nothing is stored. Nothing can be stolen.</strong>',
 
     // How it works
     'how-label': 'How It Works',
     'how-h2': 'Three steps. Zero stored keys.',
-    'how-sub': 'Face-to-unlock is not facial recognition. It\'s cryptographic derivation. Here\'s the difference.',
+    'how-sub': 'Face-to-unlock is not facial recognition. It\'s cryptographic authentication with zero stored secrets. Here\'s the difference.',
     'step-1-title': 'Look at your phone.',
-    'step-1-body': 'Open the Facrypt app. In under one second, your camera reads 128 facial geometry points and derives a unique AES-256 key. The raw image is discarded immediately.',
+    'step-1-body': 'Open the Facrypt app. In under one second, your phone verifies it\'s really you — entirely on-device. The raw image is discarded immediately; nothing is stored.',
     'step-1-chip': 'On-device · Offline',
     'step-2-title': 'Tap to unlock.',
-    'step-2-body': 'Hold your phone near VaultDrive. The derived key transfers via NFC into the drive\'s hardware security chip — air-gapped, encrypted, in under 100ms.',
+    'step-2-body': 'Hold your phone near VaultDrive. Your one-time unlock credential transfers via NFC into the drive\'s hardware security chip — air-gapped, encrypted, in under 100ms.',
     'step-2-chip': 'NFC · 100ms',
     'step-3-title': 'Use it. Then it\'s gone.',
     'step-3-body': 'Plug into any computer at full USB 3.2 speeds. When you disconnect, the key is destroyed — not wiped, not archived. Mathematically erased.',
@@ -6082,7 +6427,7 @@ const i18n = {
     'cmp-r5': 'Encryption',
     'cmp-r5-samsung': 'AES-256 (password)',
     'cmp-r5-lexar': 'AES-128',
-    'cmp-r5-vd': 'AES-256 + face-derived key',
+    'cmp-r5-vd': 'AES-256 + person-bound key',
     'cmp-r6': 'Unlock method',
     'cmp-r6-samsung': 'Password',
     'cmp-r6-lexar': 'NFC + paired phone',
@@ -6090,7 +6435,7 @@ const i18n = {
     'cmp-r7': 'Where the key lives',
     'cmp-r7-samsung': 'On drive chip',
     'cmp-r7-lexar': 'Stored on phone',
-    'cmp-r7-vd': 'Nowhere — derived fresh',
+    'cmp-r7-vd': 'Nowhere — nothing stored',
     'cmp-r8': 'If the unlock device is lost',
     'cmp-r8-samsung': 'Recover with password',
     'cmp-r8-lexar': 'Drive bricks without recovery key',
@@ -6144,9 +6489,9 @@ const i18n = {
     'spec-hero-2-label': 'Capacity',
     'spec-hero-2-note': 'NVMe SSD at full USB 3.2 Gen 2 speeds. Up to 1050 MB/s read.',
     'spec-hero-3-label': 'Unlock Time',
-    'spec-hero-3-note': 'From face scan to mounted volume. Biometric derivation + NFC transfer + AES init.',
+    'spec-hero-3-note': 'From face scan to mounted volume. On-device authentication + NFC transfer + AES init.',
     'spec-hero-4-label': 'Stored Keys',
-    'spec-hero-4-note': 'Key is derived on authentication, used in memory, destroyed on disconnect. Forever.',
+    'spec-hero-4-note': 'The credential exists only during authentication, used in memory, destroyed on disconnect. Forever.',
     'spec-r1-key': 'Storage Type',
     'spec-r1-val': 'NVMe M.2 2242 SSD · 3D TLC NAND',
     'spec-r1b-key': 'Capacity Options',
@@ -6156,9 +6501,9 @@ const i18n = {
     'spec-r3-key': 'Read / Write Speed',
     'spec-r3-val': 'Up to 1050 MB/s read · 1000 MB/s write',
     'spec-r4-key': 'Security Element',
-    'spec-r4-val': 'Dedicated hardware SE · FIPS 140-3 Level 3 certified',
+    'spec-r4-val': 'Dedicated hardware SE · FIPS 140-3 Level 3 ready',
     'spec-r5-key': 'Authentication',
-    'spec-r5-val': 'NFC · Face-derived AES-256 key (on-device, offline)',
+    'spec-r5-val': 'NFC · Person-bound AES-256 credential (on-device, offline)',
     'spec-r6-key': 'Liveness Detection',
     'spec-r6-val': 'Multi-modal · Photo / video / mask spoofing rejection',
     'spec-r7-key': 'Mobile App',
@@ -6235,7 +6580,7 @@ const i18n = {
     'faq-1-q': 'What happens if I lose my VaultDrive?',
     'faq-1-a': 'Without your face, the drive is inert. Anyone who plugs it in sees an unrecognized device — no filesystem, no data, nothing recoverable. The encryption key only exists at the moment of authentication. There is <strong>no backdoor, no master key, no customer-service recovery</strong>.',
     'faq-2-q': 'How does VaultDrive work without storing my biometric data?',
-    'faq-2-a': 'Your phone camera captures 128 facial geometry points and runs them through a deterministic key derivation algorithm. <strong>The same face always produces the same AES-256 key</strong>, but the key only exists in RAM for the moment of authentication. No facial image, template, or biometric data is ever stored — on your phone, on our servers, or on the drive.',
+    'faq-2-a': 'Authentication runs entirely on your phone, on-device and offline. <strong>The unlock credential is bound to you personally (person-bound)</strong> and exists only in RAM for the moment of authentication. No facial image, template, or biometric data is ever stored — on your phone, on our servers, or on the drive.',
     'faq-3-q': 'Can someone break in with a photo or video of me?',
     'faq-3-a': 'No. VaultDrive uses <strong>multi-modal liveness detection</strong> to verify that a real, three-dimensional face is present. Photos, videos, and masks are rejected. The same anti-spoofing technology used by banking apps (FIDO Biometric Certified Level 2) protects VaultDrive.',
     'faq-4-q': 'What if my face changes due to injury or surgery?',
@@ -6243,7 +6588,7 @@ const i18n = {
     'faq-5-q': 'Does VaultDrive work on Windows, macOS, and Linux?',
     'faq-5-a': 'Yes, on all of them — <strong>with zero drivers or software required</strong>. Once unlocked via NFC, it appears as a standard USB-C 3.2 Gen 2 external SSD. The Facrypt app for unlocking supports iOS 15+ and Android 10+.',
     'faq-6-q': 'How is this different from BitLocker or software encryption?',
-    'faq-6-a': 'Software encryption stores the key somewhere — in the OS, on a chip, or derived from a password that can be guessed or coerced. <strong>VaultDrive\'s key is derived fresh each time from your face and destroyed on disconnect</strong>. There is nothing stored to extract, nothing to crack, and nothing to coerce out of you.',
+    'faq-6-a': 'Software encryption stores the key somewhere — in the OS, on a chip, or derived from a password that can be guessed or coerced. <strong>VaultDrive\'s unlock credential requires your live, in-person authentication and is destroyed on disconnect</strong>. There is nothing stored to extract, nothing to crack, and nothing to coerce out of you.',
     'faq-7-q': 'Can I use VaultDrive at airports and border crossings?',
     'faq-7-a': 'In most jurisdictions, <strong>you cannot be compelled to provide a key that doesn\'t exist</strong>. Since VaultDrive\'s key only exists during active authentication — and is destroyed on disconnect — border agents have nothing to demand access to. Always consult local counsel for your specific travel route.',
     'faq-8-q': 'What happens when I sell or discard my VaultDrive?',
@@ -6255,7 +6600,7 @@ const i18n = {
     'ent-badge': 'Also from DSCC',
     'ent-h3-1': 'Replace every password',
     'ent-h3-2': 'in your enterprise.',
-    'ent-body': '<strong>FaceAuth</strong> is the enterprise counterpart to VaultDrive — the same zero-storage biometric architecture, scaled to replace passwords, tokens, and OTPs across your organization.',
+    'ent-body': '<strong>FacePass</strong> is the enterprise counterpart to VaultDrive — the same zero-storage biometric architecture, scaled to replace passwords, tokens, and OTPs across your organization.',
     'ent-f1': 'SAML 2.0 · OIDC · SCIM out of the box',
     'ent-f2': 'Zero biometric database to breach',
     'ent-f3': 'Integrates with Okta, Azure AD, Keycloak',
@@ -6288,7 +6633,7 @@ const i18n = {
     'footer-product-3': 'Specifications',
     'footer-product-4': 'Compare',
     'footer-product-5': 'FAQ',
-    'footer-ent-1': 'FaceAuth Platform',
+    'footer-ent-1': 'FacePass Platform',
     'footer-ent-2': 'Book a Demo',
     'footer-ent-3': 'Whitepapers',
     'footer-ent-4': 'Security Audit',
@@ -6339,7 +6684,7 @@ const i18n = {
     'nfc-h2-2': 'ドライブが開く。',
     'nfc-lead': 'NFC対応スマートフォンをドライブに近づけるだけ。指紋スキャンも、パスワード入力も不要。認証は2秒以内に完了 — ただし、このドライブの所有者の顔だけが対象です。',
     'nfc-card-1-title': '指紋不要、パスワード不要。',
-    'nfc-card-1-body': 'スマホをドライブに近づけるだけ。FacryptアプリがドライブのNFCチップとハンドシェイクし、顔から派生した鍵を渡してロックを解除。すべてが2秒以内に完了します。',
+    'nfc-card-1-body': 'スマホをドライブに近づけるだけ。FacryptアプリがドライブのNFCチップとハンドシェイクし、本人確認のうえロックを解除。すべてが2秒以内に完了します。',
     'nfc-card-2-title': 'タッチする位置',
     'nfc-card-2-body': 'スマートフォンによってNFCアンテナの位置が異なります。マークされた領域をドライブのNFCゾーンに近づけて、確実にハンドシェイクしてください。',
     'nfc-zone-iphone': 'iPhone · 上端',
@@ -6371,7 +6716,7 @@ const i18n = {
     'dc-lead': 'VaultDriveは、自社開発のストレージコントローラ、認証用NFCセキュアエレメント、AES-256ハードウェア暗号化エンジン — 3つの独立したシリコン経路を搭載。各経路は工場で焼き込まれた個体固有IDに暗号学的に結びついています。',
     'dc-p1-tag': 'LAYER 1 · NFC SE',
     'dc-p1-title': 'NFC セキュアエレメント',
-    'dc-p1-text': 'スマホ-ドライブ間のハンドシェイクを担う改ざん耐性チップ。短距離暗号化チャネル経由で顔派生認証鍵を受信し、その後でのみコントローラに信号を送ります。',
+    'dc-p1-text': 'スマホ-ドライブ間のハンドシェイクを担う改ざん耐性チップ。短距離暗号化チャネル経由で本人紐付けの認証クレデンシャルを受信し、その後でのみコントローラに信号を送ります。',
     'dc-p2-tag': 'LAYER 2 · CTRL',
     'dc-p2-title': '自社開発ストレージコントローラ',
     'dc-p2-text': 'NFC SEとAESエンジンを連携させるDSCC独自設計コントローラ。各個体には工場で焼き込まれた128ビット固有UIDが付与され、シリコンを複製してもバインディングは複製不可能です。',
@@ -6381,7 +6726,7 @@ const i18n = {
     'dc-footnote': '「銀行級」とは、セキュアエレメントの分離 + ハードウェアAES + 個体固有IDという、EMV決済チップで採用されているアーキテクチャパターンを指します。本製品が金融業界の認証を取得していることを意味するものではありません。',
 
     // Social proof
-    'sp-label': 'セキュリティコミュニティで話題に',
+    'sp-label': '設計品質と保証',
 
     // Problem
     'problem-label': '課題',
@@ -6398,17 +6743,17 @@ const i18n = {
     'solution-h2-1': 'あなたの顔が、',
     'solution-h2-2': '鍵となり、',
     'solution-h2-3': 'データを守る。',
-    'solution-body': 'VaultDriveはスマートフォンのカメラを使い、お顔からAES-256暗号鍵をリアルタイムで生成します。鍵は認証の瞬間だけ存在し、その後消滅します。<strong style="color:var(--ink)">保存されなければ、盗まれることもありません。</strong>',
+    'solution-body': 'VaultDriveのAES-256解錠クレデンシャルはご本人に紐付き、スマートフォン上でリアルタイムに検証されます。どこにも保存されず、認証の瞬間だけ存在し、その後消滅します。<strong style="color:var(--ink)">保存されなければ、盗まれることもありません。</strong>',
 
     // How it works
     'how-label': '仕組み',
     'how-h2': '3ステップ、保存ゼロ。',
-    'how-sub': '顔認証ではなく、暗号鍵の数学的派生です。その違いをご説明します。',
+    'how-sub': '単なる顔認識ではなく、秘密を一切保存しない暗号学的認証です。その違いをご説明します。',
     'step-1-title': 'スマホでお顔を撮影。',
-    'step-1-body': 'Facryptアプリを起動。1秒以内にカメラが128点の顔形状を読み取り、固有のAES-256鍵を派生。元画像は即座に破棄されます。',
+    'step-1-body': 'Facryptアプリを起動。1秒以内に端末内で本人確認が完結。元画像は即座に破棄され、何も保存されません。',
     'step-1-chip': '端末完結 · オフライン',
     'step-2-title': 'タップして解除。',
-    'step-2-body': 'VaultDriveにスマホを近づけます。派生された鍵はNFCでハードウェアセキュリティチップへ直接転送 — 独立した経路で、100ms以内に完了。',
+    'step-2-body': 'VaultDriveにスマホを近づけます。ワンタイムの解錠クレデンシャルはNFCでハードウェアセキュリティチップへ直接転送 — 独立した経路で、100ms以内に完了。',
     'step-2-chip': 'NFC · 100ms',
     'step-3-title': '使用後、消去。',
     'step-3-body': 'USB 3.2全速でどんなPCにも接続可能。取り外した瞬間、鍵は消去されます — 上書きではなく、数学的に到達不可能に。',
@@ -6484,7 +6829,7 @@ const i18n = {
     'cmp-r5': '暗号化',
     'cmp-r5-samsung': 'AES-256（パスワード）',
     'cmp-r5-lexar': 'AES-128',
-    'cmp-r5-vd': 'AES-256 + 顔派生鍵',
+    'cmp-r5-vd': 'AES-256 + 本人紐付け鍵',
     'cmp-r6': '開錠方式',
     'cmp-r6-samsung': 'パスワード',
     'cmp-r6-lexar': 'NFC + ペア端末',
@@ -6492,7 +6837,7 @@ const i18n = {
     'cmp-r7': '鍵の所在',
     'cmp-r7-samsung': 'ドライブチップ内',
     'cmp-r7-lexar': '端末に保存',
-    'cmp-r7-vd': '不在 — 毎回派生',
+    'cmp-r7-vd': '不在 — 何も保存されない',
     'cmp-r8': '開錠端末を紛失したら',
     'cmp-r8-samsung': 'パスワードで復旧',
     'cmp-r8-lexar': '復旧キーなしでドライブ使用不能',
@@ -6546,9 +6891,9 @@ const i18n = {
     'spec-hero-2-label': '容量',
     'spec-hero-2-note': 'USB 3.2 Gen 2全速対応NVMe SSD。最大1050 MB/s読み込み。',
     'spec-hero-3-label': '解除時間',
-    'spec-hero-3-note': '顔スキャンからマウント完了まで。生体派生+NFC転送+AES初期化。',
+    'spec-hero-3-note': '顔スキャンからマウント完了まで。端末内認証+NFC転送+AES初期化。',
     'spec-hero-4-label': '保存された鍵',
-    'spec-hero-4-note': '認証時に派生、メモリ内で使用、切断時に消去。永久に。',
+    'spec-hero-4-note': 'クレデンシャルは認証時のみ存在、メモリ内で使用、切断時に消去。永久に。',
     'spec-r1-key': 'ストレージ種別',
     'spec-r1-val': 'NVMe M.2 2242 SSD · 3D TLC NAND',
     'spec-r1b-key': '容量オプション',
@@ -6560,7 +6905,7 @@ const i18n = {
     'spec-r4-key': 'セキュアエレメント',
     'spec-r4-val': '専用ハードウェアSE · FIPS 140-3 Level 3認証',
     'spec-r5-key': '認証方式',
-    'spec-r5-val': 'NFC · 顔派生AES-256鍵（端末完結、オフライン）',
+    'spec-r5-val': 'NFC · 本人紐付けAES-256クレデンシャル（端末完結、オフライン）',
     'spec-r6-key': '生体判定',
     'spec-r6-val': 'マルチモーダル · 写真・動画・マスク偽装検出',
     'spec-r7-key': 'モバイルアプリ',
@@ -6637,7 +6982,7 @@ const i18n = {
     'faq-1-q': 'VaultDriveを紛失したらどうなりますか？',
     'faq-1-a': 'お顔がなければ、ドライブは不活性です。誰が差し込んでも、認識されないデバイスとして表示されます — ファイルシステムなし、データなし、復元不可能。暗号鍵は認証の瞬間のみ存在します。<strong>バックドアもマスターキーもカスタマーサービスでのリセットも存在しません</strong>。',
     'faq-2-q': '生体データを保存せずに、どう動作するのですか？',
-    'faq-2-a': 'スマートフォンのカメラが128点の顔形状を取得し、決定論的鍵派生アルゴリズムで処理します。<strong>同じお顔からは毎回同じAES-256鍵が生成されます</strong>が、鍵は認証の瞬間のみRAMに存在します。顔画像、テンプレート、生体データは一切保存されません — あなたのスマホにも、弊社サーバにも、ドライブにも。',
+    'faq-2-a': '認証はすべて端末内・オフラインで完結します。<strong>解錠クレデンシャルはご本人に紐付き</strong>、認証の瞬間のみRAMに存在します。顔画像、テンプレート、生体データは一切保存されません — あなたのスマホにも、弊社サーバにも、ドライブにも。',
     'faq-3-q': '写真や動画で突破される可能性はありますか？',
     'faq-3-a': 'ありません。VaultDriveは<strong>マルチモーダル生体判定</strong>を使用し、実際の三次元の顔の存在を確認します。写真、動画、マスクは拒否されます。銀行アプリで使われているものと同じ偽装防止技術（FIDO Biometric Certified Level 2）がVaultDriveを守ります。',
     'faq-4-q': '怪我や手術で顔が変わった場合は？',
@@ -6645,7 +6990,7 @@ const i18n = {
     'faq-5-q': 'Windows、macOS、Linuxで使えますか？',
     'faq-5-a': 'はい、すべて対応しています — <strong>ドライバやソフトウェアのインストール不要</strong>。NFCでロック解除後、標準的なUSB-C 3.2 Gen 2外付けSSDとして認識されます。解除用Facryptアプリは iOS 15+ / Android 10+ 対応。',
     'faq-6-q': 'BitLockerなどのソフトウェア暗号化とどう違いますか？',
-    'faq-6-a': 'ソフトウェア暗号化は、鍵をどこかに保存します — OS、チップ、推測・強要可能なパスフレーズから派生。<strong>VaultDriveの鍵は毎回お顔から新鮮に派生され、切断時に破壊されます</strong>。抽出対象なし、解読対象なし、強要対象なし。',
+    'faq-6-a': 'ソフトウェア暗号化は、鍵をどこかに保存します — OS、チップ、推測・強要可能なパスフレーズから派生。<strong>VaultDriveの解錠にはご本人によるその場での認証が必要で、クレデンシャルは切断時に破壊されます</strong>。抽出対象なし、解読対象なし、強要対象なし。',
     'faq-7-q': '空港や国境での使用について教えてください。',
     'faq-7-a': 'ほとんどの法域で、<strong>存在しない鍵の提供を強要されることはありません</strong>。VaultDriveの鍵は認証中のみ存在し、切断時に破壊されるため、入国審査官にアクセス要求の対象がありません。ご旅行経路については、必ず現地の法律家にご相談ください。',
     'faq-8-q': '売却・廃棄する場合はどうすれば？',
@@ -6657,7 +7002,7 @@ const i18n = {
     'ent-badge': 'DSCCから、もう一つ',
     'ent-h3-1': '企業のすべての',
     'ent-h3-2': 'パスワードを置き換える。',
-    'ent-body': '<strong>FaceAuth</strong>はVaultDriveの法人向け対応製品 — 同じ「保存ゼロ」生体認証アーキテクチャを、組織全体のパスワード、トークン、OTPの置き換えへ拡張。',
+    'ent-body': '<strong>FacePass</strong>はVaultDriveの法人向け対応製品 — 同じ「保存ゼロ」生体認証アーキテクチャを、組織全体のパスワード、トークン、OTPの置き換えへ拡張。',
     'ent-f1': 'SAML 2.0 · OIDC · SCIM 標準対応',
     'ent-f2': '漏洩対象となる生体DBが存在しない',
     'ent-f3': 'Okta、Azure AD、Keycloakと連携',
@@ -6690,7 +7035,7 @@ const i18n = {
     'footer-product-3': '仕様',
     'footer-product-4': '比較',
     'footer-product-5': 'FAQ',
-    'footer-ent-1': 'FaceAuth プラットフォーム',
+    'footer-ent-1': 'FacePass プラットフォーム',
     'footer-ent-2': 'デモ予約',
     'footer-ent-3': '技術白書',
     'footer-ent-4': 'セキュリティ監査',
@@ -6718,7 +7063,7 @@ const i18n = {
     'nav-compare': 'Vergleich',
     'nav-specs': 'Technik',
     'nav-faq': 'FAQ',
-    'nav-enterprise': 'FaceAuth',
+    'nav-enterprise': 'FacePass',
     'nav-cta': 'Vorbestellen 369€',
     'mm-product': 'Produkt',
     'mm-more': 'Weitere Produkte',
@@ -6741,7 +7086,7 @@ const i18n = {
     'nfc-h2-2': 'Die Festplatte öffnet sich.',
     'nfc-lead': 'Halten Sie ein NFC-fähiges Telefon nahe an die Festplatte. Kein Fingerabdruck-Scan. Kein Passwort eintippen. Authentifizierung in unter zwei Sekunden — aber nur für das Gesicht, dem diese Festplatte gehört.',
     'nfc-card-1-title': 'Kein Fingerabdruck. Kein Passwort.',
-    'nfc-card-1-body': 'Halten Sie einfach Ihr Telefon nahe an die Festplatte. Die Facrypt-App führt einen Handshake mit dem NFC-Chip der Festplatte durch, leitet Ihren gesichtsgebundenen Schlüssel ab und entsperrt. Das Ganze dauert unter 2 Sekunden.',
+    'nfc-card-1-body': 'Halten Sie einfach Ihr Telefon nahe an die Festplatte. Die Facrypt-App führt einen Handshake mit dem NFC-Chip der Festplatte durch, verifiziert, dass Sie es wirklich sind, und entsperrt. Das Ganze dauert unter 2 Sekunden.',
     'nfc-card-2-title': 'Wo antippen',
     'nfc-card-2-body': 'Verschiedene Telefone haben NFC-Antennen an verschiedenen Stellen. Halten Sie den markierten Bereich an die NFC-Zone der Festplatte für einen zuverlässigen Handshake.',
     'nfc-zone-iphone': 'iPhone · obere Kante',
@@ -6773,7 +7118,7 @@ const i18n = {
     'dc-lead': 'VaultDrive läuft mit einem hauseigenen Speicher-Controller, einem NFC-Sicherheitselement zur Authentifizierung und einer AES-256-Hardware-Engine zur Verschlüsselung — drei unabhängige Silizium-Pfade, jeder kryptographisch an eine pro Gerät einzigartige, im Werk eingebrannte ID gebunden.',
     'dc-p1-tag': 'LAYER 1 · NFC SE',
     'dc-p1-title': 'NFC-Sicherheitselement',
-    'dc-p1-text': 'Ein manipulationssicherer Chip, der den Telefon-zu-Festplatte-Handshake handhabt. Empfängt den gesichtsabgeleiteten Authentifizierungsschlüssel über einen verschlüsselten Nahbereichskanal — und signalisiert erst danach dem Controller.',
+    'dc-p1-text': 'Ein manipulationssicherer Chip, der den Telefon-zu-Festplatte-Handshake handhabt. Empfängt die personengebundene Authentifizierungs-Credential über einen verschlüsselten Nahbereichskanal — und signalisiert erst danach dem Controller.',
     'dc-p2-tag': 'LAYER 2 · CTRL',
     'dc-p2-title': 'Hauseigener Speicher-Controller',
     'dc-p2-text': 'Ein maßgeschneiderter DSCC-Controller, der das NFC SE mit der AES-Engine verbindet. Jede Einheit wird mit einer einzigartigen 128-Bit-UID ausgeliefert, die im Werk eingebrannt wurde — Silizium klonen geht, die Bindung zu replizieren nicht.',
@@ -6783,7 +7128,7 @@ const i18n = {
     'dc-footnote': '"Bank-Grade" beschreibt das Architektur-Muster: Trennung von Sicherheitselementen + Hardware-AES + pro Gerät einzigartige ID, derselbe Ansatz wie bei EMV-Zahlungschips. Es bedeutet nicht, dass dieses Produkt eine finanzbranchen-spezifische Zertifizierung trägt.',
 
     // Social proof
-    'sp-label': 'Diskutiert in der Security-Community',
+    'sp-label': 'Konstruiert und garantiert',
 
     // Problem
     'problem-label': 'Das Problem',
@@ -6800,14 +7145,14 @@ const i18n = {
     'solution-h2-1': 'Ihr Gesicht.',
     'solution-h2-2': 'Ihr Schlüssel.',
     'solution-h2-3': 'Ihre Daten.',
-    'solution-body': 'VaultDrive leitet den AES-256-Schlüssel in Echtzeit aus Ihrem Gesicht ab — mit der Kamera Ihres Smartphones. Der Schlüssel existiert nur für den Moment der Authentifizierung, dann ist er weg. <strong style="color:var(--ink)">Nichts wird gespeichert. Nichts kann gestohlen werden.</strong>',
+    'solution-body': 'VaultDrives AES-256-Entsperr-Credential ist an Sie persönlich gebunden — in Echtzeit auf Ihrem Smartphone verifiziert, nirgendwo gespeichert. Es existiert nur für den Moment der Authentifizierung, dann ist es weg. <strong style="color:var(--ink)">Nichts wird gespeichert. Nichts kann gestohlen werden.</strong>',
 
     // How it works
     'how-label': 'Funktionsweise',
     'how-h2': 'Drei Schritte. Null gespeicherte Schlüssel.',
     'how-sub': 'Face-Unlock ist keine Gesichtserkennung. Es ist kryptografische Schlüsselableitung. Hier der Unterschied.',
     'step-1-title': 'Blick aufs Smartphone.',
-    'step-1-body': 'Facrypt-App öffnen. In weniger als einer Sekunde liest die Kamera 128 Gesichtspunkte und leitet einen AES-256-Schlüssel ab. Das Rohbild wird sofort verworfen.',
+    'step-1-body': 'Facrypt-App öffnen. In weniger als einer Sekunde verifiziert Ihr Telefon, dass Sie es wirklich sind — vollständig auf dem Gerät. Das Rohbild wird sofort verworfen; nichts wird gespeichert.',
     'step-1-chip': 'Gerätelokal · Offline',
     'step-2-title': 'Tippen zum Entsperren.',
     'step-2-body': 'Smartphone an VaultDrive halten. Der Schlüssel wird via NFC direkt in den Hardware-Sicherheitschip übertragen — luftdicht getrennt, verschlüsselt, unter 100 ms.',
@@ -6894,7 +7239,7 @@ const i18n = {
     'cmp-r7': 'Wo der Schlüssel liegt',
     'cmp-r7-samsung': 'Auf Laufwerks-Chip',
     'cmp-r7-lexar': 'Auf Telefon gespeichert',
-    'cmp-r7-vd': 'Nirgendwo — frisch abgeleitet',
+    'cmp-r7-vd': 'Nirgendwo — nichts gespeichert',
     'cmp-r8': 'Bei Verlust des Entsperrgeräts',
     'cmp-r8-samsung': 'Wiederherstellung mit Passwort',
     'cmp-r8-lexar': 'Laufwerk unbrauchbar ohne Recovery-Key',
@@ -6948,9 +7293,9 @@ const i18n = {
     'spec-hero-2-label': 'Kapazität',
     'spec-hero-2-note': 'NVMe SSD mit voller USB 3.2 Gen 2 Geschwindigkeit. Bis zu 1050 MB/s lesend.',
     'spec-hero-3-label': 'Entsperrzeit',
-    'spec-hero-3-note': 'Vom Gesichts-Scan zum eingehängten Volume. Biometrische Ableitung + NFC + AES-Init.',
+    'spec-hero-3-note': 'Vom Gesichts-Scan zum eingehängten Volume. Geräteinterne Authentifizierung + NFC + AES-Init.',
     'spec-hero-4-label': 'Gespeicherte Schlüssel',
-    'spec-hero-4-note': 'Schlüssel wird bei Auth abgeleitet, im RAM verwendet, beim Trennen zerstört. Für immer.',
+    'spec-hero-4-note': 'Die Credential existiert nur während der Authentifizierung, wird im RAM verwendet, beim Trennen zerstört. Für immer.',
     'spec-r1-key': 'Speichertyp',
     'spec-r1-val': 'NVMe M.2 2242 SSD · 3D TLC NAND',
     'spec-r1b-key': 'Kapazitätsoptionen',
@@ -6960,9 +7305,9 @@ const i18n = {
     'spec-r3-key': 'Lese- / Schreibgeschwindigkeit',
     'spec-r3-val': 'Bis zu 1050 MB/s lesend · 1000 MB/s schreibend',
     'spec-r4-key': 'Secure Element',
-    'spec-r4-val': 'Dedizierte Hardware-SE · FIPS 140-3 Level 3 zertifiziert',
+    'spec-r4-val': 'Dedizierte Hardware-SE · ausgelegt auf FIPS 140-3 Level 3',
     'spec-r5-key': 'Authentifizierung',
-    'spec-r5-val': 'NFC · Gesichts-abgeleiteter AES-256 Schlüssel (gerätelokal, offline)',
+    'spec-r5-val': 'NFC · Personengebundene AES-256-Credential (gerätelokal, offline)',
     'spec-r6-key': 'Lebendigkeitserkennung',
     'spec-r6-val': 'Multi-modal · Foto- / Video- / Masken-Spoofing-Abwehr',
     'spec-r7-key': 'Mobile App',
@@ -7039,7 +7384,7 @@ const i18n = {
     'faq-1-q': 'Was passiert, wenn ich meine VaultDrive verliere?',
     'faq-1-a': 'Ohne Ihr Gesicht ist die Festplatte inaktiv. Wer auch immer sie einsteckt, sieht ein nicht erkanntes Gerät — kein Dateisystem, keine Daten, nichts wiederherstellbar. Der Verschlüsselungsschlüssel existiert nur im Authentifizierungsmoment. Es gibt <strong>keine Hintertür, keinen Masterkey, keine Customer-Service-Wiederherstellung</strong>.',
     'faq-2-q': 'Wie funktioniert VaultDrive, ohne meine biometrischen Daten zu speichern?',
-    'faq-2-a': 'Ihre Smartphone-Kamera erfasst 128 Gesichtspunkte und verarbeitet sie mit einem deterministischen Schlüsselableitungs-Algorithmus. <strong>Dasselbe Gesicht erzeugt immer denselben AES-256-Schlüssel</strong>, aber der Schlüssel existiert nur im RAM während der Authentifizierung. Kein Bild, keine Vorlage, keine biometrischen Daten werden jemals gespeichert — nicht auf Ihrem Smartphone, nicht auf unseren Servern, nicht auf der Festplatte.',
+    'faq-2-a': 'Die Authentifizierung läuft vollständig auf Ihrem Smartphone — geräteintern und offline. <strong>Die Entsperr-Credential ist an Sie persönlich gebunden</strong> und existiert nur im RAM während der Authentifizierung. Kein Bild, keine Vorlage, keine biometrischen Daten werden jemals gespeichert — nicht auf Ihrem Smartphone, nicht auf unseren Servern, nicht auf der Festplatte.',
     'faq-3-q': 'Kann jemand mit einem Foto oder Video von mir einbrechen?',
     'faq-3-a': 'Nein. VaultDrive nutzt <strong>multi-modale Lebendigkeitserkennung</strong>, um zu verifizieren, dass ein echtes, dreidimensionales Gesicht vorliegt. Fotos, Videos und Masken werden abgelehnt. Dieselbe Anti-Spoofing-Technologie, die Banking-Apps schützt (FIDO Biometric Certified Level 2), schützt VaultDrive.',
     'faq-4-q': 'Was, wenn sich mein Gesicht durch Verletzung oder OP verändert?',
@@ -7047,7 +7392,7 @@ const i18n = {
     'faq-5-q': 'Funktioniert VaultDrive auf Windows, macOS und Linux?',
     'faq-5-a': 'Ja, auf allen — <strong>ohne Treiber oder Software-Installation</strong>. Nach NFC-Entsperrung erscheint sie als standardmäßige USB-C 3.2 Gen 2 externe SSD. Die Facrypt-App für die Entsperrung unterstützt iOS 15+ und Android 10+.',
     'faq-6-q': 'Wie unterscheidet sich das von BitLocker oder Software-Verschlüsselung?',
-    'faq-6-a': 'Software-Verschlüsselung speichert den Schlüssel irgendwo — im OS, auf einem Chip oder aus einer Passphrase abgeleitet, die erratbar oder erzwingbar ist. <strong>VaultDrives Schlüssel wird jedes Mal frisch aus Ihrem Gesicht abgeleitet und beim Trennen zerstört</strong>. Nichts zu extrahieren, nichts zu knacken, nichts zu erzwingen.',
+    'faq-6-a': 'Software-Verschlüsselung speichert den Schlüssel irgendwo — im OS, auf einem Chip oder aus einer Passphrase abgeleitet, die erratbar oder erzwingbar ist. <strong>VaultDrives Entsperrung erfordert Ihre persönliche Live-Authentifizierung; die Credential wird beim Trennen zerstört</strong>. Nichts zu extrahieren, nichts zu knacken, nichts zu erzwingen.',
     'faq-7-q': 'Kann ich VaultDrive an Flughäfen und Grenzen nutzen?',
     'faq-7-a': 'In den meisten Jurisdiktionen <strong>können Sie nicht gezwungen werden, einen Schlüssel herauszugeben, der nicht existiert</strong>. Da VaultDrives Schlüssel nur während aktiver Authentifizierung existiert — und beim Trennen zerstört wird — haben Grenzbeamte nichts, worauf sie Zugriff fordern könnten. Konsultieren Sie für Ihre Reiseroute stets einen Anwalt.',
     'faq-8-q': 'Was passiert, wenn ich VaultDrive verkaufe oder entsorge?',
@@ -7059,7 +7404,7 @@ const i18n = {
     'ent-badge': 'Auch von DSCC',
     'ent-h3-1': 'Ersetzen Sie jedes Passwort',
     'ent-h3-2': 'in Ihrem Unternehmen.',
-    'ent-body': '<strong>FaceAuth</strong> ist das Enterprise-Pendant zu VaultDrive — dieselbe Zero-Storage-biometrische Architektur, skaliert für den Ersatz von Passwörtern, Tokens und OTPs in Ihrer Organisation.',
+    'ent-body': '<strong>FacePass</strong> ist das Enterprise-Pendant zu VaultDrive — dieselbe Zero-Storage-biometrische Architektur, skaliert für den Ersatz von Passwörtern, Tokens und OTPs in Ihrer Organisation.',
     'ent-f1': 'SAML 2.0 · OIDC · SCIM ab Werk',
     'ent-f2': 'Keine biometrische DB zum Einbrechen',
     'ent-f3': 'Integration mit Okta, Azure AD, Keycloak',
@@ -7092,7 +7437,7 @@ const i18n = {
     'footer-product-3': 'Spezifikationen',
     'footer-product-4': 'Vergleich',
     'footer-product-5': 'FAQ',
-    'footer-ent-1': 'FaceAuth Plattform',
+    'footer-ent-1': 'FacePass Plattform',
     'footer-ent-2': 'Demo buchen',
     'footer-ent-3': 'Whitepapers',
     'footer-ent-4': 'Security Audit',
